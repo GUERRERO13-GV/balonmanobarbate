@@ -51,6 +51,46 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // El header se estrecha en cuanto la página se separa del principio. Se
+  // apunta con una clase en el body porque de --header-h dependen también el
+  // menú móvil y el scroll-margin de los anclajes.
+  var marcarScroll = function () {
+    document.body.classList.toggle('is-scrolled', window.scrollY > 24);
+  };
+  marcarScroll();
+  window.addEventListener('scroll', marcarScroll, { passive: true });
+
+  // Aparición al desplazar. El atributo lo pone el script, nunca el HTML: si
+  // el JS no llega a ejecutarse, el contenido se ve igual desde el principio.
+  var quietud = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if ('IntersectionObserver' in window && !quietud.matches) {
+    var observador = new IntersectionObserver(function (entradas, obs) {
+      entradas.forEach(function (entrada) {
+        if (!entrada.isIntersecting) return;
+        entrada.target.classList.add('is-visible');
+        obs.unobserve(entrada.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+
+    // El mosaico de la galería va en columnas CSS: transformar sus hijos
+    // rompe el reparto, así que ahí se anima el bloque entero, no cada foto.
+    var selector = '.section-head, .disciplines, .grid > *, .foto-ancha,' +
+                   ' .foto-destacada, .galeria, .lista-contacto, .map-embed';
+    document.querySelectorAll(selector).forEach(function (el) {
+      if (el.closest('.galeria')) return;
+      el.setAttribute('data-reveal', '');
+      observador.observe(el);
+    });
+
+    // Escalonado corto dentro de cada rejilla: los hermanos entran seguidos,
+    // no todos de golpe. Se corta a los 4 para no hacer esperar al visitante.
+    document.querySelectorAll('.grid').forEach(function (rejilla) {
+      Array.prototype.forEach.call(rejilla.children, function (hijo, i) {
+        hijo.style.setProperty('--reveal-delay', Math.min(i, 3) * 90 + 'ms');
+      });
+    });
+  }
+
   // Season tabs (preparado para futuras temporadas; hoy solo hay una)
   document.querySelectorAll('.season-tabs').forEach(function (tabs) {
     var buttons = tabs.querySelectorAll('button');
