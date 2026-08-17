@@ -1,0 +1,434 @@
+/* ============================================
+   CLUB BALONMANO BARBATE — hoja de estilos
+   Desarrollo y diseño: Fran Vidal (FranVi)
+
+   Paleta: azul noche atlántico, oro de timón,
+   arena y rojo almadraba (red de atún).
+   ============================================ */
+
+:root{
+  /* Colores de marca: FIJOS en los dos temas. El azul del club es el azul
+     del club de día y de noche, igual que el oro del escudo. */
+  --navy-deep:   #0A2A43;
+  --navy:        #123A57;
+  --navy-ink:    #0D1F2D;
+  --gold:        #D9A73B;
+  --gold-light:  #F0C868;
+  --sand:        #F6F1E4;
+  --sand-dim:    #ECE3CC;
+  --almadraba:   #A8331F;
+  --almadraba-d: #7E2517;
+  --white:       #FFFDF8;
+
+  --font-display: 'Oswald', sans-serif;
+  --font-body:    'Source Serif 4', serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  --radius: 2px;
+  --container: 1180px;
+
+  /* Colores de función: son los ÚNICOS que cambian con el tema. */
+  --bg:         var(--sand);      /* fondo de la página        */
+  --surface:    var(--white);     /* tarjetas y secciones alt  */
+  --text:       var(--navy-ink);  /* texto corrido             */
+  --border:     var(--sand-dim);  /* bordes y separadores      */
+  --heading:    var(--navy-deep); /* titulares                 */
+  --accent:     var(--almadraba); /* eyebrows, metadatos       */
+  --accent-ink: var(--almadraba-d);
+  --notice-bg:  rgba(168,51,31,.06);
+  --tab-bg:     var(--navy-deep); /* pestaña de temporada activa */
+  --tab-fg:     var(--gold-light);
+}
+
+/* --- Tema oscuro ---------------------------------------------------------
+   Se aplica de dos maneras: siguiendo la preferencia del sistema (salvo que
+   el visitante haya elegido claro a mano) y con data-theme="dark", que pone
+   theme.js cuando pulsa el botón. */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:         #0B1922;
+    --surface:    #12293A;
+    --text:       #E7DECA;
+    --border:     #23425A;
+    --heading:    var(--gold-light);
+    --accent:     #E5806A;
+    --accent-ink: #F0A08C;
+    --notice-bg:  rgba(229,128,106,.10);
+    --tab-bg:     var(--gold);
+    --tab-fg:     var(--navy-deep);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:         #0B1922;
+  --surface:    #12293A;
+  --text:       #E7DECA;
+  --border:     #23425A;
+  --heading:    var(--gold-light);
+  --accent:     #E5806A;
+  --accent-ink: #F0A08C;
+  --notice-bg:  rgba(229,128,106,.10);
+  --tab-bg:     var(--gold);
+  --tab-fg:     var(--navy-deep);
+}
+
+*, *::before, *::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  font-size:17px;
+  line-height:1.6;
+}
+/* height:auto evita que una rejilla estire la foto a la altura de la fila:
+   sin él, las imágenes hijas de un grid salían deformadas. */
+img{ max-width:100%; display:block; height:auto; }
+picture{ display:block; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3,h4{
+  font-family:var(--font-display);
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  margin:0 0 .4em;
+  color:var(--heading);
+}
+p{ margin:0 0 1em; }
+.container{ max-width:var(--container); margin:0 auto; padding:0 24px; }
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.5em;
+  font-family:var(--font-mono);
+  font-size:.72rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.8em;
+}
+.eyebrow::before{
+  content:"";
+  width:22px; height:2px;
+  background:var(--accent);
+  display:inline-block;
+}
+
+/* ---------- Accesibilidad ---------- */
+.skip-link{
+  position:absolute; left:-999px; top:auto;
+  background:var(--gold); color:var(--navy-deep);
+  padding:10px 18px; z-index:1000;
+  font-family:var(--font-display); text-transform:uppercase;
+  font-size:.82rem; letter-spacing:.06em;
+}
+.skip-link:focus{ left:16px; top:16px; }
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:2px;
+}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky; top:0; z-index:100;
+  background:var(--navy-deep);
+  border-bottom:3px solid var(--gold);
+}
+.site-header .container{
+  display:flex; align-items:center; justify-content:space-between;
+  min-height:74px;
+}
+.brand{ display:flex; align-items:center; gap:14px; }
+.brand img{ width:46px; height:46px; }
+.brand-text{ line-height:1.1; }
+.brand-text .name{
+  font-family:var(--font-display);
+  color:var(--white);
+  font-size:1.05rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.brand-text .since{
+  font-family:var(--font-mono);
+  font-size:.65rem;
+  color:var(--gold-light);
+  letter-spacing:.12em;
+}
+.main-nav{ display:flex; gap:2px; }
+.main-nav a{
+  font-family:var(--font-display);
+  font-size:.82rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--sand-dim);
+  padding:10px 14px;
+  border-bottom:2px solid transparent;
+  transition:.2s;
+}
+.main-nav a:hover, .main-nav a.active{
+  color:var(--gold-light);
+  border-bottom-color:var(--gold);
+}
+.nav-toggle{
+  display:none;
+  background:none; border:none; color:var(--white);
+  font-size:1.6rem; cursor:pointer;
+}
+
+/* ---------- Botón de tema claro / oscuro ---------- */
+.header-actions{ display:flex; align-items:center; gap:4px; }
+.theme-toggle{
+  display:flex; align-items:center; justify-content:center;
+  background:none; border:none; cursor:pointer;
+  color:var(--sand-dim); padding:8px;
+  transition:.2s;
+}
+.theme-toggle:hover{ color:var(--gold-light); }
+.theme-toggle svg{ width:20px; height:20px; }
+/* Se enseña el icono del tema al que se puede cambiar, no el actual */
+.theme-toggle .ico-sol{ display:none; }
+:root[data-theme="dark"] .theme-toggle .ico-luna{ display:none; }
+:root[data-theme="dark"] .theme-toggle .ico-sol{ display:block; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .theme-toggle .ico-luna{ display:none; }
+  :root:not([data-theme="light"]) .theme-toggle .ico-sol{ display:block; }
+}
+@media (max-width:860px){
+  .main-nav{
+    position:fixed; inset:74px 0 0 0;
+    background:var(--navy-deep);
+    flex-direction:column;
+    padding:10px 24px;
+    transform:translateX(-100%);
+    transition:transform .3s, visibility .3s;
+    /* visibility saca los enlaces del orden de tabulación mientras el menú
+       está cerrado; solo con transform seguían siendo alcanzables con Tab */
+    visibility:hidden;
+  }
+  .main-nav.open{ transform:translateX(0); visibility:visible; }
+  .main-nav a{ padding:14px 4px; border-bottom:1px solid rgba(255,255,255,.08); }
+  .nav-toggle{ display:block; }
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(217,167,59,.20), transparent 45%),
+    linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
+  color:var(--white);
+  padding:96px 0 120px;
+}
+.hero .container{ position:relative; z-index:2; max-width:760px; }
+/* En la portada el escudo va anclado al borde derecho de la ventana, así que
+   al estrechar la pantalla se metía debajo del titular. Donde hay escudo se
+   le reserva su carril y el texto ocupa el resto. */
+@media (min-width:961px){
+  .hero:has(.hero-badge) .container{
+    max-width:var(--container);
+    padding-right:340px;
+  }
+}
+/* Brújula y escudo comparten centro: se anclan por su punto medio (right +
+   translate 50%) en lugar de por el borde, así siguen concéntricos aunque
+   cambie el tamaño de cualquiera de los dos. */
+.hero .compass,
+.hero .hero-badge{
+  position:absolute; right:155px; top:50%;
+  transform:translate(50%,-50%);
+}
+.hero .compass{
+  width:420px; height:420px; opacity:.14; z-index:1;
+  animation:spin 90s linear infinite;
+}
+.hero .hero-badge{
+  width:230px; height:230px; z-index:2;
+  filter:drop-shadow(0 12px 24px rgba(0,0,0,.35));
+}
+@media (max-width:960px){ .hero .hero-badge{ display:none; } }
+@keyframes spin{
+  from{ transform:translate(50%,-50%) rotate(0deg); }
+  to{ transform:translate(50%,-50%) rotate(360deg); }
+}
+@media (prefers-reduced-motion:reduce){
+  .hero .compass{ animation:none; }
+}
+.hero h1{
+  color:var(--white);
+  font-size:clamp(2.2rem, 5vw, 3.6rem);
+  line-height:1.02;
+}
+.hero h1 em{
+  color:var(--gold-light);
+  font-style:normal;
+}
+.hero p.lead{
+  font-size:1.1rem;
+  color:var(--sand-dim);
+  max-width:520px;
+}
+.hero-actions{ display:flex; gap:14px; margin-top:28px; flex-wrap:wrap; }
+
+.btn{
+  display:inline-block;
+  font-family:var(--font-display);
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  font-size:.82rem;
+  padding:13px 26px;
+  border-radius:var(--radius);
+  border:2px solid var(--gold);
+  transition:.2s;
+}
+.btn-solid{ background:var(--gold); color:var(--navy-deep); }
+.btn-solid:hover{ background:var(--gold-light); }
+.btn-ghost{ color:var(--gold-light); border-color:var(--gold-light); }
+.btn-ghost:hover{ background:rgba(240,200,104,.1); }
+
+/* Wave divider between navy hero and sand content */
+/* Va anclada al borde inferior del hero: como hija en flujo, el
+   padding-bottom del hero dejaba una franja azul suelta bajo la ola. */
+.wave{
+  display:block; width:100%; height:60px;
+  fill:var(--bg);
+  position:absolute; left:0; bottom:-1px; z-index:3;
+}
+
+/* ---------- Section shells ---------- */
+section{ padding:76px 0; }
+.section-head{ max-width:640px; margin-bottom:44px; }
+.section-alt{ background:var(--surface); }
+
+/* ---------- Disciplines (Pista / Playa) split ---------- */
+.disciplines{
+  display:grid; grid-template-columns:1fr 1fr; gap:0;
+  border:1px solid var(--border);
+}
+.discipline{
+  padding:44px 40px;
+  position:relative;
+}
+.discipline.pista{ background:var(--navy-deep); color:var(--white); }
+.discipline.playa{ background:var(--gold); color:var(--navy-ink); }
+.discipline h3{ color:inherit; font-size:1.6rem; }
+.discipline.pista h3{ color:var(--gold-light); }
+.discipline p{ opacity:.9; }
+.discipline .tag{
+  font-family:var(--font-mono); font-size:.7rem; letter-spacing:.14em;
+  text-transform:uppercase; opacity:.75;
+}
+@media (max-width:760px){ .disciplines{ grid-template-columns:1fr; } }
+
+/* ---------- Cards ---------- */
+.grid{ display:grid; gap:26px; }
+.grid-3{ grid-template-columns:repeat(3,1fr); }
+.grid-2{ grid-template-columns:repeat(2,1fr); }
+@media (max-width:860px){ .grid-3, .grid-2{ grid-template-columns:1fr; } }
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:.2s;
+}
+.card:hover{ border-color:var(--gold); transform:translateY(-3px); }
+.card .thumb{
+  aspect-ratio:4/3; width:100%;
+  background:linear-gradient(135deg,var(--navy-deep),var(--navy));
+  display:flex; align-items:center; justify-content:center;
+  color:var(--gold-light); font-family:var(--font-mono); font-size:.72rem;
+  letter-spacing:.1em; text-transform:uppercase; text-align:center; padding:10px;
+}
+.card .body{ padding:20px 22px; }
+
+/* ---------- Galería en mosaico ---------- */
+/* Las fotos del club van en proporciones muy dispares (desde 4:1 panorámica
+   hasta 9:16 vertical). Encajarlas en un marco 4/3 común con object-fit:cover
+   recortaba media foto, así que se apilan en columnas y cada una conserva la
+   suya. width/height en el <img> reservan el espacio y evitan el salto. */
+.galeria{ columns:3; column-gap:26px; }
+.galeria .card{ break-inside:avoid; margin:0 0 26px; }
+.galeria img{ width:100%; height:auto; }
+.foto-destacada{ margin-bottom:26px; }
+.foto-destacada img{ width:100%; height:auto; }
+
+/* Foto de grupo a todo el ancho del contenedor: en media columna los
+   jugadores salían diminutos y quedaba un hueco muerto al lado. */
+.foto-ancha{ margin:44px 0 0; }
+.foto-ancha img{
+  width:100%; height:auto;
+  border:3px solid var(--gold); border-radius:var(--radius);
+}
+.foto-ancha figcaption{
+  font-family:var(--font-mono); font-size:.72rem; letter-spacing:.08em;
+  color:var(--accent); margin-top:12px;
+}
+@media (max-width:860px){ .galeria{ columns:2; } }
+@media (max-width:560px){ .galeria{ columns:1; } }
+.card h4{ font-size:1.05rem; margin-bottom:.3em; }
+.card .meta{
+  font-family:var(--font-mono); font-size:.7rem; color:var(--accent);
+  letter-spacing:.08em; text-transform:uppercase; margin-bottom:.6em; display:block;
+}
+
+/* ---------- Season tabs ---------- */
+.season-tabs{ display:flex; gap:8px; margin-bottom:30px; }
+.season-tabs button{
+  font-family:var(--font-mono); font-size:.75rem; letter-spacing:.08em;
+  text-transform:uppercase; padding:9px 18px;
+  background:var(--surface); border:1px solid var(--heading);
+  color:var(--heading); cursor:pointer;
+}
+.season-tabs button.active{ background:var(--tab-bg); color:var(--tab-fg); border-color:var(--tab-bg); }
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background:var(--navy-ink); color:var(--sand-dim);
+  padding:56px 0 28px; margin-top:60px;
+}
+.footer-grid{
+  display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  padding-bottom:36px; margin-bottom:22px;
+}
+.footer-grid h4{ color:var(--gold-light); font-size:.95rem; }
+.footer-grid a{
+  display:flex; align-items:center; gap:9px;
+  opacity:.85; padding:4px 0; font-size:.92rem;
+}
+.footer-grid a:hover{ color:var(--gold-light); }
+.footer-bottom{
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  font-family:var(--font-mono); font-size:.72rem; opacity:.6;
+}
+@media (max-width:760px){ .footer-grid{ grid-template-columns:1fr; } }
+
+/* ---------- Misc ---------- */
+.notice{
+  border:1px dashed var(--accent);
+  background:var(--notice-bg);
+  color:var(--accent-ink);
+  padding:14px 18px;
+  font-family:var(--font-mono);
+  font-size:.82rem;
+  border-radius:var(--radius);
+  margin-bottom:30px;
+}
+.map-embed{ width:100%; height:340px; border:0; filter:grayscale(.2); }
+
+/* ---------- Iconos ---------- */
+/* SVG en línea: sin librerías externas y heredan el color del enlace. */
+.ico{ width:16px; height:16px; flex-shrink:0; }
+
+.lista-contacto{ list-style:none; margin:0; padding:0; }
+.lista-contacto li{ margin-bottom:10px; }
+.lista-contacto a{
+  display:inline-flex; align-items:center; gap:10px;
+  color:var(--text);
+}
+.lista-contacto a span{ border-bottom:1px solid var(--gold); }
+.lista-contacto a:hover span{ border-bottom-color:var(--accent); }
+.lista-contacto a:hover .ico{ color:var(--accent); }
+
