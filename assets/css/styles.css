@@ -687,14 +687,16 @@ section{ padding:0; }
   padding:clamp(16px, 1.9vw, 24px) 0;
   border-bottom:1px solid var(--rule);
 }
-.comp-lista .comp-torneo{
+.comp-lista .comp-torneo,
+.marcador-lista .comp-torneo{
   margin:0 0 .3em;
   font-family:var(--font-titular); font-weight:700;
   font-size:clamp(1rem, 1.25vw, 1.14rem);
   line-height:1.25;
   color:var(--heading);
 }
-.comp-lista .comp-detalle{
+.comp-lista .comp-detalle,
+.marcador-lista .comp-detalle{
   display:block; margin:0;
   font-family:var(--font-mono); font-size:.6rem;
   letter-spacing:.13em; text-transform:uppercase;
@@ -1068,3 +1070,160 @@ body.sin-scroll{ overflow:hidden; }
   .banda-foto[data-entra] .banda-media img{ transform:none; transition:none; }
   .galeria .card:hover img{ filter:saturate(.82) contrast(1.04); }
 }
+
+/* ============================================================
+   PRÓXIMO PARTIDO Y RESULTADOS
+   Los datos vienen de la federación y los escribe tools/genera_partidos.py.
+   Ni aquí hay tarjetas: el partido cuelga del filete de su columna y el
+   marcador es tipografía mono, que es como se lee un resultado.
+   ============================================================ */
+.proximo .proximo-cuando{
+  font-family:var(--font-mono);
+  font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--muted);
+  margin:.2em 0 1.3em;
+}
+.proximo h2{ margin-bottom:.35em; }
+
+/* La ficha del encuentro: rótulo a la izquierda y dato a la derecha, colgando
+   cada línea de su filete. Es la misma idea que .banda-datos de la portada. */
+.proximo-datos{ margin:0 0 1.4em; }
+.proximo-datos > div{
+  display:grid;
+  grid-template-columns:minmax(0, 8.5rem) minmax(0, 1fr);
+  gap:6px clamp(14px, 1.6vw, 24px);
+  padding:.62em 0;
+  border-top:1px solid var(--rule);
+}
+.proximo-datos dt{
+  font-family:var(--font-mono); font-size:.6rem;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--muted);
+}
+.proximo-datos dd{ margin:0; color:var(--text); font-size:.97rem; }
+
+/* La cuenta atrás la revela main.js: nace con [hidden] para que sin JS no
+   quede un hueco vacío. */
+.proximo-cuenta{
+  font-family:var(--font-mono);
+  font-size:clamp(1.5rem, 3.2vw, 2.3rem);
+  line-height:1;
+  color:var(--heading);
+  margin:0;
+}
+.proximo-cuenta span{
+  display:block;
+  font-size:.6rem; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--muted);
+  margin-top:.7em;
+}
+.proximo-tanteo{ font-family:var(--font-mono); color:var(--heading); }
+
+/* Resultado ganado, perdido o empatado. No hay verde ni rojo de semáforo:
+   la paleta del club no los tiene. Lo ganado pesa (negrita y color de
+   titular), lo perdido se apaga, y el filete dorado bajo la victoria es el
+   único acento. */
+.gana{ color:var(--heading); font-weight:700; border-bottom:2px solid var(--gold); }
+.pierde{ color:var(--muted); }
+.empata{ color:var(--text); }
+
+/* Los últimos resultados de la portada. */
+.ultimos{ list-style:none; margin:0 0 1.5em; padding:0; }
+.ultimos li{
+  display:grid;
+  grid-template-columns:auto minmax(0, 1fr) auto;
+  align-items:baseline;
+  gap:4px clamp(12px, 1.4vw, 20px);
+  padding:.8em 0;
+  border-bottom:1px solid var(--rule);
+}
+.ultimos .u-fecha,
+.ultimos .u-tanteo{ font-family:var(--font-mono); font-size:.82rem; }
+.ultimos .u-fecha{ color:var(--muted); font-size:.72rem; }
+.ultimos .u-quien{
+  grid-column:2; grid-row:1;
+  font-family:var(--font-mono); font-size:.58rem;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent);
+}
+.ultimos .u-rival{ grid-column:2; grid-row:2; color:var(--text); font-size:.95rem; }
+.ultimos .u-tanteo{ grid-column:3; grid-row:1 / span 2; align-self:center; white-space:nowrap; }
+.u-sets,
+.m-sets{
+  font-family:var(--font-mono); font-size:.62rem;
+  letter-spacing:.08em; color:var(--muted); white-space:nowrap;
+}
+
+/* Resultados por equipo en equipos.html. Reutiliza la rejilla, el filete de
+   sexo y el <details> por categoría del sumario de torneos: es la misma
+   jerarquía sexo → categoría → torneo, así que sería absurdo inventar otra. */
+.marcadores{ margin-bottom:clamp(34px, 4vw, 56px); }
+.marcadores-sello{ color:var(--muted); margin-bottom:clamp(18px, 2vw, 28px); }
+.marcador-lista{ list-style:none; margin:0; padding:0; }
+.marcador-lista > li{
+  padding:clamp(16px, 1.9vw, 24px) 0;
+  border-bottom:1px solid var(--rule);
+}
+.marcador-lista > li:last-child{ border-bottom:0; }
+.marcador-lista .comp-torneo{ margin:0 0 .3em; }
+.marcador-clasi{
+  margin:.9em 0 0;
+  font-family:var(--font-mono); font-size:.7rem;
+  letter-spacing:.06em; color:var(--text);
+  max-width:none;
+}
+.marcador-clasi b{ color:var(--heading); }
+.marcador-partidos{ list-style:none; margin:.9em 0 0; padding:0; }
+.marcador-partidos li{
+  display:grid;
+  grid-template-columns:auto minmax(0, 1fr) auto;
+  align-items:baseline;
+  gap:4px clamp(10px, 1.2vw, 18px);
+  padding:.45em 0;
+  border-top:1px solid var(--rule);
+}
+.marcador-partidos .m-fecha{
+  font-family:var(--font-mono); font-size:.66rem; color:var(--muted);
+}
+.marcador-partidos .m-rival{ font-size:.9rem; color:var(--text); }
+.marcador-partidos .m-tanteo{
+  font-family:var(--font-mono); font-size:.8rem; white-space:nowrap;
+}
+
+@media (max-width:560px){
+  .proximo-datos > div{ grid-template-columns:1fr; gap:2px; }
+  .ultimos li,
+  .marcador-partidos li{ grid-template-columns:auto minmax(0, 1fr); }
+  /* El filete dorado de la victoria tiene que medir lo que mide el marcador,
+     no el ancho de la columna. */
+  .ultimos .u-tanteo,
+  .marcador-partidos .m-tanteo{ grid-column:2; grid-row:auto; justify-self:start; }
+}
+
+/* El detalle equipo por equipo va plegado: quien entra quiere ver qué pasó el
+   domingo, no elegir categoría en un árbol. Lo de arriba se ve sin tocar nada
+   y esto queda para quien busca a un equipo concreto. */
+.mas-equipos{ margin-top:clamp(30px, 3.4vw, 48px); }
+.mas-equipos > summary{
+  list-style:none; cursor:pointer;
+  padding:clamp(14px, 1.6vw, 20px) 0;
+  border-top:1px solid var(--heading);
+  border-bottom:1px solid var(--rule);
+}
+.mas-equipos > summary::-webkit-details-marker{ display:none; }
+.mas-equipos > summary > span{
+  display:flex; align-items:baseline; gap:12px;
+  font-family:var(--font-mono); font-size:.68rem;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--heading);
+  transition:color .24s var(--ease);
+}
+.mas-equipos > summary > span::after{
+  content:'+'; margin-left:auto; font-size:.9rem; line-height:1; color:var(--muted);
+}
+.mas-equipos[open] > summary > span::after{ content:'−'; }
+.mas-equipos > summary:hover > span{ color:var(--accent); }
+.mas-equipos > summary:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+.mas-equipos .comp-grupos{ padding-top:clamp(22px, 2.6vw, 36px); }
+.marcadores .rejilla + .mas-equipos{ margin-top:clamp(34px, 4vw, 56px); }
+.marcadores h3{ margin:0 0 clamp(14px, 1.6vw, 20px); }

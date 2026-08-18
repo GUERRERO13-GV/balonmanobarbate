@@ -1,0 +1,56 @@
+# Actualiza solo los resultados de la federación, cada domingo por la noche.
+#
+# 20:00 UTC = 22:00 en horario de verano y 21:00 en invierno (Europe/Madrid).
+# A esa hora los partidos del domingo ya han terminado y la federación ha
+# subido las actas.
+#
+# El push a main despliega en Vercel: el estado de main es el estado del sitio.
+#
+# Club Balonmano Barbate — Francisco Vidal Mateo (FranVi)
+name: Resultados de la federación
+
+on:
+  schedule:
+    - cron: "0 20 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resultados
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Sin dependencias: los scripts solo usan la biblioteca estándar.
+      - name: Recoger de iSquad
+        run: python tools/recoge_partidos.py
+
+      # Si la recogida falla, este paso no llega a ejecutarse y el sitio se
+      # queda con los datos de la semana pasada, que es lo correcto.
+      - name: Escribir el HTML
+        run: python tools/genera_partidos.py
+
+      - name: Publicar si hay algo nuevo
+        run: |
+          if git diff --quiet -- datos index.html equipos.html; then
+            echo "La federación no ha movido nada esta semana."
+            exit 0
+          fi
+          git config user.name "FranVi"
+          git config user.email "fvidalmateo@gmail.com"
+          git add datos/deportivo.json index.html equipos.html
+          git commit -m "chore: actualizar resultados de la federación"
+          git push

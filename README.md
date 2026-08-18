@@ -35,11 +35,21 @@ balonmanobarbate/
 │   │   ├── styles.css    # Todo el CSS: tokens de marca, tokens de tema y componentes
 │   │   └── fonts.css     # @font-face de las fuentes autoalojadas
 │   ├── js/
-│   │   ├── main.js       # Menú móvil, botón de tema y pestañas de temporada
+│   │   ├── main.js       # Menú, tema, visor de fotos y cuenta atrás del próximo partido
 │   │   └── theme.js      # Aplica el tema guardado antes de pintar (sin defer)
 │   ├── img/              # Fotos en .webp con respaldo .jpg; escudo y logos en .webp
 │   │   └── equipaciones/ # Renders de las equipaciones
 │   └── fonts/            # Oswald, Source Serif 4 y JetBrains Mono en .woff2 (OFL)
+├── datos/
+│   └── deportivo.json    # Partidos, resultados y clasificaciones leídos de la federación
+├── tools/                # Scripts de Python que NO forman parte del sitio desplegado
+│   ├── isquad.py         # Descarga y parseo de la plataforma de la federación
+│   ├── torneos.py        # Los 147 torneos del club, verificados uno a uno
+│   ├── barre_isquad.py   # Busca en qué competiciones y grupos juega el club
+│   ├── recoge_partidos.py# iSquad → datos/deportivo.json
+│   └── genera_partidos.py# El JSON → los bloques de index.html y equipos.html
+├── .github/workflows/
+│   └── resultados.yml    # La actualización de cada domingo
 ├── vercel.json           # Cabeceras de seguridad y caché inmutable de /assets
 ├── robots.txt            # Indexación abierta, con referencia al sitemap
 ├── sitemap.xml           # Las siete páginas indexables
@@ -50,6 +60,34 @@ balonmanobarbate/
 > **Arquitectura:** las ocho páginas comparten todo lo de `assets/`. Lo único que sigue
 > duplicado en cada archivo es el `<header>` y el `<footer>`, así que un cambio en la
 > navegación o en el pie debe replicarse en las ocho. Los detalles están en `CLAUDE.md`.
+
+---
+
+## 🔄 Partidos y resultados, automáticos
+
+Los resultados **no se escriben a mano**. Cada domingo por la noche una GitHub Action lee la
+plataforma de la federación (iSquad), reescribe los bloques correspondientes del HTML y hace
+commit; Vercel despliega solo.
+
+| Dónde | Qué se ve |
+| :--- | :--- |
+| `index.html` | El próximo partido del club con su cuenta atrás, y los cuatro últimos resultados |
+| `equipos.html` | «Lo que viene» y «Lo último» de todo el club, más el detalle equipo por equipo |
+
+```bash
+python tools/recoge_partidos.py   # lee iSquad y escribe datos/deportivo.json
+python tools/genera_partidos.py   # vuelca el JSON en index.html y equipos.html
+```
+
+El HTML entre los marcadores `<!-- PROXIMO:INICIO -->` y `<!-- MARCADORES:INICIO -->` **está
+generado**: si se edita a mano, la siguiente pasada lo pisa.
+
+Si la federación está caída, la recogida aborta sin escribir y el sitio conserva los datos de la
+semana anterior: nunca se publica una página vacía ni sellada con una fecha falsa.
+
+> **Datos personales:** la plataforma expone la plantilla completa con nombres y edades, pero la
+> mayoría de nuestros equipos son de categoría base. **No se extrae ningún dato personal**: solo
+> el número de jugadores por equipo.
 
 ---
 
@@ -66,9 +104,9 @@ La estética está inspirada en el océano Atlántico, la tradición pesquera y 
 | `--almadraba` | `#A8331F` | Rojo almadraba (llamadas a la acción, detalles enérgicos) |
 
 ### 🔤 Tipografías
-- **Display / Titulares:** `Oswald` (Sans-Serif de impacto)
-- **Cuerpo de Lectura:** `Source Serif 4` (Serif editorial y elegante)
-- **Datos y Eyebrows:** `JetBrains Mono` (Monospace de precisión)
+- **Titulares y cuerpo:** `Source Serif 4` (serif editorial, en caja mixta)
+- **Botones y menú móvil:** `Oswald` (chapa, nunca titular)
+- **Datos, marcadores y eyebrows:** `JetBrains Mono` (monoespaciada de precisión)
 
 ---
 

@@ -1,0 +1,5028 @@
+{
+ "actualizado": "2026-08-18T20:42:27+02:00",
+ "fallos": [],
+ "equipos": [
+  {
+   "clave": "F-Alevín-1037839",
+   "sexo": "F",
+   "categoria": "Alevín",
+   "torneo": "Circuito Arenas del Sur",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037839",
+   "clasificacion": {
+    "puesto": 5,
+    "de": 5,
+    "puntos": 0,
+    "pj": 0,
+    "pg": 0,
+    "pe": 0,
+    "pp": 0,
+    "gf": 0,
+    "gc": 0,
+    "sg": 0,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 10
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-21",
+     "hora": "11:00",
+     "local": false,
+     "rival": "BALONMANO PLAYA BAHIA DE CADIZ",
+     "rival_club": "100574",
+     "lugar": "CAMPO 2 - PLAYA DEL CARMEN",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": 0,
+     "sets_rival": 0,
+     "sets": null,
+     "id_equipo_club": "224463"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-21",
+     "hora": "12:00",
+     "local": true,
+     "rival": "FELISA GOURMET BARBATE",
+     "rival_club": "100317",
+     "lugar": "CAMPO 2 - PLAYA DEL CARMEN",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": 0,
+     "sets_rival": 0,
+     "sets": null,
+     "id_equipo_club": "224463"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-21",
+     "hora": "13:00",
+     "local": false,
+     "rival": "BALONMANO SAN FERNANDO",
+     "rival_club": "100587",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": 0,
+     "sets_rival": 0,
+     "sets": null,
+     "id_equipo_club": "224463"
+    },
+    {
+     "jornada": 5,
+     "fecha": "2026-06-21",
+     "hora": "18:00",
+     "local": true,
+     "rival": "SALAZONES HERPAC BARBATE",
+     "rival_club": "100317",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": 0,
+     "sets_rival": 0,
+     "sets": null,
+     "id_equipo_club": "224463"
+    }
+   ]
+  },
+  {
+   "clave": "F-Alevín-1038828",
+   "sexo": "F",
+   "categoria": "Alevín",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase principal, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038828",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 55,
+    "gc": 37,
+    "sg": 4,
+    "sp": 1
+   },
+   "plantilla": {
+    "jugadores": 10
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-26",
+     "hora": "09:35",
+     "local": false,
+     "rival": "BM. SOLUCAR",
+     "rival_club": "100844",
+     "lugar": "3L",
+     "goles_club": 27,
+     "goles_rival": 27,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "10-13",
+      "15-10",
+      "2-4"
+     ],
+     "id_equipo_club": "224463"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-26",
+     "hora": "11:55",
+     "local": true,
+     "rival": "BALONMANO PLAYA BAHIA DE CADIZ",
+     "rival_club": "100574",
+     "lugar": "3L",
+     "goles_club": 28,
+     "goles_rival": 10,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "16-4",
+      "12-6"
+     ],
+     "id_equipo_club": "224463"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1034396",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Diego Carrasco Cup · Torremolinos",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1034396",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 5,
+    "puntos": 8,
+    "pj": 4,
+    "pg": 4,
+    "pe": 0,
+    "pp": 0,
+    "gf": 237,
+    "gc": 176,
+    "sg": 8,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2025-12-26",
+     "hora": "14:10",
+     "local": false,
+     "rival": "JAVEA COMPANY C.H. XABIA",
+     "rival_club": "100160",
+     "lugar": "ZONA DEPORTIVA PLAYAMAR 2",
+     "goles_club": 61,
+     "goles_rival": 50,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "28-29",
+      "22-32"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2025-12-26",
+     "hora": "15:30",
+     "local": true,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA A",
+     "rival_club": "100183",
+     "lugar": "ZONA DEPORTIVA PLAYAMAR 1",
+     "goles_club": 56,
+     "goles_rival": 42,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "32-22",
+      "24-20"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2025-12-26",
+     "hora": "16:50",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "ZONA DEPORTIVA PLAYAMAR 1",
+     "goles_club": 61,
+     "goles_rival": 34,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-28",
+      "14-33"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 4,
+     "fecha": "2025-12-26",
+     "hora": "17:30",
+     "local": true,
+     "rival": "BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "ZONA DEPORTIVA PLAYAMAR 4",
+     "goles_club": 59,
+     "goles_rival": 50,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "25-24",
+      "34-26"
+     ],
+     "id_equipo_club": "224235"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1037817",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Lepe",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037817",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 83,
+    "gc": 59,
+    "sg": 4,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-06-20",
+     "hora": "12:30",
+     "local": false,
+     "rival": "LLOPIS BALONMANO PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "1",
+     "goles_club": 45,
+     "goles_rival": 31,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "15-22",
+      "16-23"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-20",
+     "hora": "17:20",
+     "local": true,
+     "rival": "CONNETSUR HELVETIA MONTEQUINTO B",
+     "rival_club": "771",
+     "lugar": "3",
+     "goles_club": 38,
+     "goles_rival": 28,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-20",
+      "16-8"
+     ],
+     "id_equipo_club": "224235"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1037943",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037943",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 89,
+    "gc": 94,
+    "sg": 3,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "18:00",
+     "local": true,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 46,
+     "goles_rival": 50,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "16-30",
+      "21-14",
+      "9-6"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "22:00",
+     "local": true,
+     "rival": "TOCONSTRUCCION BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "CAMPO 5 - PLAYA DEL CARMEN",
+     "goles_club": 43,
+     "goles_rival": 44,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "21-16",
+      "16-19",
+      "6-9"
+     ],
+     "id_equipo_club": "224235"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1037944",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037944",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 3,
+    "puntos": 0,
+    "pj": 2,
+    "pg": 0,
+    "pe": 0,
+    "pp": 2,
+    "gf": 44,
+    "gc": 82,
+    "sg": 0,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "10:20",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA A",
+     "rival_club": "100183",
+     "lugar": "CAMPO 6 - PLAYA DEL CARMEN",
+     "goles_club": 26,
+     "goles_rival": 44,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "24-12",
+      "20-14"
+     ],
+     "id_equipo_club": "224237"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "22:00",
+     "local": false,
+     "rival": "LLOPIS BALONMANO PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "CAMPO 4 - PLAYA DEL CARMEN",
+     "goles_club": 18,
+     "goles_rival": 38,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "20-10",
+      "18-8"
+     ],
+     "id_equipo_club": "224237"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1038082",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038082",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 183,
+    "gc": 171,
+    "sg": 5,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-04",
+     "hora": "10:35",
+     "local": false,
+     "rival": "CD MAMUT",
+     "rival_club": "101306",
+     "lugar": "PISTA 2 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 60,
+     "goles_rival": 52,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "25-24",
+      "17-24",
+      "10-12"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "12:20",
+     "local": true,
+     "rival": "CBMP CARBONERAS",
+     "rival_club": "100234",
+     "lugar": "PISTA 7 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 55,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "26-24",
+      "29-24"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-04",
+     "hora": "18:20",
+     "local": true,
+     "rival": "PLAYAS DE FUENGIROLA",
+     "rival_club": "100890",
+     "lugar": "PISTA 6 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 68,
+     "goles_rival": 71,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "34-32",
+      "26-29",
+      "8-10"
+     ],
+     "id_equipo_club": "224235"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1038084",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038084",
+   "clasificacion": {
+    "puesto": 4,
+    "de": 4,
+    "puntos": 0,
+    "pj": 3,
+    "pg": 0,
+    "pe": 0,
+    "pp": 3,
+    "gf": 69,
+    "gc": 108,
+    "sg": 0,
+    "sp": 6
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-04",
+     "hora": "10:00",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA A",
+     "rival_club": "100183",
+     "lugar": "PISTA 3 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 15,
+     "goles_rival": 35,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "18-2",
+      "17-13"
+     ],
+     "id_equipo_club": "224237"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "12:20",
+     "local": true,
+     "rival": "CONNETSUR HELVETIA MONTEQUINTO B",
+     "rival_club": "771",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 31,
+     "goles_rival": 33,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "19-20",
+      "12-13"
+     ],
+     "id_equipo_club": "224237"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-04",
+     "hora": "17:40",
+     "local": false,
+     "rival": "LLOPIS BALONMANO PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 23,
+     "goles_rival": 40,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "18-11",
+      "22-12"
+     ],
+     "id_equipo_club": "224237"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1038485",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Arena 1000 · Cádiz",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038485",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 106,
+    "gc": 95,
+    "sg": 3,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-17",
+     "hora": "09:40",
+     "local": true,
+     "rival": "CLUB BALONMANO LOS ALCAZARES",
+     "rival_club": "100540",
+     "lugar": "CADIZ ARENA 1",
+     "goles_club": 54,
+     "goles_rival": 57,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "28-24",
+      "22-24",
+      "4-9"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-17",
+     "hora": "11:40",
+     "local": false,
+     "rival": "LOIZAGA GB ACADEMIA",
+     "rival_club": "101116",
+     "lugar": "CADIZ ARENA 2",
+     "goles_club": 52,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-28",
+      "16-24"
+     ],
+     "id_equipo_club": "224235"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1038850",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038850",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 164,
+    "gc": 105,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-24",
+     "hora": "10:20",
+     "local": true,
+     "rival": "BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "4L",
+     "goles_club": 50,
+     "goles_rival": 34,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "26-16",
+      "24-18"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-24",
+     "hora": "13:00",
+     "local": false,
+     "rival": "CONNETSUR HELVETIA MONTEQUINTO B",
+     "rival_club": "771",
+     "lugar": "4L",
+     "goles_club": 60,
+     "goles_rival": 32,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-34",
+      "8-26"
+     ],
+     "id_equipo_club": "224235"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-24",
+     "hora": "18:20",
+     "local": false,
+     "rival": "CD MAMUT",
+     "rival_club": "101306",
+     "lugar": "4L",
+     "goles_club": 54,
+     "goles_rival": 39,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "17-26",
+      "22-28"
+     ],
+     "id_equipo_club": "224235"
+    }
+   ]
+  },
+  {
+   "clave": "F-Cadete-1038951",
+   "sexo": "F",
+   "categoria": "Cadete",
+   "torneo": "Campeonato de España · Laredo",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase final, eliminatorias previas",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038951",
+   "clasificacion": {
+    "puesto": 4,
+    "de": 16,
+    "puntos": 2,
+    "pj": 1,
+    "pg": 1,
+    "pe": 0,
+    "pp": 0,
+    "gf": 52,
+    "gc": 45,
+    "sg": 2,
+    "sp": 1
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-08-01",
+     "hora": "11:40",
+     "local": true,
+     "rival": "JAVEA COMPANY C.H. XABIA",
+     "rival_club": "100160",
+     "lugar": "CAMPO 3 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 52,
+     "goles_rival": 45,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "26-18",
+      "20-23",
+      "6-4"
+     ],
+     "id_equipo_club": "224235"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1036994",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1036994",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 136,
+    "gc": 137,
+    "sg": 4,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "09:40",
+     "local": true,
+     "rival": "BALONMANO SAN FERNANDO",
+     "rival_club": "100587",
+     "lugar": "CAMPO 4 - PLAYA DEL CARMEN",
+     "goles_club": 48,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "22-20",
+      "19-24",
+      "7-4"
+     ],
+     "id_equipo_club": "224461"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "13:00",
+     "local": false,
+     "rival": "CBMP CARBONERAS",
+     "rival_club": "100234",
+     "lugar": "CAMPO 8 - PLAYA DEL CARMEN",
+     "goles_club": 30,
+     "goles_rival": 45,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "25-16",
+      "20-14"
+     ],
+     "id_equipo_club": "224461"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "20:40",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTECBMP CIUDAD DE MALAGA A",
+     "rival_club": "100183",
+     "lugar": "CAMPO 5 - PLAYA DEL CARMEN",
+     "goles_club": 58,
+     "goles_rival": 44,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "10-24",
+      "24-22",
+      "10-12"
+     ],
+     "id_equipo_club": "224461"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1036995",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1036995",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 97,
+    "gc": 55,
+    "sg": 5,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-04",
+     "hora": "09:25",
+     "local": true,
+     "rival": "BALONMANO PLAYA BAHIA DE CADIZ",
+     "rival_club": "100574",
+     "lugar": "PISTA 1 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 20,
+     "goles_rival": 0,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "10-0",
+      "10-0"
+     ],
+     "id_equipo_club": "224461"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "11:10",
+     "local": false,
+     "rival": "BM. SOLUCAR",
+     "rival_club": "100844",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 41,
+     "goles_rival": 24,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "10-21",
+      "14-20"
+     ],
+     "id_equipo_club": "224461"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-04",
+     "hora": "19:00",
+     "local": false,
+     "rival": "FELISA GOURMET BARBATE",
+     "rival_club": "100317",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 36,
+     "goles_rival": 31,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "6-16",
+      "18-16",
+      "7-4"
+     ],
+     "id_equipo_club": "224461"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1037029",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Mollina 1",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037029",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 63,
+    "gc": 28,
+    "sg": 4,
+    "sp": 1
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-06",
+     "hora": "09:00",
+     "local": false,
+     "rival": "AM TEAM ALMERIA",
+     "rival_club": "100207",
+     "lugar": "1. MOLLINA",
+     "goles_club": 30,
+     "goles_rival": 0,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "0-15",
+      "0-15"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-06",
+     "hora": "17:20",
+     "local": true,
+     "rival": "HIDROCARBUROS BMP URCI ALMERIA ´´B´´",
+     "rival_club": "100816",
+     "lugar": "2.MOLLINA",
+     "goles_club": 33,
+     "goles_rival": 28,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "16-6",
+      "10-16",
+      "7-6"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1037125",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Torrox",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037125",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 58,
+    "gc": 41,
+    "sg": 4,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-05-31",
+     "hora": "13:00",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "PLAYA TORROX - CAMPO 4",
+     "goles_club": 38,
+     "goles_rival": 27,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "13-22",
+      "14-16"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-05-31",
+     "hora": "14:20",
+     "local": true,
+     "rival": "DANADRI BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "MICHEL MIKHAELIDES",
+     "goles_club": 20,
+     "goles_rival": 14,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "14-10",
+      "6-4"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1037815",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Lepe",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037815",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 139,
+    "gc": 79,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-20",
+     "hora": "09:10",
+     "local": true,
+     "rival": "GEEX ASESORES BMP. LAS PERIS",
+     "rival_club": "100251",
+     "lugar": "4",
+     "goles_club": 47,
+     "goles_rival": 32,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-14",
+      "23-18"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-20",
+     "hora": "11:10",
+     "local": true,
+     "rival": "BM. SOLUCAR",
+     "rival_club": "100844",
+     "lugar": "5",
+     "goles_club": 48,
+     "goles_rival": 23,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "26-8",
+      "22-15"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-20",
+     "hora": "13:10",
+     "local": false,
+     "rival": "COCINAS ARYA BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "5",
+     "goles_club": 44,
+     "goles_rival": 24,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "10-20",
+      "14-24"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1037935",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037935",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 139,
+    "gc": 66,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "09:40",
+     "local": true,
+     "rival": "BM. SOLUCAR",
+     "rival_club": "100844",
+     "lugar": "CAMPO 5 - PLAYA DEL CARMEN",
+     "goles_club": 41,
+     "goles_rival": 23,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-14",
+      "21-9"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "17:20",
+     "local": false,
+     "rival": "SALAZONES HERPAC BARBATE",
+     "rival_club": "100317",
+     "lugar": "CAMPO 2 - PLAYA DEL CARMEN",
+     "goles_club": 43,
+     "goles_rival": 17,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "7-20",
+      "10-23"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "20:40",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "CAMPO 7 - PLAYA DEL CARMEN",
+     "goles_club": 55,
+     "goles_rival": 26,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "12-25",
+      "14-30"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1038092",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038092",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 88,
+    "gc": 68,
+    "sg": 4,
+    "sp": 1
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "11:10",
+     "local": true,
+     "rival": "COCINAS ARYA BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "PISTA 8 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 42,
+     "goles_rival": 28,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-14",
+      "20-14"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-04",
+     "hora": "18:20",
+     "local": true,
+     "rival": "PLAYAS DE FUENGIROLA",
+     "rival_club": "100890",
+     "lugar": "PISTA 3 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 46,
+     "goles_rival": 40,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "16-24",
+      "22-14",
+      "8-2"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1038248",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Algeciras",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038248",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 5,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 117,
+    "gc": 100,
+    "sg": 4,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-11",
+     "hora": "09:40",
+     "local": true,
+     "rival": "PLAYAS DE FUENGIROLA B",
+     "rival_club": "100890",
+     "lugar": "4R",
+     "goles_club": 48,
+     "goles_rival": 24,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-12",
+      "24-12"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-11",
+     "hora": "12:20",
+     "local": false,
+     "rival": "DANADRI BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "1R",
+     "goles_club": 28,
+     "goles_rival": 38,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "22-16",
+      "16-12"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-11",
+     "hora": "16:20",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "4R",
+     "goles_club": 41,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-21",
+      "18-20"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1038472",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Arena 1000 · Cádiz",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038472",
+   "clasificacion": {
+    "puesto": 4,
+    "de": 4,
+    "puntos": 0,
+    "pj": 3,
+    "pg": 0,
+    "pe": 0,
+    "pp": 3,
+    "gf": 96,
+    "gc": 120,
+    "sg": 0,
+    "sp": 6
+   },
+   "plantilla": {
+    "jugadores": 12
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-17",
+     "hora": "08:20",
+     "local": true,
+     "rival": "TORREON DE BENALMADENA",
+     "rival_club": "100217",
+     "lugar": "CADIZ ARENA 5",
+     "goles_club": 42,
+     "goles_rival": 54,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "24-28",
+      "18-26"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-17",
+     "hora": "10:20",
+     "local": false,
+     "rival": "BM SANSE IF",
+     "rival_club": "305",
+     "lugar": "CADIZ ARENA 7",
+     "goles_club": 26,
+     "goles_rival": 35,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "18-12",
+      "17-14"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-17",
+     "hora": "12:20",
+     "local": true,
+     "rival": "SALAZONES HERPAC BARBATE",
+     "rival_club": "100317",
+     "lugar": "CADIZ ARENA 8",
+     "goles_club": 28,
+     "goles_rival": 31,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "10-12",
+      "18-19"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1038841",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038841",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 85,
+    "gc": 80,
+    "sg": 3,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-24",
+     "hora": "16:20",
+     "local": true,
+     "rival": "BALONMANO BARBATE",
+     "rival_club": "100165",
+     "lugar": "2L",
+     "goles_club": 44,
+     "goles_rival": 36,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "18-21",
+      "24-12",
+      "2-3"
+     ],
+     "id_equipo_club": "224460"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-24",
+     "hora": "13:20",
+     "local": false,
+     "rival": "MEROIL-POOL ESTACIONES BMP LAS PERIS",
+     "rival_club": "100251",
+     "lugar": "3L",
+     "goles_club": 41,
+     "goles_rival": 44,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "22-16",
+      "18-19",
+      "4-6"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Infantil-1038911",
+   "sexo": "F",
+   "categoria": "Infantil",
+   "torneo": "Campeonato de España · Laredo",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase final, eliminatorias previas",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038911",
+   "clasificacion": {
+    "puesto": 16,
+    "de": 16,
+    "puntos": 0,
+    "pj": 1,
+    "pg": 0,
+    "pe": 0,
+    "pp": 1,
+    "gf": 20,
+    "gc": 35,
+    "sg": 0,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 12
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-08-01",
+     "hora": "09:40",
+     "local": false,
+     "rival": "MEROIL-POOL ESTACIONES BMP LAS PERIS",
+     "rival_club": "100251",
+     "lugar": "CAMPO 9 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 20,
+     "goles_rival": 35,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "20-10",
+      "15-10"
+     ],
+     "id_equipo_club": "224460"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1037007",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037007",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 4,
+    "puntos": 2,
+    "pj": 3,
+    "pg": 1,
+    "pe": 0,
+    "pp": 2,
+    "gf": 143,
+    "gc": 158,
+    "sg": 3,
+    "sp": 5
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-05",
+     "hora": "08:20",
+     "local": true,
+     "rival": "TORREON DE BENALMADENA",
+     "rival_club": "100217",
+     "lugar": "PISTA 6 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 36,
+     "goles_rival": 53,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "14-26",
+      "22-27"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-05",
+     "hora": "10:20",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA A",
+     "rival_club": "100183",
+     "lugar": "PISTA 1 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 53,
+     "goles_rival": 52,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "23-22",
+      "22-25",
+      "7-6"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-05",
+     "hora": "12:20",
+     "local": false,
+     "rival": "NICOSUR BMP. LAS PERIS",
+     "rival_club": "100251",
+     "lugar": "PISTA 3 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 54,
+     "goles_rival": 53,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "20-21",
+      "25-24",
+      "8-9"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1037008",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037008",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 122,
+    "gc": 80,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "11:40",
+     "local": false,
+     "rival": "PLAYAS DE FUENGIROLA B",
+     "rival_club": "100890",
+     "lugar": "CAMPO 6 - PLAYA DEL CARMEN",
+     "goles_club": 40,
+     "goles_rival": 20,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "10-24",
+      "10-16"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "18:40",
+     "local": true,
+     "rival": "BM PLAYA FARMACIA COVADONGA DUPUY LEPE",
+     "rival_club": "100920",
+     "lugar": "CAMPO 6 - PLAYA DEL CARMEN",
+     "goles_club": 33,
+     "goles_rival": 26,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "18-12",
+      "15-14"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "22:40",
+     "local": true,
+     "rival": "BALONMANO PLAYA BAHIA DE CADIZ",
+     "rival_club": "100574",
+     "lugar": "CAMPO 4 - PLAYA DEL CARMEN",
+     "goles_club": 49,
+     "goles_rival": 34,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "21-14",
+      "28-20"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1037039",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Algeciras",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037039",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 91,
+    "gc": 88,
+    "sg": 3,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-07-12",
+     "hora": "10:20",
+     "local": true,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA A",
+     "rival_club": "100183",
+     "lugar": "2R",
+     "goles_club": 43,
+     "goles_rival": 43,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "18-21",
+      "20-18",
+      "5-4"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-12",
+     "hora": "11:40",
+     "local": true,
+     "rival": "TORREON DE BENALMADENA",
+     "rival_club": "100217",
+     "lugar": "3R",
+     "goles_club": 48,
+     "goles_rival": 45,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "22-23",
+      "22-14",
+      "4-8"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1037409",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Utrera",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037409",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 2,
+    "pj": 3,
+    "pg": 1,
+    "pe": 0,
+    "pp": 2,
+    "gf": 127,
+    "gc": 119,
+    "sg": 3,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-06",
+     "hora": "17:20",
+     "local": true,
+     "rival": "NORSUR BMP ALGECIRAS",
+     "rival_club": "100243",
+     "lugar": "PLAYA VISTALEGRE 2",
+     "goles_club": 43,
+     "goles_rival": 41,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "15-16",
+      "22-15",
+      "6-10"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-06",
+     "hora": "22:00",
+     "local": true,
+     "rival": "BALONMANO PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "PLAYA VISTALEGRE 1",
+     "goles_club": 46,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-16",
+      "24-22"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-07",
+     "hora": "09:00",
+     "local": false,
+     "rival": "NICOSUR BMP LAS PERIS",
+     "rival_club": "100251",
+     "lugar": "PLAYA VISTALEGRE 4",
+     "goles_club": 38,
+     "goles_rival": 40,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "21-20",
+      "19-18"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1037786",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Arena 1000 · Orihuela",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037786",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 117,
+    "gc": 102,
+    "sg": 4,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-19",
+     "hora": "17:20",
+     "local": true,
+     "rival": "VILLA GIJON BM. PLAYA JUVENIL",
+     "rival_club": "100891",
+     "lugar": "CAMPO 8 ORIHUELA",
+     "goles_club": 35,
+     "goles_rival": 22,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-14",
+      "15-8"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-19",
+     "hora": "20:40",
+     "local": true,
+     "rival": "PLASROAL BMP ALCALA JF",
+     "rival_club": "100080",
+     "lugar": "CAMPO 3 ORIHUELA",
+     "goles_club": 36,
+     "goles_rival": 30,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "18-14",
+      "18-16"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-20",
+     "hora": "13:40",
+     "local": false,
+     "rival": "BMP BEACH CASERIO CIUDAD REAL",
+     "rival_club": "100255",
+     "lugar": "CAMPO 8 ORIHUELA",
+     "goles_club": 46,
+     "goles_rival": 50,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "26-24",
+      "24-22"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1038492",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Arena 1000 · Cádiz",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038492",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 3,
+    "puntos": 0,
+    "pj": 2,
+    "pg": 0,
+    "pe": 0,
+    "pp": 2,
+    "gf": 110,
+    "gc": 115,
+    "sg": 2,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-17",
+     "hora": "16:00",
+     "local": true,
+     "rival": "CLUB BALONMANO LOS ALCAZARES",
+     "rival_club": "100540",
+     "lugar": "CADIZ ARENA 1",
+     "goles_club": 57,
+     "goles_rival": 60,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "28-26",
+      "23-24",
+      "6-10"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-17",
+     "hora": "17:20",
+     "local": false,
+     "rival": "PLASROAL BMP ALCALA JF",
+     "rival_club": "100080",
+     "lugar": "CADIZ ARENA 2",
+     "goles_club": 53,
+     "goles_rival": 55,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "16-19",
+      "25-22",
+      "14-12"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1038663",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "División de Honor Juvenil",
+   "nombre_federado": "Salazones La Chanca Balonmano Barbate",
+   "fase": "Primera fase, grupo B clasificatorio",
+   "temporada": "2026/27",
+   "superficie": "1",
+   "grupo": "1038663",
+   "clasificacion": {
+    "puesto": null,
+    "de": 5,
+    "puntos": 0,
+    "pj": 0,
+    "pg": 0,
+    "pe": 0,
+    "pp": 0,
+    "gf": 0,
+    "gc": 0
+   },
+   "plantilla": null,
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-09-27",
+     "hora": null,
+     "local": false,
+     "rival": "CLINICA DENTAL VILLALON ANTEQUERA",
+     "rival_club": "835",
+     "lugar": "PABELLÓN FERNANDO ARGüELES",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-10-04",
+     "hora": null,
+     "local": true,
+     "rival": "ED FUNDACION VICTORIA BM MALAGA",
+     "rival_club": "100869",
+     "lugar": "PABELLON MUNICIPAL DE BARBATE",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-10-18",
+     "hora": null,
+     "local": false,
+     "rival": "FUNDACION UNICAJA COSTA DEL SOL MALAGA B",
+     "rival_club": "35",
+     "lugar": "PAB. MUN. DIEGO CARRASCO",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    },
+    {
+     "jornada": 4,
+     "fecha": "2026-10-25",
+     "hora": null,
+     "local": true,
+     "rival": "RINCON FERTILIDAD ALFARNATEJO BM CMCJ-Balonmano COÍN",
+     "rival_club": "100846",
+     "lugar": "PABELLON MUNICIPAL DE BARBATE",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    },
+    {
+     "jornada": 6,
+     "fecha": "2026-11-15",
+     "hora": null,
+     "local": true,
+     "rival": "CLINICA DENTAL VILLALON ANTEQUERA",
+     "rival_club": "835",
+     "lugar": "PABELLON MUNICIPAL DE BARBATE",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    },
+    {
+     "jornada": 7,
+     "fecha": "2026-11-22",
+     "hora": null,
+     "local": false,
+     "rival": "ED FUNDACION VICTORIA BM MALAGA",
+     "rival_club": "100869",
+     "lugar": "Colegio Cardenal Herrera Oria",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    },
+    {
+     "jornada": 8,
+     "fecha": "2026-11-29",
+     "hora": null,
+     "local": true,
+     "rival": "FUNDACION UNICAJA COSTA DEL SOL MALAGA B",
+     "rival_club": "35",
+     "lugar": "PABELLON MUNICIPAL DE BARBATE",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    },
+    {
+     "jornada": 9,
+     "fecha": "2026-12-13",
+     "hora": null,
+     "local": false,
+     "rival": "RINCON FERTILIDAD ALFARNATEJO BM CMCJ-Balonmano COÍN",
+     "rival_club": "100846",
+     "lugar": "PAB. MUN. DIEGO CARRASCO",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": null,
+     "sets_rival": null,
+     "sets": null,
+     "id_equipo_club": "223237"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1038859",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase principal, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038859",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 4,
+    "puntos": 2,
+    "pj": 3,
+    "pg": 1,
+    "pe": 0,
+    "pp": 2,
+    "gf": 135,
+    "gc": 137,
+    "sg": 3,
+    "sp": 5
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-25",
+     "hora": "12:20",
+     "local": true,
+     "rival": "BMP ALGECIRAS",
+     "rival_club": "100243",
+     "lugar": "6L",
+     "goles_club": 39,
+     "goles_rival": 43,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "16-14",
+      "17-22",
+      "6-7"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-25",
+     "hora": "17:40",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "3L",
+     "goles_club": 40,
+     "goles_rival": 47,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "18-14",
+      "29-26"
+     ],
+     "id_equipo_club": "224457"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-25",
+     "hora": "19:40",
+     "local": false,
+     "rival": "BALONMANO PLAYA BAHIA DE CADIZ",
+     "rival_club": "100574",
+     "lugar": "4L",
+     "goles_club": 56,
+     "goles_rival": 47,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "22-26",
+      "23-22",
+      "2-8"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "F-Juvenil-1038978",
+   "sexo": "F",
+   "categoria": "Juvenil",
+   "torneo": "Campeonato de España · Laredo",
+   "nombre_federado": "La Chanca Balonmano Barbate",
+   "fase": "Fase final, eliminatorias previas",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038978",
+   "clasificacion": {
+    "puesto": 10,
+    "de": 16,
+    "puntos": 0,
+    "pj": 1,
+    "pg": 0,
+    "pe": 0,
+    "pp": 1,
+    "gf": 49,
+    "gc": 48,
+    "sg": 1,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 9
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-08-01",
+     "hora": "10:20",
+     "local": true,
+     "rival": "BMP BEACH CASERIO CIUDAD REAL",
+     "rival_club": "100255",
+     "lugar": "CAMPO 4 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 49,
+     "goles_rival": 48,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "25-18",
+      "18-22",
+      "6-8"
+     ],
+     "id_equipo_club": "224457"
+    }
+   ]
+  },
+  {
+   "clave": "M-Alevín-1037838",
+   "sexo": "M",
+   "categoria": "Alevín",
+   "torneo": "Circuito Arenas del Sur",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037838",
+   "clasificacion": {
+    "puesto": null,
+    "de": 3,
+    "puntos": 0,
+    "pj": 0,
+    "pg": 0,
+    "pe": 0,
+    "pp": 0,
+    "gf": 0,
+    "gc": 0,
+    "sg": 0,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-21",
+     "hora": "10:30",
+     "local": false,
+     "rival": "SALAZONES HERPAC BARBATE B",
+     "rival_club": "100317",
+     "lugar": "CAMPO 2 - PLAYA DEL CARMEN",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": 0,
+     "sets_rival": 0,
+     "sets": null,
+     "id_equipo_club": "224462"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-21",
+     "hora": "12:30",
+     "local": true,
+     "rival": "CADIZ CF ZONABALONMANO",
+     "rival_club": "100574",
+     "lugar": "CAMPO 2 - PLAYA DEL CARMEN",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": 0,
+     "sets_rival": 0,
+     "sets": null,
+     "id_equipo_club": "224462"
+    }
+   ]
+  },
+  {
+   "clave": "M-Alevín-1038827",
+   "sexo": "M",
+   "categoria": "Alevín",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase principal, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038827",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 3,
+    "puntos": 0,
+    "pj": 2,
+    "pg": 0,
+    "pe": 0,
+    "pp": 2,
+    "gf": 42,
+    "gc": 70,
+    "sg": 1,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 14
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-26",
+     "hora": "09:00",
+     "local": true,
+     "rival": "CBM CADIZ CF ZONABALONMANO",
+     "rival_club": "100574",
+     "lugar": "4L",
+     "goles_club": 29,
+     "goles_rival": 42,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "12-18",
+      "15-14",
+      "2-10"
+     ],
+     "id_equipo_club": "224462"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-26",
+     "hora": "10:10",
+     "local": false,
+     "rival": "PLAYAS DE FUENGIROLA",
+     "rival_club": "100890",
+     "lugar": "5L",
+     "goles_club": 13,
+     "goles_rival": 28,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "14-3",
+      "14-10"
+     ],
+     "id_equipo_club": "224462"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1037045",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Torrox",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037045",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 162,
+    "gc": 144,
+    "sg": 6,
+    "sp": 1
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-05-29",
+     "hora": "16:40",
+     "local": false,
+     "rival": "ATLETICO MARAVILLAS",
+     "rival_club": "100217",
+     "lugar": "MICHEL MIKHAELIDES",
+     "goles_club": 46,
+     "goles_rival": 40,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-27",
+      "16-19"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-05-29",
+     "hora": "18:00",
+     "local": true,
+     "rival": "Electro Meridional BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "PLAYA TORROX - CAMPO 3",
+     "goles_club": 50,
+     "goles_rival": 57,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "14-27",
+      "22-18",
+      "14-12"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-05-29",
+     "hora": "19:20",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "MICHEL MIKHAELIDES",
+     "goles_club": 66,
+     "goles_rival": 47,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-34",
+      "25-32"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1037051",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Algeciras",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037051",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 148,
+    "gc": 132,
+    "sg": 6,
+    "sp": 1
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-11",
+     "hora": "10:20",
+     "local": true,
+     "rival": "ATLETICO MARAVILLAS",
+     "rival_club": "100217",
+     "lugar": "2R",
+     "goles_club": 49,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "18-22",
+      "23-22",
+      "8-4"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-11",
+     "hora": "13:00",
+     "local": false,
+     "rival": "MARITIMA DEL ESTRECHO BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "3R",
+     "goles_club": 47,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-23",
+      "16-24"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-11",
+     "hora": "17:40",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA A",
+     "rival_club": "100183",
+     "lugar": "2R",
+     "goles_club": 52,
+     "goles_rival": 46,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-26",
+      "24-26"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1037054",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037054",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 97,
+    "gc": 70,
+    "sg": 4,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "17:20",
+     "local": true,
+     "rival": "CONSULTING CARTERA SUR PLAYA LEPE",
+     "rival_club": "100920",
+     "lugar": "CAMPO 7 - PLAYA DEL CARMEN",
+     "goles_club": 54,
+     "goles_rival": 32,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-14",
+      "30-18"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "22:00",
+     "local": true,
+     "rival": "MARITIMA DEL ESTRECHO BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 43,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-20",
+      "19-18"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1037187",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Utrera",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037187",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 122,
+    "gc": 69,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-06",
+     "hora": "10:20",
+     "local": false,
+     "rival": "VENDING SIERRA MORENA - BMP OPEN ARENA",
+     "rival_club": "101216",
+     "lugar": "PLAYA VISTALEGRE 2",
+     "goles_club": 20,
+     "goles_rival": 0,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "0-10",
+      "0-10"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-06",
+     "hora": "19:20",
+     "local": false,
+     "rival": "GRUPO ARAHAL BM PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "PLAYA VISTALEGRE 2",
+     "goles_club": 50,
+     "goles_rival": 30,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "16-28",
+      "14-22"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-06",
+     "hora": "21:20",
+     "local": true,
+     "rival": "CADIZ CF ZONABALONMANO",
+     "rival_club": "100574",
+     "lugar": "PLAYA VISTALEGRE 2",
+     "goles_club": 52,
+     "goles_rival": 39,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "25-21",
+      "27-18"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1038085",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo E",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038085",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 107,
+    "gc": 83,
+    "sg": 4,
+    "sp": 1
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "11:10",
+     "local": true,
+     "rival": "BM SAN FERNANDO",
+     "rival_club": "100587",
+     "lugar": "PISTA 1 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 52,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-20",
+      "28-18"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-04",
+     "hora": "19:40",
+     "local": true,
+     "rival": "MONTAJES DOMNIGUEZ BM PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "PISTA 5 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 55,
+     "goles_rival": 45,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "20-23",
+      "26-16",
+      "9-6"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1038475",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Arena 1000 · Cádiz",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038475",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 110,
+    "gc": 101,
+    "sg": 3,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-17",
+     "hora": "09:40",
+     "local": true,
+     "rival": "PLASROAL BMP ALCALA CM",
+     "rival_club": "100080",
+     "lugar": "CADIZ ARENA 5",
+     "goles_club": 59,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "18-20",
+      "24-12",
+      "17-16"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-17",
+     "hora": "12:20",
+     "local": false,
+     "rival": "CLUB HANDBOL XÀBIA TARONJA",
+     "rival_club": "100160",
+     "lugar": "CADIZ ARENA 1",
+     "goles_club": 51,
+     "goles_rival": 53,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "20-24",
+      "27-23",
+      "6-4"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1038844",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038844",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 94,
+    "gc": 95,
+    "sg": 2,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-24",
+     "hora": "17:00",
+     "local": true,
+     "rival": "GRUPO ARAHAL BM PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "3L",
+     "goles_club": 54,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "28-22",
+      "18-20",
+      "8-6"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-24",
+     "hora": "13:40",
+     "local": false,
+     "rival": "ATLETICO MARAVILLAS",
+     "rival_club": "100217",
+     "lugar": "4L",
+     "goles_club": 40,
+     "goles_rival": 47,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "23-18",
+      "24-22"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Cadete-1038925",
+   "sexo": "M",
+   "categoria": "Cadete",
+   "torneo": "Campeonato de España · Laredo",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo G",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038925",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 133,
+    "gc": 113,
+    "sg": 3,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 15
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-30",
+     "hora": "20:40",
+     "local": false,
+     "rival": "CLUB BALONMANO LOS ALCAZARES",
+     "rival_club": "100540",
+     "lugar": "CAMPO 7 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 63,
+     "goles_rival": 51,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "26-24",
+      "19-30",
+      "6-9"
+     ],
+     "id_equipo_club": "224458"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-31",
+     "hora": "20:00",
+     "local": true,
+     "rival": "C-SYSTEM SINFIN DOSA ARENA",
+     "rival_club": "118",
+     "lugar": "CAMPO 3 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 70,
+     "goles_rival": 62,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "20-22",
+      "30-18",
+      "20-22"
+     ],
+     "id_equipo_club": "224458"
+    }
+   ]
+  },
+  {
+   "clave": "M-Infantil-1037344",
+   "sexo": "M",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Mollina 1",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037344",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 135,
+    "gc": 109,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-06",
+     "hora": "09:40",
+     "local": true,
+     "rival": "TARAMELLI & PAYAN BMP URCI ALMERIA ``A``",
+     "rival_club": "100816",
+     "lugar": "3.MOLLINA",
+     "goles_club": 46,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-18",
+      "22-20"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-06",
+     "hora": "11:40",
+     "local": true,
+     "rival": "UNION DEPORTIVA ROQUETAS",
+     "rival_club": "100207",
+     "lugar": "1. MOLLINA",
+     "goles_club": 51,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "27-24",
+      "24-14"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-06",
+     "hora": "18:40",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "4.MOLLINA",
+     "goles_club": 38,
+     "goles_rival": 33,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "14-18",
+      "19-20"
+     ],
+     "id_equipo_club": "224234"
+    }
+   ]
+  },
+  {
+   "clave": "M-Infantil-1037754",
+   "sexo": "M",
+   "categoria": "Infantil",
+   "torneo": "Arena 1000 · Orihuela",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase intermedia, eliminatorias previas",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037754",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 8,
+    "puntos": 2,
+    "pj": 1,
+    "pg": 1,
+    "pe": 0,
+    "pp": 0,
+    "gf": 55,
+    "gc": 42,
+    "sg": 2,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-19",
+     "hora": "16:40",
+     "local": true,
+     "rival": "BMP BEACH CASERIO CIUDAD REAL",
+     "rival_club": "100255",
+     "lugar": "CAMPO 7 ORIHUELA",
+     "goles_club": 55,
+     "goles_rival": 42,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "26-22",
+      "29-20"
+     ],
+     "id_equipo_club": "224234"
+    }
+   ]
+  },
+  {
+   "clave": "M-Infantil-1037930",
+   "sexo": "M",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037930",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 150,
+    "gc": 130,
+    "sg": 6,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "09:00",
+     "local": true,
+     "rival": "PLAYAS DE FUENGIROLA B",
+     "rival_club": "100890",
+     "lugar": "CAMPO 2 - PLAYA DEL CARMEN",
+     "goles_club": 45,
+     "goles_rival": 46,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "14-26",
+      "24-14",
+      "7-6"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "13:00",
+     "local": false,
+     "rival": "CBMP CARBONERAS",
+     "rival_club": "100234",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 60,
+     "goles_rival": 50,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "22-30",
+      "24-22",
+      "4-8"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "20:40",
+     "local": false,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 45,
+     "goles_rival": 34,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "16-20",
+      "18-25"
+     ],
+     "id_equipo_club": "224234"
+    }
+   ]
+  },
+  {
+   "clave": "M-Infantil-1038102",
+   "sexo": "M",
+   "categoria": "Infantil",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038102",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 100,
+    "gc": 88,
+    "sg": 3,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "17:40",
+     "local": true,
+     "rival": "COCINAS ARYA BMP ALGECIRAS INFANTIL A",
+     "rival_club": "100243",
+     "lugar": "PISTA 8 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 51,
+     "goles_rival": 52,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "22-23",
+      "25-22",
+      "4-7"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-04",
+     "hora": "20:20",
+     "local": true,
+     "rival": "PLAYAS DE FUENGIROLA B",
+     "rival_club": "100890",
+     "lugar": "PISTA 5 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 49,
+     "goles_rival": 36,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "25-18",
+      "24-18"
+     ],
+     "id_equipo_club": "224234"
+    }
+   ]
+  },
+  {
+   "clave": "M-Infantil-1038466",
+   "sexo": "M",
+   "categoria": "Infantil",
+   "torneo": "Arena 1000 · Cádiz",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038466",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 174,
+    "gc": 137,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-17",
+     "hora": "09:00",
+     "local": true,
+     "rival": "PLAYAS DE FUENGIROLA B",
+     "rival_club": "100890",
+     "lugar": "CADIZ ARENA 2",
+     "goles_club": 55,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "26-20",
+      "29-28"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-17",
+     "hora": "11:00",
+     "local": false,
+     "rival": "BMP BEACH CASERIO CIUDAD REAL",
+     "rival_club": "100255",
+     "lugar": "CADIZ ARENA 4",
+     "goles_club": 56,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-26",
+      "24-30"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-17",
+     "hora": "13:00",
+     "local": true,
+     "rival": "BM PLAYA PARLA IM",
+     "rival_club": "2892",
+     "lugar": "CADIZ ARENA 5",
+     "goles_club": 63,
+     "goles_rival": 41,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "30-18",
+      "33-23"
+     ],
+     "id_equipo_club": "224234"
+    }
+   ]
+  },
+  {
+   "clave": "M-Infantil-1038834",
+   "sexo": "M",
+   "categoria": "Infantil",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038834",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 174,
+    "gc": 127,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-24",
+     "hora": "12:20",
+     "local": false,
+     "rival": "PLAYAS DE FUENGIROLA B",
+     "rival_club": "100890",
+     "lugar": "1L",
+     "goles_club": 62,
+     "goles_rival": 45,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-30",
+      "23-32"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-24",
+     "hora": "09:40",
+     "local": true,
+     "rival": "CBMP VISTALEGRE-UTRERA",
+     "rival_club": "100263",
+     "lugar": "3L",
+     "goles_club": 68,
+     "goles_rival": 52,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "34-26",
+      "34-26"
+     ],
+     "id_equipo_club": "224234"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-24",
+     "hora": "17:40",
+     "local": true,
+     "rival": "SALAZONES HERPAC BARBATE",
+     "rival_club": "100317",
+     "lugar": "2L",
+     "goles_club": 44,
+     "goles_rival": 30,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-14",
+      "22-16"
+     ],
+     "id_equipo_club": "224234"
+    }
+   ]
+  },
+  {
+   "clave": "M-Infantil-1038895",
+   "sexo": "M",
+   "categoria": "Infantil",
+   "torneo": "Campeonato de España · Laredo",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase final, eliminatorias previas",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038895",
+   "clasificacion": {
+    "puesto": 4,
+    "de": 16,
+    "puntos": 2,
+    "pj": 1,
+    "pg": 1,
+    "pe": 0,
+    "pp": 0,
+    "gf": 55,
+    "gc": 40,
+    "sg": 2,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-08-01",
+     "hora": "09:00",
+     "local": true,
+     "rival": "MUBAK-BHB",
+     "rival_club": "100178",
+     "lugar": "CAMPO 8 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 55,
+     "goles_rival": 40,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "26-24",
+      "29-16"
+     ],
+     "id_equipo_club": "224234"
+    }
+   ]
+  },
+  {
+   "clave": "M-Juvenil-1037002",
+   "sexo": "M",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Torrox",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037002",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 77,
+    "gc": 80,
+    "sg": 2,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-05-30",
+     "hora": "09:40",
+     "local": false,
+     "rival": "ATLAS CONSULTING BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "PLAYA TORROX - CAMPO 3",
+     "goles_club": 45,
+     "goles_rival": 41,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "15-10",
+      "18-26",
+      "8-9"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-05-30",
+     "hora": "11:40",
+     "local": true,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "PLAYA TORROX - CAMPO 3",
+     "goles_club": 32,
+     "goles_rival": 39,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "14-20",
+      "18-19"
+     ],
+     "id_equipo_club": "224238"
+    }
+   ]
+  },
+  {
+   "clave": "M-Juvenil-1037005",
+   "sexo": "M",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037005",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 3,
+    "puntos": 0,
+    "pj": 2,
+    "pg": 0,
+    "pe": 0,
+    "pp": 2,
+    "gf": 83,
+    "gc": 85,
+    "sg": 2,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "11:00",
+     "local": false,
+     "rival": "MINGORANCE FORMACION DE CONDUCTORES BM PLAYA LEPE",
+     "rival_club": "100920",
+     "lugar": "CAMPO 3 - PLAYA DEL CARMEN",
+     "goles_club": 44,
+     "goles_rival": 44,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "23-22",
+      "16-18",
+      "5-4"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-27",
+     "hora": "22:40",
+     "local": false,
+     "rival": "GGS MEDISAND BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 39,
+     "goles_rival": 41,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "20-21",
+      "14-12",
+      "7-6"
+     ],
+     "id_equipo_club": "224238"
+    }
+   ]
+  },
+  {
+   "clave": "M-Juvenil-1037015",
+   "sexo": "M",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Mollina 2",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037015",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 4,
+    "puntos": 2,
+    "pj": 3,
+    "pg": 1,
+    "pe": 0,
+    "pp": 2,
+    "gf": 120,
+    "gc": 118,
+    "sg": 2,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-13",
+     "hora": "17:20",
+     "local": false,
+     "rival": "VENDING SIERRA MORENA - BMP OPEN ARENA",
+     "rival_club": "101216",
+     "lugar": "1. MOLLINA",
+     "goles_club": 45,
+     "goles_rival": 35,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-22",
+      "15-23"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-13",
+     "hora": "20:40",
+     "local": true,
+     "rival": "GGS MEDISAND BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "2.MOLLINA",
+     "goles_club": 42,
+     "goles_rival": 45,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "22-24",
+      "20-21"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-13",
+     "hora": "22:00",
+     "local": false,
+     "rival": "CBMP BEDETEC VISTALEGRE-UTRERA",
+     "rival_club": "100263",
+     "lugar": "4.MOLLINA",
+     "goles_club": 33,
+     "goles_rival": 38,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "18-14",
+      "20-19"
+     ],
+     "id_equipo_club": "224238"
+    }
+   ]
+  },
+  {
+   "clave": "M-Juvenil-1038075",
+   "sexo": "M",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038075",
+   "clasificacion": {
+    "puesto": 3,
+    "de": 4,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 142,
+    "gc": 135,
+    "sg": 4,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-04",
+     "hora": "13:00",
+     "local": false,
+     "rival": "HELVETIA MONTEQUINTO CARBONERAS",
+     "rival_club": "771",
+     "lugar": "PISTA 8 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 47,
+     "goles_rival": 47,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "16-17",
+      "23-20",
+      "8-10"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "19:40",
+     "local": true,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "PISTA 1 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 44,
+     "goles_rival": 52,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "18-24",
+      "26-28"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-05",
+     "hora": "08:20",
+     "local": true,
+     "rival": "TORREON DE BENALMADENA A",
+     "rival_club": "100217",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 51,
+     "goles_rival": 36,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "27-22",
+      "24-14"
+     ],
+     "id_equipo_club": "224238"
+    }
+   ]
+  },
+  {
+   "clave": "M-Juvenil-1038258",
+   "sexo": "M",
+   "categoria": "Juvenil",
+   "torneo": "Arena Sur · Algeciras",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038258",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 87,
+    "gc": 85,
+    "sg": 2,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-07-12",
+     "hora": "11:00",
+     "local": true,
+     "rival": "ATLAS CONSULTING BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "1R",
+     "goles_club": 44,
+     "goles_rival": 49,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "22-24",
+      "22-25"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-12",
+     "hora": "12:20",
+     "local": true,
+     "rival": "TORREON DE BENALMADENA A",
+     "rival_club": "100217",
+     "lugar": "3R",
+     "goles_club": 43,
+     "goles_rival": 36,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-19",
+      "23-17"
+     ],
+     "id_equipo_club": "224238"
+    }
+   ]
+  },
+  {
+   "clave": "M-Juvenil-1038856",
+   "sexo": "M",
+   "categoria": "Juvenil",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038856",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 87,
+    "gc": 83,
+    "sg": 2,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 2,
+     "fecha": "2026-07-25",
+     "hora": "09:00",
+     "local": false,
+     "rival": "PLAYAS DE FUENGIROLA",
+     "rival_club": "100890",
+     "lugar": "5L",
+     "goles_club": 57,
+     "goles_rival": 34,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-29",
+      "14-28"
+     ],
+     "id_equipo_club": "224238"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-25",
+     "hora": "11:40",
+     "local": true,
+     "rival": "SALAZONES HERPAC CLUB BALONMANO PLAYA BARBATE",
+     "rival_club": "100186",
+     "lugar": "6L",
+     "goles_club": 30,
+     "goles_rival": 49,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "10-28",
+      "20-21"
+     ],
+     "id_equipo_club": "224238"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1034391",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Diego Carrasco Cup · Torremolinos",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase principal, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1034391",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 2,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 80,
+    "gc": 95,
+    "sg": 2,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 12
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2025-12-27",
+     "hora": "08:50",
+     "local": true,
+     "rival": "SALAZONES HERPAC CLUB BALONMANO PLAYA BARBATE",
+     "rival_club": "100186",
+     "lugar": "ZONA DEPORTIVA PLAYAMAR 2",
+     "goles_club": 46,
+     "goles_rival": 48,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "14-20",
+      "18-16",
+      "14-12"
+     ],
+     "id_equipo_club": "224236"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1034395",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Diego Carrasco Cup · Torremolinos",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo H",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1034395",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 1,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 107,
+    "gc": 90,
+    "sg": 3,
+    "sp": 2
+   },
+   "plantilla": null,
+   "partidos": []
+  },
+  {
+   "clave": "M-Sénior-1037038",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena Sur · Torrox",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo A",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037038",
+   "clasificacion": {
+    "puesto": 4,
+    "de": 4,
+    "puntos": 0,
+    "pj": 3,
+    "pg": 0,
+    "pe": 0,
+    "pp": 3,
+    "gf": 84,
+    "gc": 141,
+    "sg": 0,
+    "sp": 6
+   },
+   "plantilla": {
+    "jugadores": 12
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-05-29",
+     "hora": "22:40",
+     "local": false,
+     "rival": "CADIZ CF ZONABALONMANO",
+     "rival_club": "100574",
+     "lugar": "MICHEL MIKHAELIDES",
+     "goles_club": 30,
+     "goles_rival": 52,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "22-18",
+      "30-12"
+     ],
+     "id_equipo_club": "224236"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-05-30",
+     "hora": "13:00",
+     "local": false,
+     "rival": "BMP ALGECIRAS A",
+     "rival_club": "100243",
+     "lugar": "PLAYA TORROX - CAMPO 3",
+     "goles_club": 26,
+     "goles_rival": 44,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "20-6",
+      "24-20"
+     ],
+     "id_equipo_club": "224236"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-05-30",
+     "hora": "19:00",
+     "local": true,
+     "rival": "FABM.NAZARE BEACH HANDBALL TEAM",
+     "rival_club": "101413",
+     "lugar": "PLAYA TORROX - CAMPO 4",
+     "goles_club": 28,
+     "goles_rival": 45,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "14-25",
+      "14-20"
+     ],
+     "id_equipo_club": "224236"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1037180",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena Sur · Torrox",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037180",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 142,
+    "gc": 125,
+    "sg": 5,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-05-29",
+     "hora": "22:00",
+     "local": true,
+     "rival": "FABM.LONDON OLYMPIA BEACH HANDBALL",
+     "rival_club": "101413",
+     "lugar": "PLAYA TORROX - CAMPO 3",
+     "goles_club": 44,
+     "goles_rival": 26,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "26-14",
+      "18-12"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-05-30",
+     "hora": "12:20",
+     "local": false,
+     "rival": "GRD LEÃ?Â§A - SPAR",
+     "rival_club": "100310",
+     "lugar": "MICHEL MIKHAELIDES",
+     "goles_club": 51,
+     "goles_rival": 50,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "24-22",
+      "18-20",
+      "8-9"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-05-30",
+     "hora": "18:20",
+     "local": true,
+     "rival": "PLASROAL BALONMANO PLAYA ALCALA",
+     "rival_club": "100080",
+     "lugar": "PLAYA TORROX - CAMPO 3",
+     "goles_club": 47,
+     "goles_rival": 49,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "21-20",
+      "20-22",
+      "6-7"
+     ],
+     "id_equipo_club": "224233"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1037544",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena 1000 · Vilanova i la Geltrú",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo G",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037544",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 84,
+    "gc": 71,
+    "sg": 4,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-13",
+     "hora": "10:20",
+     "local": true,
+     "rival": "BAY BANDITS HCSB A",
+     "rival_club": "2905",
+     "lugar": "PISTA 7 PLATJA D ' ADARRO",
+     "goles_club": 42,
+     "goles_rival": 35,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-20",
+      "20-15"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-13",
+     "hora": "13:00",
+     "local": false,
+     "rival": "CADIZ CF ZONABALONMANO",
+     "rival_club": "100574",
+     "lugar": "PISTA 8 PLATJA D ' ADARRO",
+     "goles_club": 42,
+     "goles_rival": 36,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "14-15",
+      "22-27"
+     ],
+     "id_equipo_club": "224233"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1037798",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena 1000 · Orihuela",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase intermedia, eliminatorias previas",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037798",
+   "clasificacion": {
+    "puesto": 15,
+    "de": 16,
+    "puntos": 0,
+    "pj": 1,
+    "pg": 0,
+    "pe": 0,
+    "pp": 1,
+    "gf": 38,
+    "gc": 49,
+    "sg": 1,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-20",
+     "hora": "20:00",
+     "local": true,
+     "rival": "BMP MARNI-NOU RACO",
+     "rival_club": "805",
+     "lugar": "CAMPO 6 ORIHUELA",
+     "goles_club": 38,
+     "goles_rival": 49,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "12-22",
+      "22-20",
+      "4-7"
+     ],
+     "id_equipo_club": "224233"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1037957",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037957",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 153,
+    "gc": 118,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "12:20",
+     "local": false,
+     "rival": "CLUB BALONMANO PLAYA UTRERA",
+     "rival_club": "100247",
+     "lugar": "CAMPO 2 - PLAYA DEL CARMEN",
+     "goles_club": 54,
+     "goles_rival": 40,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-30",
+      "18-24"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "19:20",
+     "local": true,
+     "rival": "FLUIDMECANICA SUR BM SAN FERNANDO",
+     "rival_club": "100587",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 55,
+     "goles_rival": 40,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "30-20",
+      "25-20"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-28",
+     "hora": "09:00",
+     "local": true,
+     "rival": "FUNDACION FOMENTO DEPORTE CBMP CIUDAD DE MALAGA B",
+     "rival_club": "100183",
+     "lugar": "CAMPO 8 - PLAYA DEL CARMEN",
+     "goles_club": 44,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-20",
+      "20-18"
+     ],
+     "id_equipo_club": "224233"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1037959",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena Sur · Barbate",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1037959",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 2,
+    "pj": 3,
+    "pg": 1,
+    "pe": 0,
+    "pp": 2,
+    "gf": 129,
+    "gc": 126,
+    "sg": 3,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 12
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-06-27",
+     "hora": "12:20",
+     "local": true,
+     "rival": "SALAZONES HERPAC CLUB BALONMANO PLAYA BARBATE B",
+     "rival_club": "100186",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 59,
+     "goles_rival": 58,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "18-20",
+      "27-22",
+      "14-16"
+     ],
+     "id_equipo_club": "224236"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-06-27",
+     "hora": "19:20",
+     "local": false,
+     "rival": "CBMP BEDETEC VISTALEGRE-UTRERA",
+     "rival_club": "100263",
+     "lugar": "CAMPO 4 - PLAYA DEL CARMEN",
+     "goles_club": 46,
+     "goles_rival": 32,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-22",
+      "12-24"
+     ],
+     "id_equipo_club": "224236"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-06-28",
+     "hora": "09:00",
+     "local": false,
+     "rival": "CADIZ CF ZONABALONMANO",
+     "rival_club": "100574",
+     "lugar": "CAMPO 1 - PLAYA DEL CARMEN",
+     "goles_club": 24,
+     "goles_rival": 36,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "16-12",
+      "20-12"
+     ],
+     "id_equipo_club": "224236"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1038078",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase de clasificación, grupo D",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038078",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 94,
+    "gc": 91,
+    "sg": 3,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-04",
+     "hora": "17:00",
+     "local": false,
+     "rival": "FERROTEK BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 49,
+     "goles_rival": 51,
+     "sets_club": 1,
+     "sets_rival": 2,
+     "sets": [
+      "20-27",
+      "23-16",
+      "8-6"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "21:00",
+     "local": true,
+     "rival": "CONNETSUR HELVETIA MONTEQUINTO",
+     "rival_club": "771",
+     "lugar": "PISTA 6 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 45,
+     "goles_rival": 40,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "23-22",
+      "22-18"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-05",
+     "hora": "09:00",
+     "local": false,
+     "rival": "CD MAMUT",
+     "rival_club": "101306",
+     "lugar": "PISTA 1 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": null,
+     "goles_rival": null,
+     "sets_club": 0,
+     "sets_rival": 0,
+     "sets": null,
+     "id_equipo_club": "224233"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1038080",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena Sur · Trofeo Carranza",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase de clasificación, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038080",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 4,
+    "puntos": 4,
+    "pj": 3,
+    "pg": 2,
+    "pe": 0,
+    "pp": 1,
+    "gf": 137,
+    "gc": 144,
+    "sg": 4,
+    "sp": 4
+   },
+   "plantilla": {
+    "jugadores": 12
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-04",
+     "hora": "13:00",
+     "local": false,
+     "rival": "CUBIERTAS ARAHAL BM PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 53,
+     "goles_rival": 53,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "22-23",
+      "25-22",
+      "6-8"
+     ],
+     "id_equipo_club": "224236"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-04",
+     "hora": "21:00",
+     "local": true,
+     "rival": "CBM CADIZ CF ZONABALONMANO",
+     "rival_club": "100574",
+     "lugar": "PISTA 5 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 28,
+     "goles_rival": 42,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "12-22",
+      "16-20"
+     ],
+     "id_equipo_club": "224236"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-05",
+     "hora": "09:40",
+     "local": true,
+     "rival": "CBMP CARBONERAS",
+     "rival_club": "100234",
+     "lugar": "PISTA 4 ZONA DEPORTIVA PLAYA DE LA VICTORIA",
+     "goles_club": 56,
+     "goles_rival": 49,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "23-18",
+      "24-25",
+      "9-6"
+     ],
+     "id_equipo_club": "224236"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1038523",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena 1000 · Cádiz",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo H",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038523",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 104,
+    "gc": 66,
+    "sg": 4,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-18",
+     "hora": "08:20",
+     "local": true,
+     "rival": "C. BM. GETASUR SM",
+     "rival_club": "289",
+     "lugar": "CADIZ ARENA 8",
+     "goles_club": 51,
+     "goles_rival": 30,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-8",
+      "29-22"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-18",
+     "hora": "11:00",
+     "local": false,
+     "rival": "SPIT ARHS TEAM SM",
+     "rival_club": "100166",
+     "lugar": "CADIZ ARENA 7",
+     "goles_club": 53,
+     "goles_rival": 36,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "18-28",
+      "18-25"
+     ],
+     "id_equipo_club": "224233"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1038524",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Arena 1000 · Cádiz",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase final, eliminatorias previas",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038524",
+   "clasificacion": {
+    "puesto": 15,
+    "de": 16,
+    "puntos": 0,
+    "pj": 1,
+    "pg": 0,
+    "pe": 0,
+    "pp": 1,
+    "gf": 38,
+    "gc": 47,
+    "sg": 0,
+    "sp": 2
+   },
+   "plantilla": {
+    "jugadores": 11
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-18",
+     "hora": "20:40",
+     "local": false,
+     "rival": "GRUPO EGIDO BM PLAYA PINTO SM",
+     "rival_club": "295",
+     "lugar": "CADIZ ARENA 5",
+     "goles_club": 38,
+     "goles_rival": 47,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "20-16",
+      "27-22"
+     ],
+     "id_equipo_club": "224236"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1038866",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo C",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038866",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 4,
+    "puntos": 6,
+    "pj": 3,
+    "pg": 3,
+    "pe": 0,
+    "pp": 0,
+    "gf": 146,
+    "gc": 111,
+    "sg": 6,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-25",
+     "hora": "10:20",
+     "local": true,
+     "rival": "CLUB BALONMANO PLAYA UTRERA",
+     "rival_club": "100247",
+     "lugar": "3L",
+     "goles_club": 50,
+     "goles_rival": 38,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "24-14",
+      "26-24"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-25",
+     "hora": "13:40",
+     "local": false,
+     "rival": "CBMP CARBONERAS",
+     "rival_club": "100234",
+     "lugar": "5L",
+     "goles_club": 46,
+     "goles_rival": 29,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "16-24",
+      "13-22"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 3,
+     "fecha": "2026-07-25",
+     "hora": "18:20",
+     "local": false,
+     "rival": "SALAZONES HERPAC CLUB BALONMANO PLAYA BARBATE B",
+     "rival_club": "100186",
+     "lugar": "3L",
+     "goles_club": 50,
+     "goles_rival": 44,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "20-24",
+      "24-26"
+     ],
+     "id_equipo_club": "224233"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1038867",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Campeonato de Andalucía",
+   "nombre_federado": "Balonmano Barbate",
+   "fase": "Fase principal, grupo B",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1038867",
+   "clasificacion": {
+    "puesto": 2,
+    "de": 3,
+    "puntos": 2,
+    "pj": 2,
+    "pg": 1,
+    "pe": 0,
+    "pp": 1,
+    "gf": 92,
+    "gc": 101,
+    "sg": 2,
+    "sp": 3
+   },
+   "plantilla": {
+    "jugadores": 12
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-25",
+     "hora": "17:00",
+     "local": false,
+     "rival": "BMP ALGECIRAS B",
+     "rival_club": "100243",
+     "lugar": "6L",
+     "goles_club": 31,
+     "goles_rival": 42,
+     "sets_club": 0,
+     "sets_rival": 2,
+     "sets": [
+      "22-12",
+      "20-19"
+     ],
+     "id_equipo_club": "224236"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-25",
+     "hora": "09:40",
+     "local": true,
+     "rival": "CUBIERTAS ARAHAL BM PLAYA SEVILLA",
+     "rival_club": "100257",
+     "lugar": "4L",
+     "goles_club": 61,
+     "goles_rival": 59,
+     "sets_club": 2,
+     "sets_rival": 1,
+     "sets": [
+      "20-23",
+      "23-20",
+      "18-16"
+     ],
+     "id_equipo_club": "224236"
+    }
+   ]
+  },
+  {
+   "clave": "M-Sénior-1039023",
+   "sexo": "M",
+   "categoria": "Sénior",
+   "torneo": "Campeonato de España · Laredo",
+   "nombre_federado": "Salazones La Chanca BM Barbate",
+   "fase": "Fase principal, grupo E",
+   "temporada": "2026",
+   "superficie": "2",
+   "grupo": "1039023",
+   "clasificacion": {
+    "puesto": 1,
+    "de": 3,
+    "puntos": 4,
+    "pj": 2,
+    "pg": 2,
+    "pe": 0,
+    "pp": 0,
+    "gf": 97,
+    "gc": 78,
+    "sg": 4,
+    "sp": 0
+   },
+   "plantilla": {
+    "jugadores": 13
+   },
+   "partidos": [
+    {
+     "jornada": 1,
+     "fecha": "2026-07-31",
+     "hora": "09:00",
+     "local": true,
+     "rival": "BMP MARNI-NOU RACO",
+     "rival_club": "805",
+     "lugar": "CAMPO 5 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 41,
+     "goles_rival": 34,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-18",
+      "19-16"
+     ],
+     "id_equipo_club": "224233"
+    },
+    {
+     "jornada": 2,
+     "fecha": "2026-07-31",
+     "hora": "16:00",
+     "local": false,
+     "rival": "VILLA GIJON BM. PLAYA SENIOR",
+     "rival_club": "100891",
+     "lugar": "CAMPO 5 - PLAYA LA SALVÉ LAREDO",
+     "goles_club": 56,
+     "goles_rival": 44,
+     "sets_club": 2,
+     "sets_rival": 0,
+     "sets": [
+      "22-26",
+      "22-30"
+     ],
+     "id_equipo_club": "224233"
+    }
+   ]
+  }
+ ]
+}

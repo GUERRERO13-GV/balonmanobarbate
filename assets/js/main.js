@@ -361,6 +361,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // ---------- Cuenta atrás del próximo partido ----------
+  // El bloque lo escribe tools/genera_partidos.py con la fecha, el rival y el
+  // pabellón ya puestos: esto es un añadido. Nace con [hidden] para que sin JS
+  // no quede un hueco, y si la fecha ya pasó se queda oculto en vez de contar
+  // hacia atrás (la recogida es semanal, así que puede haberse quedado vieja).
+  // La fecha va sin zona horaria a propósito: se lee como hora local, que es
+  // la del pabellón y la de casi todo el que mira esta página.
+  document.querySelectorAll('.proximo-cuenta[data-cuenta]').forEach(function (el) {
+    var cuando = new Date(el.getAttribute('data-cuenta'));
+    if (isNaN(cuando)) return;
+
+    function pinta() {
+      var faltan = cuando - new Date();
+      if (faltan <= 0) { el.hidden = true; return false; }
+      var dias = Math.floor(faltan / 86400000);
+      var horas = Math.floor((faltan % 86400000) / 3600000);
+      var minutos = Math.floor((faltan % 3600000) / 60000);
+      var cifra, unidad;
+      if (dias >= 1) {
+        cifra = dias; unidad = dias === 1 ? 'día para el partido' : 'días para el partido';
+      } else if (horas >= 1) {
+        cifra = horas; unidad = horas === 1 ? 'hora para el partido' : 'horas para el partido';
+      } else {
+        cifra = minutos; unidad = minutos === 1 ? 'minuto para el partido' : 'minutos para el partido';
+      }
+      el.textContent = '';
+      el.appendChild(document.createTextNode(cifra));
+      var rot = document.createElement('span');
+      rot.textContent = unidad;
+      el.appendChild(rot);
+      el.hidden = false;
+      return true;
+    }
+
+    if (pinta()) setInterval(pinta, 60000);
+  });
+
   // Season tabs (preparado para futuras temporadas; hoy solo hay una)
   document.querySelectorAll('.season-tabs').forEach(function (tabs) {
     var buttons = tabs.querySelectorAll('button');

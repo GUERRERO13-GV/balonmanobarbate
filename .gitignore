@@ -48,3 +48,7 @@ node_modules/
 dist/
 build/
 .cache/
+
+# Python (los scripts de tools/)
+__pycache__/
+*.py[cod]

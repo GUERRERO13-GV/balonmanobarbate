@@ -11,25 +11,22 @@ Las filas que salgan aqui se pasan a tools/torneos.py.
 
 Club Balonmano Barbate — Francisco Vidal Mateo (FranVi)
 """
-import re, json, html, time, urllib.request, sys
+import re, json, os, time, sys
 
-NUESTRO = "100165"
-UA = {"User-Agent": "Mozilla/5.0"}
-B = "https://resultadosbalonmano.isquad.es/"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import isquad
+from isquad import arregla, limpio      # noqa: F401 - se usan mas abajo
+
+NUESTRO = isquad.CLUB
+B = isquad.BASE
 
 def baja(u):
-    for _ in range(3):
-        try:
-            return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read().decode("utf-8", "replace")
-        except Exception as e:
-            time.sleep(2)
-    return ""
-
-def arregla(t):
-    try: return t.encode("latin-1").decode("utf-8")
-    except Exception: return t
-
-def limpio(t): return arregla(html.unescape(re.sub("<[^>]+>", "", t)).strip())
+    """Aqui un grupo que falla no debe cortar el barrido entero, que dura un
+    cuarto de hora: se devuelve vacio y se sigue."""
+    try:
+        return isquad.baja(u)
+    except isquad.ErrorRed:
+        return ""
 
 def opciones(s, sid):
     m = re.search(r'<select[^>]*id=["\']' + sid + r'["\'][^>]*>(.*?)</select>', s, re.S | re.I)

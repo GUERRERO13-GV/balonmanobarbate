@@ -164,3 +164,20 @@ FILAS = [
  ("F","Infantil","Campeonato de Andalucía","La Chanca Balonmano Barbate","Liga regular","2024/25","1","26","2203","207817","1026459"),
  ("M","Infantil","Campeonato de Andalucía","Salazones La Chanca Balonmano Barbate","Liga regular","2024/25","1","26","2203","207816","1026458"),
 ]
+
+
+def temporada_activa(superficie):
+    """La temporada mas reciente de esa superficie ("1" pista, "2" playa).
+
+    Se calcula, no se escribe: asi la recogida semanal pasa sola a la
+    temporada siguiente en cuanto se anyaden sus filas. Pista y playa NO
+    coinciden (pista va por 2026/27 y playa por 2026), por eso van aparte."""
+    temps = {f[5] for f in FILAS if f[6] == superficie}
+    return max(temps, key=lambda t: (int(t[:4]), t)) if temps else None
+
+
+def filas_activas():
+    """Las filas que se barren cada domingo: solo la temporada en curso de cada
+    superficie. Barrer las 147 seria descargar historia que ya no cambia."""
+    activas = {(s, temporada_activa(s)) for s in ("1", "2")}
+    return [f for f in FILAS if (f[6], f[5]) in activas]
