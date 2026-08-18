@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   Club Balonmano Barbate — web oficial
-  Desarrollo y diseño: Fran Vidal (FranVi)
+  Desarrollo, diseño y contenidos: Francisco Vidal Mateo (FranVi), 2026.
 -->
 <html lang="es">
 <head>
@@ -9,9 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Patrocinadores | Club Balonmano Barbate</title>
 <meta name="description" content="Empresas e instituciones que patrocinan al Club Balonmano Barbate: Finance La Janda, La Chanca, Emec, Transportes Manzorro e Hijos, Taberna Abelardo, el Ayuntamiento de Barbate y la Diputación de Cádiz.">
-<meta name="author" content="Fran Vidal">
+<meta name="author" content="Francisco Vidal Mateo">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0A2A43">
+<meta name="theme-color" content="#F6F1E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1922" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://balonmanobarbate.vercel.app/patrocinadores.html">
 <link rel="icon" href="assets/img/escudo-club-balonmano-barbate.webp" type="image/webp">
 <meta property="og:type" content="website">
@@ -21,19 +22,108 @@
 <meta property="og:description" content="Empresas e instituciones que patrocinan al Club Balonmano Barbate: Finance La Janda, La Chanca, Emec, Transportes Manzorro e Hijos, Taberna Abelardo, el Ayuntamiento de Barbate y la Diputación de Cádiz.">
 <meta property="og:image" content="https://balonmanobarbate.vercel.app/img/escudo-club-balonmano-barbate.webp">
 <meta property="og:url" content="https://balonmanobarbate.vercel.app/patrocinadores.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsOrganization",
+      "@id": "https://balonmanobarbate.vercel.app/#club",
+      "name": "Club Balonmano Barbate",
+      "alternateName": "BM Barbate",
+      "sport": [
+        "Balonmano",
+        "Balonmano playa"
+      ],
+      "foundingDate": "1997",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "logo": "https://balonmanobarbate.vercel.app/assets/img/escudo-club-balonmano-barbate.webp",
+      "email": "balonmanobarbate@gmail.com",
+      "areaServed": "Barbate, Cádiz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Joaquín Blume, 14",
+        "postalCode": "11160",
+        "addressLocality": "Barbate",
+        "addressRegion": "Cádiz",
+        "addressCountry": "ES"
+      },
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "Pabellón Municipal de Barbate",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Joaquín Blume, 14",
+          "postalCode": "11160",
+          "addressLocality": "Barbate",
+          "addressRegion": "Cádiz",
+          "addressCountry": "ES"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/barbatebalonmano",
+        "https://www.facebook.com/ClubBalonmanoBarbate"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://balonmanobarbate.vercel.app/#sitio",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "name": "Club Balonmano Barbate",
+      "inLanguage": "es-ES",
+      "publisher": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      },
+      "author": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      },
+      "creator": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://balonmanobarbate.vercel.app/#autor",
+      "name": "Francisco Vidal Mateo",
+      "alternateName": "FranVi",
+      "jobTitle": "Desarrollo y diseño del sitio",
+      "affiliation": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://balonmanobarbate.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Patrocinadores",
+          "item": "https://balonmanobarbate.vercel.app/patrocinadores.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script src="assets/js/theme.js"></script>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="con-portada">
 
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <img src="assets/img/escudo-club-balonmano-barbate.webp" width="46" height="46" alt="Escudo Club Balonmano Barbate">
+      <img src="assets/img/escudo-club-balonmano-barbate-96.webp" width="96" height="96" alt="Escudo Club Balonmano Barbate">
       <div class="brand-text">
         <div class="name">Balonmano Barbate</div>
         <div class="since">DESDE 1997 · BARBATE, CÁDIZ</div>
@@ -42,8 +132,24 @@
     <nav class="main-nav">
       <a href="index.html">Inicio</a>
       <a href="club.html">El Club</a>
-      <a href="equipos.html">Equipos</a>
-      <a href="equipaciones.html">Equipaciones</a>
+      <div class="nav-grupo">
+        <a href="equipos.html">Equipos</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipos" aria-label="Abrir el submenú de equipos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipos" hidden>
+          <a href="equipos.html">Todo</a>
+          <a href="equipos.html#pista">Pista</a>
+          <a href="equipos.html#playa">Playa</a>
+        </div>
+      </div>
+      <div class="nav-grupo">
+        <a href="equipaciones.html">Equipaciones</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipaciones" aria-label="Abrir el submenú de equipaciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipaciones" hidden>
+          <a href="equipaciones.html">Todo</a>
+          <a href="equipaciones.html#pista">Pista</a>
+          <a href="equipaciones.html#playa">Playa</a>
+        </div>
+      </div>
       <a href="galeria.html">Galería</a>
       <a href="patrocinadores.html" class="active" aria-current="page">Patrocinadores</a>
       <a href="contacto.html">Contacto</a>
@@ -60,7 +166,13 @@
 
 <main id="main">
 
-<section class="hero" style="padding-bottom:70px;">
+<section class="banda banda-foto banda-rotulo">
+  <div class="banda-media">
+    <picture>
+      <source srcset="assets/img/equipos-femeninos-y-familias-en-la-grada.webp" type="image/webp">
+      <img src="assets/img/equipos-femeninos-y-familias-en-la-grada.jpg" width="900" height="675" alt="Equipos femeninos del club y sus familias en la grada" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
   <div class="container">
     <p class="eyebrow">Gracias por remar con nosotros</p>
     <h1>Patrocinadores</h1>
@@ -68,54 +180,26 @@
   </div>
 </section>
 
-<section>
+<section class="banda banda-arena">
   <div class="container">
 
     <div class="section-head">
       <p class="eyebrow">Temporada 2025 / 2026</p>
       <h2>Nuestros patrocinadores</h2>
     </div>
-    <div class="grid grid-3">
-      <div class="card">
-        <div style="background:var(--white); padding:26px 20px; display:flex; align-items:center; justify-content:center; aspect-ratio:4/3;">
-          <img src="assets/img/finance-la-janda.webp" width="500" height="140" alt="Finance La Janda" style="max-width:100%; max-height:100%; object-fit:contain;" loading="lazy" decoding="async">
-        </div>
-      </div>
-      <div class="card">
-        <div style="background:var(--white); padding:26px 20px; display:flex; align-items:center; justify-content:center; aspect-ratio:4/3;">
-          <img src="assets/img/la-chanca.webp" width="400" height="304" alt="La Chanca" style="max-width:100%; max-height:100%; object-fit:contain;" loading="lazy" decoding="async">
-        </div>
-      </div>
-      <div class="card">
-        <div style="background:var(--white); padding:26px 20px; display:flex; align-items:center; justify-content:center; aspect-ratio:4/3;">
-          <img src="assets/img/emec.webp" width="450" height="168" alt="Emec" style="max-width:100%; max-height:100%; object-fit:contain;" loading="lazy" decoding="async">
-        </div>
-      </div>
-      <div class="card">
-        <div style="background:var(--white); padding:26px 20px; display:flex; align-items:center; justify-content:center; aspect-ratio:4/3;">
-          <img src="assets/img/transportes-manzorro-e-hijos.webp" width="353" height="116" alt="Transportes Manzorro e Hijos" style="max-width:100%; max-height:100%; object-fit:contain;" loading="lazy" decoding="async">
-        </div>
-      </div>
-      <div class="card">
-        <div style="background:var(--white); padding:26px 20px; display:flex; align-items:center; justify-content:center; aspect-ratio:4/3;">
-          <img src="assets/img/taberna-abelardo.webp" width="313" height="84" alt="Taberna Abelardo" style="max-width:100%; max-height:100%; object-fit:contain;" loading="lazy" decoding="async">
-        </div>
-      </div>
-      <div class="card">
-        <div style="background:var(--white); padding:26px 20px; display:flex; align-items:center; justify-content:center; aspect-ratio:4/3;">
-          <img src="assets/img/ayuntamiento-de-barbate.webp" width="400" height="507" alt="Ayuntamiento de Barbate" style="max-width:100%; max-height:100%; object-fit:contain;" loading="lazy" decoding="async">
-        </div>
-      </div>
-      <div class="card">
-        <div style="background:var(--white); padding:26px 20px; display:flex; align-items:center; justify-content:center; aspect-ratio:4/3;">
-          <img src="assets/img/diputacion-de-cadiz.webp" width="500" height="196" alt="Diputación de Cádiz" style="max-width:100%; max-height:100%; object-fit:contain;" loading="lazy" decoding="async">
-        </div>
-      </div>
+    <div class="muro-logos">
+      <div><img src="assets/img/finance-la-janda.webp" width="500" height="140" alt="Finance La Janda" loading="lazy" decoding="async"></div>
+      <div><img src="assets/img/la-chanca.webp" width="400" height="304" alt="La Chanca" loading="lazy" decoding="async"></div>
+      <div><img src="assets/img/emec.webp" width="450" height="168" alt="Emec" loading="lazy" decoding="async"></div>
+      <div><img src="assets/img/transportes-manzorro-e-hijos.webp" width="353" height="116" alt="Transportes Manzorro e Hijos" loading="lazy" decoding="async"></div>
+      <div><img src="assets/img/taberna-abelardo.webp" width="313" height="84" alt="Taberna Abelardo" loading="lazy" decoding="async"></div>
+      <div><img src="assets/img/ayuntamiento-de-barbate.webp" width="400" height="507" alt="Ayuntamiento de Barbate" loading="lazy" decoding="async"></div>
+      <div><img src="assets/img/diputacion-de-cadiz.webp" width="500" height="196" alt="Diputación de Cádiz" loading="lazy" decoding="async"></div>
     </div>
   </div>
 </section>
 
-<section class="section-alt">
+<section class="banda banda-arena banda-clara">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Colabora</p>

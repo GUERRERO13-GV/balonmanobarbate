@@ -1,5 +1,5 @@
 /* Club Balonmano Barbate — tema claro / oscuro
-   Desarrollo: Fran Vidal (FranVi)
+   Desarrollo: Francisco Vidal Mateo (FranVi)
 
    Este archivo se carga SIN defer en el <head> a propósito: tiene que aplicar
    el tema guardado antes de que se pinte la página, o se vería un destello

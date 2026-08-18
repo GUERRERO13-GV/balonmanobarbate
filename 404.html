@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   Club Balonmano Barbate — web oficial
-  Desarrollo y diseño: Fran Vidal (FranVi)
+  Desarrollo, diseño y contenidos: Francisco Vidal Mateo (FranVi), 2026.
 -->
 <html lang="es">
 <head>
@@ -9,9 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Página no encontrada | Club Balonmano Barbate</title>
 <meta name="description" content="La página que buscas no existe en la web del Club Balonmano Barbate.">
-<meta name="author" content="Fran Vidal">
+<meta name="author" content="Francisco Vidal Mateo">
 <meta name="robots" content="noindex, follow">
-<meta name="theme-color" content="#0A2A43">
+<meta name="theme-color" content="#F6F1E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1922" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/img/escudo-club-balonmano-barbate.webp" type="image/webp">
 <script src="assets/js/theme.js"></script>
 <link rel="stylesheet" href="assets/css/fonts.css">
@@ -25,7 +26,7 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <img src="assets/img/escudo-club-balonmano-barbate.webp" width="46" height="46" alt="Escudo Club Balonmano Barbate">
+      <img src="assets/img/escudo-club-balonmano-barbate-96.webp" width="96" height="96" alt="Escudo Club Balonmano Barbate">
       <div class="brand-text">
         <div class="name">Balonmano Barbate</div>
         <div class="since">DESDE 1997 · BARBATE, CÁDIZ</div>
@@ -34,8 +35,24 @@
     <nav class="main-nav">
       <a href="index.html">Inicio</a>
       <a href="club.html">El Club</a>
-      <a href="equipos.html">Equipos</a>
-      <a href="equipaciones.html">Equipaciones</a>
+      <div class="nav-grupo">
+        <a href="equipos.html">Equipos</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipos" aria-label="Abrir el submenú de equipos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipos" hidden>
+          <a href="equipos.html">Todo</a>
+          <a href="equipos.html#pista">Pista</a>
+          <a href="equipos.html#playa">Playa</a>
+        </div>
+      </div>
+      <div class="nav-grupo">
+        <a href="equipaciones.html">Equipaciones</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipaciones" aria-label="Abrir el submenú de equipaciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipaciones" hidden>
+          <a href="equipaciones.html">Todo</a>
+          <a href="equipaciones.html#pista">Pista</a>
+          <a href="equipaciones.html#playa">Playa</a>
+        </div>
+      </div>
       <a href="galeria.html">Galería</a>
       <a href="patrocinadores.html">Patrocinadores</a>
       <a href="contacto.html">Contacto</a>
@@ -52,11 +69,11 @@
 
 <main id="main">
 
-<section class="hero" style="padding-bottom:70px;">
+<section class="banda banda-arena" style="padding-top:clamp(90px,11vw,150px);">
   <div class="container">
     <p class="eyebrow">Error 404</p>
-    <h1>Esta pelota se ha ido <em>fuera de banda</em>.</h1>
-    <p class="lead">La página que buscas no existe o ha cambiado de sitio. Vuelve al inicio o pasa directamente por los equipos.</p>
+    <h1>Esta pelota se ha ido fuera de banda.</h1>
+    <p class="lead" style="max-width:52ch;">La página que buscas no existe o ha cambiado de sitio. Vuelve al inicio o pasa directamente por los equipos.</p>
     <div class="hero-actions">
       <a href="index.html" class="btn btn-solid">Volver al inicio</a>
       <a href="equipos.html" class="btn btn-ghost">Ver equipos</a>

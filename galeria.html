@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   Club Balonmano Barbate — web oficial
-  Desarrollo y diseño: Fran Vidal (FranVi)
+  Desarrollo, diseño y contenidos: Francisco Vidal Mateo (FranVi), 2026.
 -->
 <html lang="es">
 <head>
@@ -9,9 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Galería | Club Balonmano Barbate</title>
 <meta name="description" content="Fotos de partidos, torneos y celebraciones del Club Balonmano Barbate en el pabellón y en la playa.">
-<meta name="author" content="Fran Vidal">
+<meta name="author" content="Francisco Vidal Mateo">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0A2A43">
+<meta name="theme-color" content="#F6F1E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1922" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://balonmanobarbate.vercel.app/galeria.html">
 <link rel="icon" href="assets/img/escudo-club-balonmano-barbate.webp" type="image/webp">
 <meta property="og:type" content="website">
@@ -21,19 +22,108 @@
 <meta property="og:description" content="Fotos de partidos, torneos y celebraciones del Club Balonmano Barbate en el pabellón y en la playa.">
 <meta property="og:image" content="https://balonmanobarbate.vercel.app/img/escudo-club-balonmano-barbate.webp">
 <meta property="og:url" content="https://balonmanobarbate.vercel.app/galeria.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsOrganization",
+      "@id": "https://balonmanobarbate.vercel.app/#club",
+      "name": "Club Balonmano Barbate",
+      "alternateName": "BM Barbate",
+      "sport": [
+        "Balonmano",
+        "Balonmano playa"
+      ],
+      "foundingDate": "1997",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "logo": "https://balonmanobarbate.vercel.app/assets/img/escudo-club-balonmano-barbate.webp",
+      "email": "balonmanobarbate@gmail.com",
+      "areaServed": "Barbate, Cádiz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Joaquín Blume, 14",
+        "postalCode": "11160",
+        "addressLocality": "Barbate",
+        "addressRegion": "Cádiz",
+        "addressCountry": "ES"
+      },
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "Pabellón Municipal de Barbate",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Joaquín Blume, 14",
+          "postalCode": "11160",
+          "addressLocality": "Barbate",
+          "addressRegion": "Cádiz",
+          "addressCountry": "ES"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/barbatebalonmano",
+        "https://www.facebook.com/ClubBalonmanoBarbate"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://balonmanobarbate.vercel.app/#sitio",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "name": "Club Balonmano Barbate",
+      "inLanguage": "es-ES",
+      "publisher": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      },
+      "author": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      },
+      "creator": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://balonmanobarbate.vercel.app/#autor",
+      "name": "Francisco Vidal Mateo",
+      "alternateName": "FranVi",
+      "jobTitle": "Desarrollo y diseño del sitio",
+      "affiliation": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://balonmanobarbate.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Galería",
+          "item": "https://balonmanobarbate.vercel.app/galeria.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script src="assets/js/theme.js"></script>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="con-portada">
 
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <img src="assets/img/escudo-club-balonmano-barbate.webp" width="46" height="46" alt="Escudo Club Balonmano Barbate">
+      <img src="assets/img/escudo-club-balonmano-barbate-96.webp" width="96" height="96" alt="Escudo Club Balonmano Barbate">
       <div class="brand-text">
         <div class="name">Balonmano Barbate</div>
         <div class="since">DESDE 1997 · BARBATE, CÁDIZ</div>
@@ -42,8 +132,24 @@
     <nav class="main-nav">
       <a href="index.html">Inicio</a>
       <a href="club.html">El Club</a>
-      <a href="equipos.html">Equipos</a>
-      <a href="equipaciones.html">Equipaciones</a>
+      <div class="nav-grupo">
+        <a href="equipos.html">Equipos</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipos" aria-label="Abrir el submenú de equipos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipos" hidden>
+          <a href="equipos.html">Todo</a>
+          <a href="equipos.html#pista">Pista</a>
+          <a href="equipos.html#playa">Playa</a>
+        </div>
+      </div>
+      <div class="nav-grupo">
+        <a href="equipaciones.html">Equipaciones</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipaciones" aria-label="Abrir el submenú de equipaciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipaciones" hidden>
+          <a href="equipaciones.html">Todo</a>
+          <a href="equipaciones.html#pista">Pista</a>
+          <a href="equipaciones.html#playa">Playa</a>
+        </div>
+      </div>
       <a href="galeria.html" class="active" aria-current="page">Galería</a>
       <a href="patrocinadores.html">Patrocinadores</a>
       <a href="contacto.html">Contacto</a>
@@ -60,7 +166,13 @@
 
 <main id="main">
 
-<section class="hero" style="padding-bottom:70px;">
+<section class="banda banda-foto banda-rotulo">
+  <div class="banda-media">
+    <picture>
+      <source srcset="assets/img/celebracion-en-el-pabellon-con-la-aficion.webp" type="image/webp">
+      <img src="assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg" width="900" height="608" alt="Celebración en el pabellón con la afición" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
   <div class="container">
     <p class="eyebrow">Momentos del club</p>
     <h1>Galería</h1>
@@ -68,7 +180,7 @@
   </div>
 </section>
 
-<section>
+<section class="banda banda-arena">
   <div class="container">
     <div class="season-tabs">
       <button class="active" data-target="25-26">Temporada 2025 / 2026</button>
@@ -76,12 +188,12 @@
 
     <div class="season-panel" data-season="25-26">
       <div class="galeria">
-        <div class="card"><picture><source srcset="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.webp" type="image/webp"><img src="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.jpg" width="900" height="534" alt="Diego Carrasco Cup (Torremolinos), balonmano playa" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/celebracion-en-el-pabellon-con-la-aficion.webp" type="image/webp"><img src="assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg" width="900" height="608" alt="Celebración en el pabellón con la afición" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-de-balonmano-playa-celebrando-un-torneo.webp" type="image/webp"><img src="assets/img/equipo-de-balonmano-playa-celebrando-un-torneo.jpg" width="900" height="660" alt="Equipo de balonmano playa celebrando un torneo" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/entrega-de-trofeos-en-la-playa.webp" type="image/webp"><img src="assets/img/entrega-de-trofeos-en-la-playa.jpg" width="900" height="612" alt="Entrega de trofeos en la playa" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/celebracion-con-medallas-en-la-playa.webp" type="image/webp"><img src="assets/img/celebracion-con-medallas-en-la-playa.jpg" width="900" height="1111" alt="Celebración con medallas en la playa" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club.webp" type="image/webp"><img src="assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club.jpg" width="900" height="599" alt="Grand Handball Tour, celebración con la bufanda del club" loading="lazy" decoding="async"></picture></div>
+        <figure class="card" data-visor="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.webp" data-visor-jpg="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa-450.webp 450w, assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.webp 900w"><img src="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa-450.jpg 450w, assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.jpg 900w" width="900" height="534" alt="Diego Carrasco Cup (Torremolinos), balonmano playa" loading="lazy" decoding="async"></picture><figcaption>Diego Carrasco Cup (Torremolinos), balonmano playa</figcaption></figure>
+        <figure class="card" data-visor="assets/img/celebracion-en-el-pabellon-con-la-aficion.webp" data-visor-jpg="assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-en-el-pabellon-con-la-aficion-450.webp 450w, assets/img/celebracion-en-el-pabellon-con-la-aficion.webp 900w"><img src="assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-en-el-pabellon-con-la-aficion-450.jpg 450w, assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg 900w" width="900" height="608" alt="Celebración en el pabellón con la afición" loading="lazy" decoding="async"></picture><figcaption>Celebración en el pabellón con la afición</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-de-balonmano-playa-celebrando-un-torneo.webp" data-visor-jpg="assets/img/equipo-de-balonmano-playa-celebrando-un-torneo.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-de-balonmano-playa-celebrando-un-torneo-450.webp 450w, assets/img/equipo-de-balonmano-playa-celebrando-un-torneo.webp 900w"><img src="assets/img/equipo-de-balonmano-playa-celebrando-un-torneo.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-de-balonmano-playa-celebrando-un-torneo-450.jpg 450w, assets/img/equipo-de-balonmano-playa-celebrando-un-torneo.jpg 900w" width="900" height="660" alt="Equipo de balonmano playa celebrando un torneo" loading="lazy" decoding="async"></picture><figcaption>Equipo de balonmano playa celebrando un torneo</figcaption></figure>
+        <figure class="card" data-visor="assets/img/entrega-de-trofeos-en-la-playa.webp" data-visor-jpg="assets/img/entrega-de-trofeos-en-la-playa.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/entrega-de-trofeos-en-la-playa-450.webp 450w, assets/img/entrega-de-trofeos-en-la-playa.webp 900w"><img src="assets/img/entrega-de-trofeos-en-la-playa.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/entrega-de-trofeos-en-la-playa-450.jpg 450w, assets/img/entrega-de-trofeos-en-la-playa.jpg 900w" width="900" height="612" alt="Entrega de trofeos en la playa" loading="lazy" decoding="async"></picture><figcaption>Entrega de trofeos en la playa</figcaption></figure>
+        <figure class="card" data-visor="assets/img/celebracion-con-medallas-en-la-playa.webp" data-visor-jpg="assets/img/celebracion-con-medallas-en-la-playa.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-con-medallas-en-la-playa-450.webp 450w, assets/img/celebracion-con-medallas-en-la-playa.webp 900w"><img src="assets/img/celebracion-con-medallas-en-la-playa.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-con-medallas-en-la-playa-450.jpg 450w, assets/img/celebracion-con-medallas-en-la-playa.jpg 900w" width="900" height="1111" alt="Celebración con medallas en la playa" loading="lazy" decoding="async"></picture><figcaption>Celebración con medallas en la playa</figcaption></figure>
+        <figure class="card" data-visor="assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club.webp" data-visor-jpg="assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club-450.webp 450w, assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club.webp 900w"><img src="assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club-450.jpg 450w, assets/img/grand-handball-tour-celebracion-con-la-bufanda-del-club.jpg 900w" width="900" height="599" alt="Grand Handball Tour, celebración con la bufanda del club" loading="lazy" decoding="async"></picture><figcaption>Grand Handball Tour, celebración con la bufanda del club</figcaption></figure>
       </div>
     </div>
   </div>

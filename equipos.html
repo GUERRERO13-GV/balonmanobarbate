@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   Club Balonmano Barbate — web oficial
-  Desarrollo y diseño: Fran Vidal (FranVi)
+  Desarrollo, diseño y contenidos: Francisco Vidal Mateo (FranVi), 2026.
 -->
 <html lang="es">
 <head>
@@ -9,9 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Equipos | Club Balonmano Barbate</title>
 <meta name="description" content="Todos los equipos del Club Balonmano Barbate por temporada, de alevín a sénior, en balonmano pista y balonmano playa.">
-<meta name="author" content="Fran Vidal">
+<meta name="author" content="Francisco Vidal Mateo">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0A2A43">
+<meta name="theme-color" content="#F6F1E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1922" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://balonmanobarbate.vercel.app/equipos.html">
 <link rel="icon" href="assets/img/escudo-club-balonmano-barbate.webp" type="image/webp">
 <meta property="og:type" content="website">
@@ -21,19 +22,128 @@
 <meta property="og:description" content="Todos los equipos del Club Balonmano Barbate por temporada, de alevín a sénior, en balonmano pista y balonmano playa.">
 <meta property="og:image" content="https://balonmanobarbate.vercel.app/img/escudo-club-balonmano-barbate.webp">
 <meta property="og:url" content="https://balonmanobarbate.vercel.app/equipos.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsOrganization",
+      "@id": "https://balonmanobarbate.vercel.app/#club",
+      "name": "Club Balonmano Barbate",
+      "alternateName": "BM Barbate",
+      "sport": [
+        "Balonmano",
+        "Balonmano playa"
+      ],
+      "foundingDate": "1997",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "logo": "https://balonmanobarbate.vercel.app/assets/img/escudo-club-balonmano-barbate.webp",
+      "email": "balonmanobarbate@gmail.com",
+      "areaServed": "Barbate, Cádiz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Joaquín Blume, 14",
+        "postalCode": "11160",
+        "addressLocality": "Barbate",
+        "addressRegion": "Cádiz",
+        "addressCountry": "ES"
+      },
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "Pabellón Municipal de Barbate",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Joaquín Blume, 14",
+          "postalCode": "11160",
+          "addressLocality": "Barbate",
+          "addressRegion": "Cádiz",
+          "addressCountry": "ES"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/barbatebalonmano",
+        "https://www.facebook.com/ClubBalonmanoBarbate"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://balonmanobarbate.vercel.app/#sitio",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "name": "Club Balonmano Barbate",
+      "inLanguage": "es-ES",
+      "publisher": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      },
+      "author": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      },
+      "creator": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://balonmanobarbate.vercel.app/#autor",
+      "name": "Francisco Vidal Mateo",
+      "alternateName": "FranVi",
+      "jobTitle": "Desarrollo y diseño del sitio",
+      "affiliation": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://balonmanobarbate.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Equipos",
+          "item": "https://balonmanobarbate.vercel.app/equipos.html"
+        }
+      ]
+    },
+    {
+      "@type": "SportsTeam",
+      "name": "Club Balonmano Barbate — Balonmano pista",
+      "sport": "Balonmano",
+      "memberOf": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      },
+      "url": "https://balonmanobarbate.vercel.app/equipos.html#pista",
+      "description": "9 equipos del Club Balonmano Barbate en balonmano pista."
+    },
+    {
+      "@type": "SportsTeam",
+      "name": "Club Balonmano Barbate — Balonmano playa",
+      "sport": "Balonmano playa",
+      "memberOf": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      },
+      "url": "https://balonmanobarbate.vercel.app/equipos.html#playa",
+      "description": "12 equipos del Club Balonmano Barbate en balonmano playa."
+    }
+  ]
+}
+</script>
 <script src="assets/js/theme.js"></script>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="con-portada">
 
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <img src="assets/img/escudo-club-balonmano-barbate.webp" width="46" height="46" alt="Escudo Club Balonmano Barbate">
+      <img src="assets/img/escudo-club-balonmano-barbate-96.webp" width="96" height="96" alt="Escudo Club Balonmano Barbate">
       <div class="brand-text">
         <div class="name">Balonmano Barbate</div>
         <div class="since">DESDE 1997 · BARBATE, CÁDIZ</div>
@@ -42,8 +152,24 @@
     <nav class="main-nav">
       <a href="index.html">Inicio</a>
       <a href="club.html">El Club</a>
-      <a href="equipos.html" class="active" aria-current="page">Equipos</a>
-      <a href="equipaciones.html">Equipaciones</a>
+      <div class="nav-grupo">
+        <a href="equipos.html" class="active" aria-current="page">Equipos</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipos" aria-label="Abrir el submenú de equipos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipos" hidden>
+          <a href="equipos.html">Todo</a>
+          <a href="equipos.html#pista">Pista</a>
+          <a href="equipos.html#playa">Playa</a>
+        </div>
+      </div>
+      <div class="nav-grupo">
+        <a href="equipaciones.html">Equipaciones</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipaciones" aria-label="Abrir el submenú de equipaciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipaciones" hidden>
+          <a href="equipaciones.html">Todo</a>
+          <a href="equipaciones.html#pista">Pista</a>
+          <a href="equipaciones.html#playa">Playa</a>
+        </div>
+      </div>
       <a href="galeria.html">Galería</a>
       <a href="patrocinadores.html">Patrocinadores</a>
       <a href="contacto.html">Contacto</a>
@@ -60,7 +186,13 @@
 
 <main id="main">
 
-<section class="hero" style="padding-bottom:70px;">
+<section class="banda banda-foto banda-rotulo">
+  <div class="banda-media">
+    <picture>
+      <source srcset="assets/img/equipos-de-base-y-familias-tras-la-jornada.webp" type="image/webp">
+      <img src="assets/img/equipos-de-base-y-familias-tras-la-jornada.jpg" width="900" height="546" alt="Equipos de base del club y sus familias tras la jornada" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
   <div class="container">
     <p class="eyebrow">Todas las categorías</p>
     <h1>Equipos</h1>
@@ -68,7 +200,7 @@
   </div>
 </section>
 
-<section>
+<section class="banda banda-arena">
   <div class="container">
     <div class="season-tabs">
       <button class="active" data-target="25-26">Temporada 2025 / 2026</button>
@@ -83,20 +215,20 @@
       </div>
       <div class="foto-destacada"><picture><source srcset="assets/img/todos-los-equipos-del-club-en-el-pabellon-de-barbate.webp" type="image/webp"><img src="assets/img/todos-los-equipos-del-club-en-el-pabellon-de-barbate.jpg" width="1124" height="280" alt="Todos los equipos del Club Balonmano Barbate juntos en el pabellón" loading="lazy" decoding="async"></picture></div>
       <div class="galeria">
-        <div class="card"><picture><source srcset="assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon.webp" type="image/webp"><img src="assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon.jpg" width="889" height="600" alt="Celebración con la bandera de Andalucía en el pabellón de Barbate" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-celebrando-una-victoria-en-casa.webp" type="image/webp"><img src="assets/img/equipo-femenino-celebrando-una-victoria-en-casa.jpg" width="900" height="675" alt="Equipo femenino celebrando una victoria en casa" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo.webp" type="image/webp"><img src="assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo.jpg" width="900" height="1600" alt="Sénior femenino celebrando con la afición y el bombo" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/senior-femenino-de-pista-posando-ante-la-porteria.webp" type="image/webp"><img src="assets/img/senior-femenino-de-pista-posando-ante-la-porteria.jpg" width="900" height="675" alt="Sénior femenino de pista posando ante la portería" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-de-pista-celebrando-la-victoria.webp" type="image/webp"><img src="assets/img/equipo-femenino-de-pista-celebrando-la-victoria.jpg" width="900" height="1200" alt="Equipo femenino de pista celebrando la victoria" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/juvenil-masculino-de-pista-antes-del-partido.webp" type="image/webp"><img src="assets/img/juvenil-masculino-de-pista-antes-del-partido.jpg" width="900" height="675" alt="Juvenil masculino de pista posando antes del partido" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/cadete-masculino-de-pista-posando-en-la-porteria.webp" type="image/webp"><img src="assets/img/cadete-masculino-de-pista-posando-en-la-porteria.jpg" width="900" height="600" alt="Cadete masculino de pista posando en la portería" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-de-pista-en-la-herradura.webp" type="image/webp"><img src="assets/img/equipo-femenino-de-pista-en-la-herradura.jpg" width="900" height="675" alt="Equipo femenino de pista en el pabellón de La Herradura" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/selfie-del-equipo-femenino-con-la-aficion.webp" type="image/webp"><img src="assets/img/selfie-del-equipo-femenino-con-la-aficion.jpg" width="900" height="675" alt="Selfie del equipo femenino con la afición tras el partido" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-de-base-posando-tras-el-partido.webp" type="image/webp"><img src="assets/img/equipo-femenino-de-base-posando-tras-el-partido.jpg" width="900" height="470" alt="Equipo femenino de base posando tras el partido" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipos-de-base-y-familias-tras-la-jornada.webp" type="image/webp"><img src="assets/img/equipos-de-base-y-familias-tras-la-jornada.jpg" width="900" height="546" alt="Equipos de base y familias del club tras la jornada" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipos-femeninos-y-familias-en-la-grada.webp" type="image/webp"><img src="assets/img/equipos-femeninos-y-familias-en-la-grada.jpg" width="900" height="675" alt="Equipos femeninos del club y sus familias en la grada" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento.webp" type="image/webp"><img src="assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento.jpg" width="900" height="1114" alt="Expedición del equipo de base en un desplazamiento" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-alevin-femenino-en-el-vestuario.webp" type="image/webp"><img src="assets/img/equipo-alevin-femenino-en-el-vestuario.jpg" width="900" height="1200" alt="Equipo alevín femenino en el vestuario" loading="lazy" decoding="async"></picture></div>
+        <figure class="card" data-visor="assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon.webp" data-visor-jpg="assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon-450.webp 450w, assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon.webp 889w"><img src="assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon-450.jpg 450w, assets/img/celebracion-con-la-bandera-de-andalucia-en-el-pabellon.jpg 889w" width="889" height="600" alt="Celebración con la bandera de Andalucía en el pabellón de Barbate" loading="lazy" decoding="async"></picture><figcaption>Celebración con la bandera de Andalucía en el pabellón de Barbate</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-celebrando-una-victoria-en-casa.webp" data-visor-jpg="assets/img/equipo-femenino-celebrando-una-victoria-en-casa.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-celebrando-una-victoria-en-casa-450.webp 450w, assets/img/equipo-femenino-celebrando-una-victoria-en-casa.webp 900w"><img src="assets/img/equipo-femenino-celebrando-una-victoria-en-casa.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-celebrando-una-victoria-en-casa-450.jpg 450w, assets/img/equipo-femenino-celebrando-una-victoria-en-casa.jpg 900w" width="900" height="675" alt="Equipo femenino celebrando una victoria en casa" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino celebrando una victoria en casa</figcaption></figure>
+        <figure class="card" data-visor="assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo.webp" data-visor-jpg="assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo-450.webp 450w, assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo.webp 900w"><img src="assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo-450.jpg 450w, assets/img/senior-femenino-celebrando-con-la-aficion-y-el-bombo.jpg 900w" width="900" height="1600" alt="Sénior femenino celebrando con la afición y el bombo" loading="lazy" decoding="async"></picture><figcaption>Sénior femenino celebrando con la afición y el bombo</figcaption></figure>
+        <figure class="card" data-visor="assets/img/senior-femenino-de-pista-posando-ante-la-porteria.webp" data-visor-jpg="assets/img/senior-femenino-de-pista-posando-ante-la-porteria.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-femenino-de-pista-posando-ante-la-porteria-450.webp 450w, assets/img/senior-femenino-de-pista-posando-ante-la-porteria.webp 900w"><img src="assets/img/senior-femenino-de-pista-posando-ante-la-porteria.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-femenino-de-pista-posando-ante-la-porteria-450.jpg 450w, assets/img/senior-femenino-de-pista-posando-ante-la-porteria.jpg 900w" width="900" height="675" alt="Sénior femenino de pista posando ante la portería" loading="lazy" decoding="async"></picture><figcaption>Sénior femenino de pista posando ante la portería</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-de-pista-celebrando-la-victoria.webp" data-visor-jpg="assets/img/equipo-femenino-de-pista-celebrando-la-victoria.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-pista-celebrando-la-victoria-450.webp 450w, assets/img/equipo-femenino-de-pista-celebrando-la-victoria.webp 900w"><img src="assets/img/equipo-femenino-de-pista-celebrando-la-victoria.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-pista-celebrando-la-victoria-450.jpg 450w, assets/img/equipo-femenino-de-pista-celebrando-la-victoria.jpg 900w" width="900" height="1200" alt="Equipo femenino de pista celebrando la victoria" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino de pista celebrando la victoria</figcaption></figure>
+        <figure class="card" data-visor="assets/img/juvenil-masculino-de-pista-antes-del-partido.webp" data-visor-jpg="assets/img/juvenil-masculino-de-pista-antes-del-partido.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/juvenil-masculino-de-pista-antes-del-partido-450.webp 450w, assets/img/juvenil-masculino-de-pista-antes-del-partido.webp 900w"><img src="assets/img/juvenil-masculino-de-pista-antes-del-partido.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/juvenil-masculino-de-pista-antes-del-partido-450.jpg 450w, assets/img/juvenil-masculino-de-pista-antes-del-partido.jpg 900w" width="900" height="675" alt="Juvenil masculino de pista posando antes del partido" loading="lazy" decoding="async"></picture><figcaption>Juvenil masculino de pista posando antes del partido</figcaption></figure>
+        <figure class="card" data-visor="assets/img/cadete-masculino-de-pista-posando-en-la-porteria.webp" data-visor-jpg="assets/img/cadete-masculino-de-pista-posando-en-la-porteria.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/cadete-masculino-de-pista-posando-en-la-porteria-450.webp 450w, assets/img/cadete-masculino-de-pista-posando-en-la-porteria.webp 900w"><img src="assets/img/cadete-masculino-de-pista-posando-en-la-porteria.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/cadete-masculino-de-pista-posando-en-la-porteria-450.jpg 450w, assets/img/cadete-masculino-de-pista-posando-en-la-porteria.jpg 900w" width="900" height="600" alt="Cadete masculino de pista posando en la portería" loading="lazy" decoding="async"></picture><figcaption>Cadete masculino de pista posando en la portería</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-de-pista-en-la-herradura.webp" data-visor-jpg="assets/img/equipo-femenino-de-pista-en-la-herradura.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-pista-en-la-herradura-450.webp 450w, assets/img/equipo-femenino-de-pista-en-la-herradura.webp 900w"><img src="assets/img/equipo-femenino-de-pista-en-la-herradura.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-pista-en-la-herradura-450.jpg 450w, assets/img/equipo-femenino-de-pista-en-la-herradura.jpg 900w" width="900" height="675" alt="Equipo femenino de pista en el pabellón de La Herradura" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino de pista en el pabellón de La Herradura</figcaption></figure>
+        <figure class="card" data-visor="assets/img/selfie-del-equipo-femenino-con-la-aficion.webp" data-visor-jpg="assets/img/selfie-del-equipo-femenino-con-la-aficion.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/selfie-del-equipo-femenino-con-la-aficion-450.webp 450w, assets/img/selfie-del-equipo-femenino-con-la-aficion.webp 900w"><img src="assets/img/selfie-del-equipo-femenino-con-la-aficion.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/selfie-del-equipo-femenino-con-la-aficion-450.jpg 450w, assets/img/selfie-del-equipo-femenino-con-la-aficion.jpg 900w" width="900" height="675" alt="Selfie del equipo femenino con la afición tras el partido" loading="lazy" decoding="async"></picture><figcaption>Selfie del equipo femenino con la afición tras el partido</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-de-base-posando-tras-el-partido.webp" data-visor-jpg="assets/img/equipo-femenino-de-base-posando-tras-el-partido.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-base-posando-tras-el-partido-450.webp 450w, assets/img/equipo-femenino-de-base-posando-tras-el-partido.webp 900w"><img src="assets/img/equipo-femenino-de-base-posando-tras-el-partido.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-base-posando-tras-el-partido-450.jpg 450w, assets/img/equipo-femenino-de-base-posando-tras-el-partido.jpg 900w" width="900" height="470" alt="Equipo femenino de base posando tras el partido" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino de base posando tras el partido</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipos-de-base-y-familias-tras-la-jornada.webp" data-visor-jpg="assets/img/equipos-de-base-y-familias-tras-la-jornada.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipos-de-base-y-familias-tras-la-jornada-450.webp 450w, assets/img/equipos-de-base-y-familias-tras-la-jornada.webp 900w"><img src="assets/img/equipos-de-base-y-familias-tras-la-jornada.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipos-de-base-y-familias-tras-la-jornada-450.jpg 450w, assets/img/equipos-de-base-y-familias-tras-la-jornada.jpg 900w" width="900" height="546" alt="Equipos de base y familias del club tras la jornada" loading="lazy" decoding="async"></picture><figcaption>Equipos de base y familias del club tras la jornada</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipos-femeninos-y-familias-en-la-grada.webp" data-visor-jpg="assets/img/equipos-femeninos-y-familias-en-la-grada.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipos-femeninos-y-familias-en-la-grada-450.webp 450w, assets/img/equipos-femeninos-y-familias-en-la-grada.webp 900w"><img src="assets/img/equipos-femeninos-y-familias-en-la-grada.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipos-femeninos-y-familias-en-la-grada-450.jpg 450w, assets/img/equipos-femeninos-y-familias-en-la-grada.jpg 900w" width="900" height="675" alt="Equipos femeninos del club y sus familias en la grada" loading="lazy" decoding="async"></picture><figcaption>Equipos femeninos del club y sus familias en la grada</figcaption></figure>
+        <figure class="card" data-visor="assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento.webp" data-visor-jpg="assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento-450.webp 450w, assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento.webp 900w"><img src="assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento-450.jpg 450w, assets/img/expedicion-del-equipo-de-base-en-un-desplazamiento.jpg 900w" width="900" height="1114" alt="Expedición del equipo de base en un desplazamiento" loading="lazy" decoding="async"></picture><figcaption>Expedición del equipo de base en un desplazamiento</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-alevin-femenino-en-el-vestuario.webp" data-visor-jpg="assets/img/equipo-alevin-femenino-en-el-vestuario.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-alevin-femenino-en-el-vestuario-450.webp 450w, assets/img/equipo-alevin-femenino-en-el-vestuario.webp 900w"><img src="assets/img/equipo-alevin-femenino-en-el-vestuario.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-alevin-femenino-en-el-vestuario-450.jpg 450w, assets/img/equipo-alevin-femenino-en-el-vestuario.jpg 900w" width="900" height="1200" alt="Equipo alevín femenino en el vestuario" loading="lazy" decoding="async"></picture><figcaption>Equipo alevín femenino en el vestuario</figcaption></figure>
       </div>
 
       <div id="playa" class="section-head" style="margin-top:70px;">
@@ -105,28 +237,1138 @@
         <p>Doce equipos, de alevín a sénior, compitiendo en la arena por toda Andalucía y en los circuitos nacionales.</p>
       </div>
       <div class="galeria">
-        <div class="card"><picture><source srcset="assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour.webp" type="image/webp"><img src="assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour.jpg" width="900" height="675" alt="Afición y equipos del Club Balonmano Barbate celebrando en el Arena Handball Tour" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-campeon-del-arena-handball-tour.webp" type="image/webp"><img src="assets/img/equipo-femenino-campeon-del-arena-handball-tour.jpg" width="900" height="510" alt="Equipo femenino de balonmano playa, campeón del Arena Handball Tour" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup.webp" type="image/webp"><img src="assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup.jpg" width="900" height="675" alt="Sénior masculino de balonmano playa en la Diego Carrasco Beach Handball Cup" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria.webp" type="image/webp"><img src="assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria.jpg" width="900" height="675" alt="Sénior masculino de balonmano playa celebrando ante la portería" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion.webp" type="image/webp"><img src="assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion.jpg" width="900" height="476" alt="Sénior masculino con el trofeo en La Línea de la Concepción" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/senior-masculino-celebrando-con-las-medallas.webp" type="image/webp"><img src="assets/img/senior-masculino-celebrando-con-las-medallas.jpg" width="900" height="646" alt="Sénior masculino celebrando con las medallas al cuello" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-de-playa-posando-en-la-pista.webp" type="image/webp"><img src="assets/img/equipo-femenino-de-playa-posando-en-la-pista.jpg" width="900" height="675" alt="Equipo femenino de balonmano playa posando en la pista" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion.webp" type="image/webp"><img src="assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion.jpg" width="900" height="632" alt="Equipos femeninos de balonmano playa en La Línea de la Concepción" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa.webp" type="image/webp"><img src="assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa.jpg" width="900" height="660" alt="Juvenil masculino y femenino juntos tras el torneo de playa" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea.webp" type="image/webp"><img src="assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea.jpg" width="900" height="582" alt="Juvenil masculino de balonmano playa con las medallas en La Línea" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria.webp" type="image/webp"><img src="assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria.jpg" width="900" height="383" alt="Equipo femenino de balonmano playa con las medallas ante la portería" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea.webp" type="image/webp"><img src="assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea.jpg" width="900" height="592" alt="Cadete masculino de balonmano playa con el trofeo en La Línea" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/cadete-masculino-de-playa-celebrando-una-victoria.webp" type="image/webp"><img src="assets/img/cadete-masculino-de-playa-celebrando-una-victoria.jpg" width="800" height="410" alt="Cadete masculino de balonmano playa celebrando una victoria" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/campeon-del-torneo-recortes-de-mojama.webp" type="image/webp"><img src="assets/img/campeon-del-torneo-recortes-de-mojama.jpg" width="900" height="579" alt="Campeón del torneo Recortes de Mojama de balonmano playa" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate.webp" type="image/webp"><img src="assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate.jpg" width="800" height="410" alt="Equipo femenino de balonmano playa con el trofeo en Barbate" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/infantil-masculino-de-playa-con-medallas-en-barbate.webp" type="image/webp"><img src="assets/img/infantil-masculino-de-playa-con-medallas-en-barbate.jpg" width="900" height="675" alt="Infantil masculino de balonmano playa con las medallas en Barbate" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/alevin-masculino-de-playa-con-su-trofeo.webp" type="image/webp"><img src="assets/img/alevin-masculino-de-playa-con-su-trofeo.jpg" width="900" height="616" alt="Alevín masculino de balonmano playa con su trofeo" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/alevin-femenino-de-playa-con-su-trofeo.webp" type="image/webp"><img src="assets/img/alevin-femenino-de-playa-con-su-trofeo.jpg" width="900" height="1200" alt="Alevín femenino de balonmano playa con su trofeo" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.webp" type="image/webp"><img src="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.jpg" width="900" height="600" alt="Celebración con la bufanda de Barbate sobre la arena" loading="lazy" decoding="async"></picture></div>
-        <div class="card"><picture><source srcset="assets/img/celebracion-del-club-con-medallas-al-atardecer.webp" type="image/webp"><img src="assets/img/celebracion-del-club-con-medallas-al-atardecer.jpg" width="900" height="1111" alt="Celebración del club con las medallas al atardecer" loading="lazy" decoding="async"></picture></div>
+        <figure class="card" data-visor="assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour.webp" data-visor-jpg="assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour-450.webp 450w, assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour.webp 900w"><img src="assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour-450.jpg 450w, assets/img/aficion-y-equipos-celebrando-en-el-arena-handball-tour.jpg 900w" width="900" height="675" alt="Afición y equipos del Club Balonmano Barbate celebrando en el Arena Handball Tour" loading="lazy" decoding="async"></picture><figcaption>Afición y equipos del Club Balonmano Barbate celebrando en el Arena Handball Tour</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-campeon-del-arena-handball-tour.webp" data-visor-jpg="assets/img/equipo-femenino-campeon-del-arena-handball-tour.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-campeon-del-arena-handball-tour-450.webp 450w, assets/img/equipo-femenino-campeon-del-arena-handball-tour.webp 900w"><img src="assets/img/equipo-femenino-campeon-del-arena-handball-tour.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-campeon-del-arena-handball-tour-450.jpg 450w, assets/img/equipo-femenino-campeon-del-arena-handball-tour.jpg 900w" width="900" height="510" alt="Equipo femenino de balonmano playa, campeón del Arena Handball Tour" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino de balonmano playa, campeón del Arena Handball Tour</figcaption></figure>
+        <figure class="card" data-visor="assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup.webp" data-visor-jpg="assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup-450.webp 450w, assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup.webp 900w"><img src="assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup-450.jpg 450w, assets/img/senior-masculino-en-la-diego-carrasco-beach-handball-cup.jpg 900w" width="900" height="675" alt="Sénior masculino de balonmano playa en la Diego Carrasco Beach Handball Cup" loading="lazy" decoding="async"></picture><figcaption>Sénior masculino de balonmano playa en la Diego Carrasco Beach Handball Cup</figcaption></figure>
+        <figure class="card" data-visor="assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria.webp" data-visor-jpg="assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria-450.webp 450w, assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria.webp 900w"><img src="assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria-450.jpg 450w, assets/img/senior-masculino-de-playa-celebrando-ante-la-porteria.jpg 900w" width="900" height="675" alt="Sénior masculino de balonmano playa celebrando ante la portería" loading="lazy" decoding="async"></picture><figcaption>Sénior masculino de balonmano playa celebrando ante la portería</figcaption></figure>
+        <figure class="card" data-visor="assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion.webp" data-visor-jpg="assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion-450.webp 450w, assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion.webp 900w"><img src="assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion-450.jpg 450w, assets/img/senior-masculino-con-trofeo-en-la-linea-de-la-concepcion.jpg 900w" width="900" height="476" alt="Sénior masculino con el trofeo en La Línea de la Concepción" loading="lazy" decoding="async"></picture><figcaption>Sénior masculino con el trofeo en La Línea de la Concepción</figcaption></figure>
+        <figure class="card" data-visor="assets/img/senior-masculino-celebrando-con-las-medallas.webp" data-visor-jpg="assets/img/senior-masculino-celebrando-con-las-medallas.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-celebrando-con-las-medallas-450.webp 450w, assets/img/senior-masculino-celebrando-con-las-medallas.webp 900w"><img src="assets/img/senior-masculino-celebrando-con-las-medallas.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/senior-masculino-celebrando-con-las-medallas-450.jpg 450w, assets/img/senior-masculino-celebrando-con-las-medallas.jpg 900w" width="900" height="646" alt="Sénior masculino celebrando con las medallas al cuello" loading="lazy" decoding="async"></picture><figcaption>Sénior masculino celebrando con las medallas al cuello</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-de-playa-posando-en-la-pista.webp" data-visor-jpg="assets/img/equipo-femenino-de-playa-posando-en-la-pista.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-playa-posando-en-la-pista-450.webp 450w, assets/img/equipo-femenino-de-playa-posando-en-la-pista.webp 900w"><img src="assets/img/equipo-femenino-de-playa-posando-en-la-pista.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-playa-posando-en-la-pista-450.jpg 450w, assets/img/equipo-femenino-de-playa-posando-en-la-pista.jpg 900w" width="900" height="675" alt="Equipo femenino de balonmano playa posando en la pista" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino de balonmano playa posando en la pista</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion.webp" data-visor-jpg="assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion-450.webp 450w, assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion.webp 900w"><img src="assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion-450.jpg 450w, assets/img/equipos-femeninos-de-playa-en-la-linea-de-la-concepcion.jpg 900w" width="900" height="632" alt="Equipos femeninos de balonmano playa en La Línea de la Concepción" loading="lazy" decoding="async"></picture><figcaption>Equipos femeninos de balonmano playa en La Línea de la Concepción</figcaption></figure>
+        <figure class="card" data-visor="assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa.webp" data-visor-jpg="assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa-450.webp 450w, assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa.webp 900w"><img src="assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa-450.jpg 450w, assets/img/juvenil-masculino-y-femenino-tras-el-torneo-de-playa.jpg 900w" width="900" height="660" alt="Juvenil masculino y femenino juntos tras el torneo de playa" loading="lazy" decoding="async"></picture><figcaption>Juvenil masculino y femenino juntos tras el torneo de playa</figcaption></figure>
+        <figure class="card" data-visor="assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea.webp" data-visor-jpg="assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea-450.webp 450w, assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea.webp 900w"><img src="assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea-450.jpg 450w, assets/img/juvenil-masculino-de-playa-con-medallas-en-la-linea.jpg 900w" width="900" height="582" alt="Juvenil masculino de balonmano playa con las medallas en La Línea" loading="lazy" decoding="async"></picture><figcaption>Juvenil masculino de balonmano playa con las medallas en La Línea</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria.webp" data-visor-jpg="assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria-450.webp 450w, assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria.webp 900w"><img src="assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria-450.jpg 450w, assets/img/equipo-femenino-de-playa-con-medallas-ante-la-porteria.jpg 900w" width="900" height="383" alt="Equipo femenino de balonmano playa con las medallas ante la portería" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino de balonmano playa con las medallas ante la portería</figcaption></figure>
+        <figure class="card" data-visor="assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea.webp" data-visor-jpg="assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea-450.webp 450w, assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea.webp 900w"><img src="assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea-450.jpg 450w, assets/img/cadete-masculino-de-playa-con-trofeo-en-la-linea.jpg 900w" width="900" height="592" alt="Cadete masculino de balonmano playa con el trofeo en La Línea" loading="lazy" decoding="async"></picture><figcaption>Cadete masculino de balonmano playa con el trofeo en La Línea</figcaption></figure>
+        <figure class="card" data-visor="assets/img/cadete-masculino-de-playa-celebrando-una-victoria.webp" data-visor-jpg="assets/img/cadete-masculino-de-playa-celebrando-una-victoria.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/cadete-masculino-de-playa-celebrando-una-victoria-450.webp 450w, assets/img/cadete-masculino-de-playa-celebrando-una-victoria.webp 800w"><img src="assets/img/cadete-masculino-de-playa-celebrando-una-victoria.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/cadete-masculino-de-playa-celebrando-una-victoria-450.jpg 450w, assets/img/cadete-masculino-de-playa-celebrando-una-victoria.jpg 800w" width="800" height="410" alt="Cadete masculino de balonmano playa celebrando una victoria" loading="lazy" decoding="async"></picture><figcaption>Cadete masculino de balonmano playa celebrando una victoria</figcaption></figure>
+        <figure class="card" data-visor="assets/img/campeon-del-torneo-recortes-de-mojama.webp" data-visor-jpg="assets/img/campeon-del-torneo-recortes-de-mojama.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/campeon-del-torneo-recortes-de-mojama-450.webp 450w, assets/img/campeon-del-torneo-recortes-de-mojama.webp 900w"><img src="assets/img/campeon-del-torneo-recortes-de-mojama.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/campeon-del-torneo-recortes-de-mojama-450.jpg 450w, assets/img/campeon-del-torneo-recortes-de-mojama.jpg 900w" width="900" height="579" alt="Campeón del torneo Recortes de Mojama de balonmano playa" loading="lazy" decoding="async"></picture><figcaption>Campeón del torneo Recortes de Mojama de balonmano playa</figcaption></figure>
+        <figure class="card" data-visor="assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate.webp" data-visor-jpg="assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate-450.webp 450w, assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate.webp 800w"><img src="assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate-450.jpg 450w, assets/img/equipo-femenino-de-playa-con-trofeo-en-barbate.jpg 800w" width="800" height="410" alt="Equipo femenino de balonmano playa con el trofeo en Barbate" loading="lazy" decoding="async"></picture><figcaption>Equipo femenino de balonmano playa con el trofeo en Barbate</figcaption></figure>
+        <figure class="card" data-visor="assets/img/infantil-masculino-de-playa-con-medallas-en-barbate.webp" data-visor-jpg="assets/img/infantil-masculino-de-playa-con-medallas-en-barbate.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/infantil-masculino-de-playa-con-medallas-en-barbate-450.webp 450w, assets/img/infantil-masculino-de-playa-con-medallas-en-barbate.webp 900w"><img src="assets/img/infantil-masculino-de-playa-con-medallas-en-barbate.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/infantil-masculino-de-playa-con-medallas-en-barbate-450.jpg 450w, assets/img/infantil-masculino-de-playa-con-medallas-en-barbate.jpg 900w" width="900" height="675" alt="Infantil masculino de balonmano playa con las medallas en Barbate" loading="lazy" decoding="async"></picture><figcaption>Infantil masculino de balonmano playa con las medallas en Barbate</figcaption></figure>
+        <figure class="card" data-visor="assets/img/alevin-masculino-de-playa-con-su-trofeo.webp" data-visor-jpg="assets/img/alevin-masculino-de-playa-con-su-trofeo.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/alevin-masculino-de-playa-con-su-trofeo-450.webp 450w, assets/img/alevin-masculino-de-playa-con-su-trofeo.webp 900w"><img src="assets/img/alevin-masculino-de-playa-con-su-trofeo.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/alevin-masculino-de-playa-con-su-trofeo-450.jpg 450w, assets/img/alevin-masculino-de-playa-con-su-trofeo.jpg 900w" width="900" height="616" alt="Alevín masculino de balonmano playa con su trofeo" loading="lazy" decoding="async"></picture><figcaption>Alevín masculino de balonmano playa con su trofeo</figcaption></figure>
+        <figure class="card" data-visor="assets/img/alevin-femenino-de-playa-con-su-trofeo.webp" data-visor-jpg="assets/img/alevin-femenino-de-playa-con-su-trofeo.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/alevin-femenino-de-playa-con-su-trofeo-450.webp 450w, assets/img/alevin-femenino-de-playa-con-su-trofeo.webp 900w"><img src="assets/img/alevin-femenino-de-playa-con-su-trofeo.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/alevin-femenino-de-playa-con-su-trofeo-450.jpg 450w, assets/img/alevin-femenino-de-playa-con-su-trofeo.jpg 900w" width="900" height="1200" alt="Alevín femenino de balonmano playa con su trofeo" loading="lazy" decoding="async"></picture><figcaption>Alevín femenino de balonmano playa con su trofeo</figcaption></figure>
+        <figure class="card" data-visor="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.webp" data-visor-jpg="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena-450.webp 450w, assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.webp 900w"><img src="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena-450.jpg 450w, assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.jpg 900w" width="900" height="600" alt="Celebración con la bufanda de Barbate sobre la arena" loading="lazy" decoding="async"></picture><figcaption>Celebración con la bufanda de Barbate sobre la arena</figcaption></figure>
+        <figure class="card" data-visor="assets/img/celebracion-del-club-con-medallas-al-atardecer.webp" data-visor-jpg="assets/img/celebracion-del-club-con-medallas-al-atardecer.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-del-club-con-medallas-al-atardecer-450.webp 450w, assets/img/celebracion-del-club-con-medallas-al-atardecer.webp 900w"><img src="assets/img/celebracion-del-club-con-medallas-al-atardecer.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-del-club-con-medallas-al-atardecer-450.jpg 450w, assets/img/celebracion-del-club-con-medallas-al-atardecer.jpg 900w" width="900" height="1111" alt="Celebración del club con las medallas al atardecer" loading="lazy" decoding="async"></picture><figcaption>Celebración del club con las medallas al atardecer</figcaption></figure>
       </div>
 
+    </div>
+  </div>
+</section>
+
+
+<!-- Resultados oficiales. Va FUERA del .season-panel a propósito: si estuviera
+     dentro, la pestaña de temporada lo escondería junto con las fotos. -->
+<section id="resultados" class="banda banda-arena banda-clara">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Datos oficiales · Federación Andaluza y Real Federación Española</p>
+      <h2>Resultados y clasificación</h2>
+      <p>Los datos oficiales de la competición, servidos por la propia federación. No los copiamos ni los tocamos: lo que aquí se ve es lo que hay en el acta. Busca tu equipo por <strong>sexo y categoría</strong> y elige después cuál de sus torneos quieres mirar: pista y playa, andaluces y de ámbito nacional.</p>
+      <p>En las clasificaciones nuestros equipos salen como <strong>La Chanca</strong> —el patrocinador principal— o simplemente como <strong>Balonmano Barbate</strong>. En el pueblo hay otro club de balonmano, así que conviene fijarse en el escudo.</p>
+    </div>
+
+    <div class="notice">
+      Al pulsar «Ver clasificación» se carga una tabla de <strong>resultadosbalonmano.isquad.es</strong>, y tu navegador contacta también con Google Analytics y con Google Fonts. Hasta entonces no se envía nada. También puedes <a href="https://resultadosbalonmano.isquad.es/" target="_blank" rel="noopener noreferrer">ir directamente a la web de la federación</a>.
+    </div>
+
+    <div class="comp-grupos">
+      <div class="comp-sexo">
+        <h3>Masculino</h3>
+        <details class="comp-categoria">
+          <summary><h4>Sénior <span>26 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de España · Laredo</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo E</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Campeonato de España · Laredo — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2878&amp;id_competicion=210662&amp;id=1039023&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Campeonato de Andalucía — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212070&amp;id=1038866&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Campeonato de Andalucía — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212070&amp;id=1038867&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Cádiz</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase final, eliminatorias previas</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena 1000 · Cádiz — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2875&amp;id_competicion=210636&amp;id=1038524&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Cádiz</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo H</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena 1000 · Cádiz — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2875&amp;id_competicion=210636&amp;id=1038523&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Orihuela</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase intermedia, eliminatorias previas</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena 1000 · Orihuela — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2876&amp;id_competicion=210644&amp;id=1037798&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Vilanova i la Geltrú</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo G</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena 1000 · Vilanova i la Geltrú — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2874&amp;id_competicion=210628&amp;id=1037544&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Barbate — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211257&amp;id=1037957&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Barbate — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211257&amp;id=1037959&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Torrox</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Torrox — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2974&amp;id_competicion=211100&amp;id=1037038&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Torrox</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Torrox — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2974&amp;id_competicion=211100&amp;id=1037180&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Trofeo Carranza — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211265&amp;id=1038078&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Trofeo Carranza — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211265&amp;id=1038080&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Diego Carrasco Cup · Torremolinos</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase principal, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Diego Carrasco Cup · Torremolinos — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2828&amp;id_competicion=210363&amp;id=1034391&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Diego Carrasco Cup · Torremolinos</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo H</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Diego Carrasco Cup · Torremolinos — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2828&amp;id_competicion=210363&amp;id=1034395&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca BM Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Campeonato de Andalucía · Trofeo Carranza — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209589&amp;id=1031793&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo E</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Campeonato de Andalucía · Trofeo Carranza — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209589&amp;id=1031795&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca BM Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Barbate — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209108&amp;id=1030725&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Barbate — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209108&amp;id=1030726&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Cádiz — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209131&amp;id=1031160&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · La Línea</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca BM Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · La Línea — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2494&amp;id_competicion=209146&amp;id=1031286&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · La Línea</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · La Línea — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2494&amp;id_competicion=209146&amp;id=1031287&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca BM Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Lepe — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209121&amp;id=1030696&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca BM Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Utrera — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209080&amp;id=1030320&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Arena Sur · Utrera — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209080&amp;id=1030321&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Primera Andaluza</p>
+                <span class="comp-detalle">Pista 2024/25 · Salazones La Chanca BM Barbate · Fase previa, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Sénior · Primera Andaluza — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2032&amp;id_competicion=207711&amp;id=1026441&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Juvenil <span>7 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Juvenil · Campeonato de Andalucía — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212068&amp;id=1038856&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Juvenil · Arena Sur · Barbate — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211255&amp;id=1037005&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Algeciras</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Juvenil · Arena Sur · Algeciras — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2984&amp;id_competicion=211217&amp;id=1038258&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Mollina 2</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Juvenil · Arena Sur · Mollina 2 — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2987&amp;id_competicion=211239&amp;id=1037015&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Torrox</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Juvenil · Arena Sur · Torrox — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2974&amp;id_competicion=211096&amp;id=1037002&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Juvenil · Arena Sur · Trofeo Carranza — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211263&amp;id=1038075&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Primera Andaluza</p>
+                <span class="comp-detalle">Pista 2025/26 · Salazones La Chanca BM Barbate · Criterio olímpico, grupo B de ascenso</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Juvenil · Primera Andaluza — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2515&amp;id_competicion=209259&amp;id=1035235&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Cadete <span>17 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de España · Laredo</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo G</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Campeonato de España · Laredo — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2878&amp;id_competicion=210666&amp;id=1038925&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Campeonato de Andalucía — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212066&amp;id=1038844&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Cádiz</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena 1000 · Cádiz — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2875&amp;id_competicion=210640&amp;id=1038475&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Barbate — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211253&amp;id=1037054&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Algeciras</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Algeciras — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2984&amp;id_competicion=211215&amp;id=1037051&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Torrox</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Torrox — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2974&amp;id_competicion=211094&amp;id=1037045&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo E</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Trofeo Carranza — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211261&amp;id=1038085&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Utrera — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2975&amp;id_competicion=211105&amp;id=1037187&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2025/26 · Salazones La Chanca BM Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Campeonato de Andalucía — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2657&amp;id_competicion=209681&amp;id=1032114&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · fase previa</p>
+                <span class="comp-detalle">Pista 2025/26 · Salazones La Chanca BM Barbate · Grupo Andalucía 4</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Campeonato de Andalucía · fase previa — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2515&amp;id_competicion=210564&amp;id=1035144&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Campeonato de Andalucía · Trofeo Carranza — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209585&amp;id=1031468&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Barbate — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209104&amp;id=1030710&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Cádiz — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209127&amp;id=1031050&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Lepe — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209117&amp;id=1030939&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Arena Sur · Utrera — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209075&amp;id=1030309&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · Salazones La Chanca Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Campeonato de Andalucía — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2203&amp;id_competicion=207818&amp;id=1026460&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Copa Diputación de Cádiz</p>
+                <span class="comp-detalle">Pista 2024/25 · Salazones La Chanca Balonmano Barbate · Liga regular, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Cadete · Copa Diputación de Cádiz — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2387&amp;id_competicion=208538&amp;id=1028244&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Infantil <span>19 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de España · Laredo</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase final, eliminatorias previas</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Campeonato de España · Laredo — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2878&amp;id_competicion=210668&amp;id=1038895&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Campeonato de Andalucía — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212064&amp;id=1038834&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Cádiz</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena 1000 · Cádiz — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2875&amp;id_competicion=210642&amp;id=1038466&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Orihuela</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase intermedia, eliminatorias previas</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena 1000 · Orihuela — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2876&amp;id_competicion=210650&amp;id=1037754&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Barbate — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211251&amp;id=1037930&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Mollina 1</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Mollina 1 — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2986&amp;id_competicion=211229&amp;id=1037344&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · Salazones La Chanca BM Barbate · Fase de clasificación, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Trofeo Carranza — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211259&amp;id=1038102&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2025/26 · Salazones La Chanca BM Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Campeonato de Andalucía — Salazones La Chanca BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2657&amp;id_competicion=209679&amp;id=1032112&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Campeonato de Andalucía · Trofeo Carranza — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209583&amp;id=1031549&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Campeonato de Andalucía · Trofeo Carranza — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209583&amp;id=1031550&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Barbate — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209102&amp;id=1030702&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Barbate — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209102&amp;id=1030704&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Cádiz — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209125&amp;id=1031043&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Cádiz — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209125&amp;id=1031044&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Fuengirola</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Fuengirola — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2487&amp;id_competicion=209082&amp;id=1030270&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Lepe — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209115&amp;id=1030943&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · Salazones La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Arena Sur · Utrera — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209073&amp;id=1030304&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · Salazones La Chanca Balonmano Barbate · Fase previa, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Campeonato de Andalucía — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2032&amp;id_competicion=208771&amp;id=1028841&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · Salazones La Chanca Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Infantil · Campeonato de Andalucía — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2203&amp;id_competicion=207816&amp;id=1026458&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Alevín <span>2 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Alevín · Campeonato de Andalucía — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212031&amp;id=1038827&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Circuito Arenas del Sur</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Masculino Alevín · Circuito Arenas del Sur — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3049&amp;id_competicion=211520&amp;id=1037838&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+      </div>
+      <div class="comp-sexo">
+        <h3>Femenino</h3>
+        <details class="comp-categoria">
+          <summary><h4>Sénior <span>4 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato Interprovincial</p>
+                <span class="comp-detalle">Pista 2025/26 · La Chanca Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Sénior · Campeonato Interprovincial — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2716&amp;id_competicion=209884&amp;id=1033840&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · BM Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Sénior · Campeonato de Andalucía · Trofeo Carranza — BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209590&amp;id=1031790&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · BM Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Sénior · Arena Sur · Barbate — BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209109&amp;id=1030729&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · BM Barbate · Fase principal, grupo único</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Sénior · Arena Sur · Lepe — BM Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209122&amp;id=1030926&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Juvenil <span>13 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">División de Honor Juvenil</p>
+                <span class="comp-detalle">Pista 2026/27 · Salazones La Chanca Balonmano Barbate · Primera fase, grupo B clasificatorio</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · División de Honor Juvenil — Salazones La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3010&amp;id_competicion=211449&amp;id=1038663&amp;id_temp=2627&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de España · Laredo</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase final, eliminatorias previas</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Campeonato de España · Laredo — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2878&amp;id_competicion=210665&amp;id=1038978&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212069&amp;id=1038859&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Cádiz</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena 1000 · Cádiz — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2875&amp;id_competicion=210639&amp;id=1038492&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Orihuela</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena 1000 · Orihuela — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2876&amp;id_competicion=210647&amp;id=1037786&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · Barbate — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211256&amp;id=1037008&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Algeciras</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · Algeciras — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2984&amp;id_competicion=211218&amp;id=1037039&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · Trofeo Carranza — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211264&amp;id=1037007&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · Utrera — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2975&amp;id_competicion=211108&amp;id=1037409&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · Barbate — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209107&amp;id=1030724&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · La Línea</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · La Línea — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2494&amp;id_competicion=209145&amp;id=1031283&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · Lepe — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209120&amp;id=1030929&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo juvenil-sénior C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Juvenil · Arena Sur · Utrera — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209078&amp;id=1030319&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Cadete <span>25 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de España · Laredo</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase final, eliminatorias previas</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de España · Laredo — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2878&amp;id_competicion=210667&amp;id=1038951&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212067&amp;id=1038850&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Cádiz</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena 1000 · Cádiz — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2875&amp;id_competicion=210641&amp;id=1038485&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Barbate — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211254&amp;id=1037943&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Barbate — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211254&amp;id=1037944&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Lepe — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2988&amp;id_competicion=211246&amp;id=1037817&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Trofeo Carranza — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211262&amp;id=1038082&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Trofeo Carranza — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211262&amp;id=1038084&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Diego Carrasco Cup · Torremolinos</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Diego Carrasco Cup · Torremolinos — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2828&amp;id_competicion=210358&amp;id=1034396&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2025/26 · La Chanca Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2657&amp;id_competicion=209682&amp;id=1032115&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · fase previa</p>
+                <span class="comp-detalle">Pista 2025/26 · La Chanca Balonmano Barbate · Grupo Andalucía 3</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía · fase previa — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2515&amp;id_competicion=210580&amp;id=1035223&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía · Trofeo Carranza — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209586&amp;id=1031467&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía · Trofeo Carranza — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209586&amp;id=1031544&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Barbate — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209105&amp;id=1030716&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Barbate — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209105&amp;id=1030718&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Cádiz — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209128&amp;id=1031053&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Cádiz — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209128&amp;id=1031054&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · La Línea</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · La Línea — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2494&amp;id_competicion=209143&amp;id=1031277&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Lepe — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209118&amp;id=1030694&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Lepe — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209118&amp;id=1030934&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate Promesas · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Utrera — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209076&amp;id=1030312&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Arena Sur · Utrera — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209076&amp;id=1030313&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · La Chanca Balonmano Barbate · Primera fase, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2032&amp;id_competicion=208545&amp;id=1028301&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · Balonmano Barbate Promesas · Primera fase, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2032&amp;id_competicion=208545&amp;id=1028299&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · Balonmano Barbate Promesas · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Cadete · Campeonato de Andalucía — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2203&amp;id_competicion=207819&amp;id=1026461&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Infantil <span>26 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de España · Laredo</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase final, eliminatorias previas</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de España · Laredo — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2878&amp;id_competicion=210669&amp;id=1038911&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212065&amp;id=1038841&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena 1000 · Cádiz</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena 1000 · Cádiz — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2875&amp;id_competicion=210643&amp;id=1038472&amp;id_temp=2526&amp;id_territorial=9999&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Barbate — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211252&amp;id=1036994&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Barbate — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2989&amp;id_competicion=211252&amp;id=1037935&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Algeciras</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Algeciras — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2984&amp;id_competicion=211214&amp;id=1038248&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Lepe — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2988&amp;id_competicion=211244&amp;id=1037815&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Mollina 1</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Mollina 1 — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2986&amp;id_competicion=211230&amp;id=1037029&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Torrox</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Torrox — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2974&amp;id_competicion=211093&amp;id=1037125&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Trofeo Carranza — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211260&amp;id=1036995&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2026 · La Chanca Balonmano Barbate · Fase de clasificación, grupo D</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Trofeo Carranza — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2990&amp;id_competicion=211260&amp;id=1038092&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2025/26 · La Chanca Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2657&amp;id_competicion=209680&amp;id=1032113&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · fase previa</p>
+                <span class="comp-detalle">Pista 2025/26 · La Chanca Balonmano Barbate · Grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de Andalucía · fase previa — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2515&amp;id_competicion=210808&amp;id=1035940&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de Andalucía · Trofeo Carranza — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209584&amp;id=1031556&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo E</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de Andalucía · Trofeo Carranza — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209584&amp;id=1031558&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Barbate — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209103&amp;id=1030705&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Barbate — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209103&amp;id=1030707&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Cádiz — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209126&amp;id=1031046&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Cádiz — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209126&amp;id=1031047&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · La Línea</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · La Línea — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2494&amp;id_competicion=209141&amp;id=1031271&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · La Línea</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo B</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · La Línea — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2494&amp;id_competicion=209141&amp;id=1031272&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Lepe</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Lepe — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2491&amp;id_competicion=209116&amp;id=1030942&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Utrera</p>
+                <span class="comp-detalle">Playa 2025 · La Chanca Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Arena Sur · Utrera — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2486&amp;id_competicion=209074&amp;id=1030305&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · La Chanca Balonmano Barbate · Fase previa, grupo C</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2032&amp;id_competicion=208772&amp;id=1028839&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · La Chanca Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Campeonato de Andalucía — La Chanca Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2203&amp;id_competicion=207817&amp;id=1026459&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Copa Diputación de Cádiz</p>
+                <span class="comp-detalle">Pista 2024/25 · Balonmano Barbate Promesas · Liga regular, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Infantil · Copa Diputación de Cádiz — Balonmano Barbate Promesas" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2387&amp;id_competicion=208536&amp;id=1028241&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+        <details class="comp-categoria">
+          <summary><h4>Alevín <span>8 torneos</span></h4></summary>
+          <ul class="comp-lista">
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Campeonato de Andalucía — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3177&amp;id_competicion=212032&amp;id=1038828&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Circuito Arenas del Sur</p>
+                <span class="comp-detalle">Playa 2026 · Balonmano Barbate · Fase de clasificación, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Circuito Arenas del Sur — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=3049&amp;id_competicion=211522&amp;id=1037839&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2025/26 · Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Campeonato de Andalucía — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2657&amp;id_competicion=209678&amp;id=1032111&amp;id_temp=2526&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía · Trofeo Carranza</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Campeonato de Andalucía · Trofeo Carranza — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2616&amp;id_competicion=209582&amp;id=1031518&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Barbate</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Arena Sur · Barbate — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2490&amp;id_competicion=209101&amp;id=1030699&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Arena Sur · Cádiz</p>
+                <span class="comp-detalle">Playa 2025 · Balonmano Barbate · Fase principal, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Arena Sur · Cádiz — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2492&amp;id_competicion=209124&amp;id=1031154&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=2&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Campeonato de Andalucía</p>
+                <span class="comp-detalle">Pista 2024/25 · Balonmano Barbate · Liga regular</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Campeonato de Andalucía — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2203&amp;id_competicion=207815&amp;id=1026457&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+            <li>
+              <div>
+                <p class="comp-torneo">Copa Diputación de Cádiz</p>
+                <span class="comp-detalle">Pista 2024/25 · Balonmano Barbate · Liga regular, grupo A</span>
+              </div>
+              <button class="comp-ver" type="button" data-nombre="Femenino Alevín · Copa Diputación de Cádiz — Balonmano Barbate" data-src="https://resultadosbalonmano.isquad.es/competicion.php?embed=1&amp;id_categoria=2387&amp;id_competicion=208535&amp;id=1028239&amp;id_temp=2425&amp;id_territorial=26&amp;id_ambito=0&amp;id_superficie=1&amp;seleccion=0&amp;embed_menus=Y2xhc2lmaWNhY2lvbnx8Y2FsZW5kYXJpbw%3D%3D">Ver clasificación</button>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div id="tabla-federacion">
+      <p class="comp-vacio">Elige una competición para ver su clasificación y su calendario.</p>
     </div>
   </div>
 </section>

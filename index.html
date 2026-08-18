@@ -1,39 +1,112 @@
 <!DOCTYPE html>
 <!--
   Club Balonmano Barbate — web oficial
-  Desarrollo y diseño: Fran Vidal (FranVi)
+  Desarrollo, diseño y contenidos: Francisco Vidal Mateo (FranVi), 2026.
 -->
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Club Balonmano Barbate | Balonmano Pista y Playa</title>
-<meta name="description" content="Club Balonmano Barbate, fundado en 1997: balonmano pista en el Pabellón Municipal y balonmano playa en la Costa de la Luz, Barbate (Cádiz).">
-<meta name="author" content="Fran Vidal">
+<meta name="description" content="Club Balonmano Barbate, fundado en 1997: balonmano pista en el Pabellón Municipal y balonmano playa en la arena de Barbate (Cádiz).">
+<meta name="author" content="Francisco Vidal Mateo">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0A2A43">
+<meta name="theme-color" content="#F6F1E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1922" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://balonmanobarbate.vercel.app/">
 <link rel="icon" href="assets/img/escudo-club-balonmano-barbate.webp" type="image/webp">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Club Balonmano Barbate">
 <meta property="og:title" content="Club Balonmano Barbate — Balonmano pista y playa">
-<meta property="og:description" content="Club Balonmano Barbate, fundado en 1997: balonmano pista en el Pabellón Municipal y balonmano playa en la Costa de la Luz, Barbate (Cádiz).">
+<meta property="og:description" content="Club Balonmano Barbate, fundado en 1997: balonmano pista en el Pabellón Municipal y balonmano playa en la arena de Barbate (Cádiz).">
 <meta property="og:image" content="https://balonmanobarbate.vercel.app/img/escudo-club-balonmano-barbate.webp">
 <meta property="og:url" content="https://balonmanobarbate.vercel.app/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsOrganization",
+      "@id": "https://balonmanobarbate.vercel.app/#club",
+      "name": "Club Balonmano Barbate",
+      "alternateName": "BM Barbate",
+      "sport": [
+        "Balonmano",
+        "Balonmano playa"
+      ],
+      "foundingDate": "1997",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "logo": "https://balonmanobarbate.vercel.app/assets/img/escudo-club-balonmano-barbate.webp",
+      "email": "balonmanobarbate@gmail.com",
+      "areaServed": "Barbate, Cádiz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Joaquín Blume, 14",
+        "postalCode": "11160",
+        "addressLocality": "Barbate",
+        "addressRegion": "Cádiz",
+        "addressCountry": "ES"
+      },
+      "location": {
+        "@type": "SportsActivityLocation",
+        "name": "Pabellón Municipal de Barbate",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Joaquín Blume, 14",
+          "postalCode": "11160",
+          "addressLocality": "Barbate",
+          "addressRegion": "Cádiz",
+          "addressCountry": "ES"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/barbatebalonmano",
+        "https://www.facebook.com/ClubBalonmanoBarbate"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://balonmanobarbate.vercel.app/#sitio",
+      "url": "https://balonmanobarbate.vercel.app/",
+      "name": "Club Balonmano Barbate",
+      "inLanguage": "es-ES",
+      "publisher": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      },
+      "author": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      },
+      "creator": {
+        "@id": "https://balonmanobarbate.vercel.app/#autor"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://balonmanobarbate.vercel.app/#autor",
+      "name": "Francisco Vidal Mateo",
+      "alternateName": "FranVi",
+      "jobTitle": "Desarrollo y diseño del sitio",
+      "affiliation": {
+        "@id": "https://balonmanobarbate.vercel.app/#club"
+      }
+    }
+  ]
+}
+</script>
 <script src="assets/js/theme.js"></script>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="con-portada">
 
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <img src="assets/img/escudo-club-balonmano-barbate.webp" width="46" height="46" alt="Escudo Club Balonmano Barbate">
+      <img src="assets/img/escudo-club-balonmano-barbate-96.webp" width="96" height="96" alt="Escudo Club Balonmano Barbate">
       <div class="brand-text">
         <div class="name">Balonmano Barbate</div>
         <div class="since">DESDE 1997 · BARBATE, CÁDIZ</div>
@@ -42,8 +115,24 @@
     <nav class="main-nav">
       <a href="index.html" class="active" aria-current="page">Inicio</a>
       <a href="club.html">El Club</a>
-      <a href="equipos.html">Equipos</a>
-      <a href="equipaciones.html">Equipaciones</a>
+      <div class="nav-grupo">
+        <a href="equipos.html">Equipos</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipos" aria-label="Abrir el submenú de equipos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipos" hidden>
+          <a href="equipos.html">Todo</a>
+          <a href="equipos.html#pista">Pista</a>
+          <a href="equipos.html#playa">Playa</a>
+        </div>
+      </div>
+      <div class="nav-grupo">
+        <a href="equipaciones.html">Equipaciones</a>
+        <button class="nav-mas" type="button" aria-expanded="false" aria-controls="sub-equipaciones" aria-label="Abrir el submenú de equipaciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="nav-sub" id="sub-equipaciones" hidden>
+          <a href="equipaciones.html">Todo</a>
+          <a href="equipaciones.html#pista">Pista</a>
+          <a href="equipaciones.html#playa">Playa</a>
+        </div>
+      </div>
       <a href="galeria.html">Galería</a>
       <a href="patrocinadores.html">Patrocinadores</a>
       <a href="contacto.html">Contacto</a>
@@ -60,27 +149,26 @@
 
 <main id="main">
 
-<section class="hero">
-  <svg class="compass" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="100" cy="100" r="94" stroke="#D9A73B" stroke-width="3"/>
-    <circle cx="100" cy="100" r="70" stroke="#D9A73B" stroke-width="2"/>
-    <g stroke="#D9A73B" stroke-width="3">
-      <line x1="100" y1="6" x2="100" y2="40"/>
-      <line x1="100" y1="160" x2="100" y2="194"/>
-      <line x1="6" y1="100" x2="40" y2="100"/>
-      <line x1="160" y1="100" x2="194" y2="100"/>
-      <line x1="35" y1="35" x2="58" y2="58"/>
-      <line x1="142" y1="142" x2="165" y2="165"/>
-      <line x1="165" y1="35" x2="142" y2="58"/>
-      <line x1="58" y1="142" x2="35" y2="165"/>
-    </g>
-    <circle cx="100" cy="100" r="14" fill="#D9A73B"/>
-  </svg>
-  <img class="hero-badge" src="assets/img/escudo-club-balonmano-barbate.webp" width="230" height="230" alt="Escudo Club Balonmano Barbate">
+<!-- Paño 1 — portada. La foto del pabellón a sangre, en duotono, con el
+     titular apoyado en el borde inferior y la ficha del club colgando de un
+     filete. El header va transparente por encima. -->
+<section class="banda banda-foto banda-portada">
+  <div class="banda-media">
+    <picture>
+      <source srcset="assets/img/equipo-del-club-balonmano-barbate-celebrando-una-victoria-en.webp" type="image/webp">
+      <img src="assets/img/equipo-del-club-balonmano-barbate-celebrando-una-victoria-en.jpg" width="1100" height="413" alt="Equipo del Club Balonmano Barbate celebrando una victoria en el pabellón" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
   <div class="container">
     <p class="eyebrow">Temporada 2025 / 2026</p>
-    <h1>Un club, <em>dos territorios</em>: el pabellón y la arena.</h1>
-    <p class="lead">El Club Balonmano Barbate lleva desde 1997 formando jugadoras y jugadores en Barbate, Cádiz. Un mismo escudo, dos disciplinas: la pista del pabellón y el balonmano playa.</p>
+    <h1>Un club, dos territorios.</h1>
+    <p class="lead">El pabellón y la arena. Desde 1997, balonmano de Barbate para Barbate.</p>
+    <div class="banda-datos">
+      <div><span class="rot">Fundado</span><span class="val">1997</span></div>
+      <div><span class="rot">Equipos</span><span class="val">21</span></div>
+      <div><span class="rot">Disciplinas</span><span class="val">Pista y playa</span></div>
+      <div><span class="rot">Sede</span><span class="val">Pabellón Municipal</span></div>
+    </div>
     <div class="hero-actions">
       <a href="equipos.html" class="btn btn-solid">Ver equipos</a>
       <a href="club.html" class="btn btn-ghost">Conoce el club</a>
@@ -88,44 +176,75 @@
   </div>
 </section>
 
-<section>
+<!-- Paño 2 — arena. Las dos disciplinas, en tramos desiguales de la retícula
+     de doce columnas: 5 y 6 columnas, no dos mitades. -->
+<section class="banda banda-arena">
   <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Dos disciplinas, un mismo club</p>
-      <h2>Pista y playa</h2>
-    </div>
-    <div class="disciplines">
-      <div class="discipline pista">
-        <span class="tag">Balonmano Pista</span>
-        <h3>El pabellón, cada fin de semana</h3>
+    <div class="rejilla">
+      <div class="col-a filete">
+        <p class="eyebrow">01 — Balonmano pista</p>
+        <h2>El pabellón, cada fin de semana</h2>
         <p>Nuestros equipos de pista entrenan y compiten en el Pabellón Municipal de Av. Joaquín Blume, formando categorías desde la escuela hasta el sénior.</p>
-        <a href="equipos.html#pista" class="btn btn-ghost">Ver equipos de pista</a>
+        <a class="enlace-filete" href="equipos.html#pista">Ver equipos de pista</a>
       </div>
-      <div class="discipline playa">
-        <span class="tag">Balonmano Playa</span>
-        <h3>La arena, en verano</h3>
-        <p>Con Barbate y su litoral como escenario natural, el equipo de balonmano playa lleva el nombre del club a la arena en los torneos de la Costa de la Luz.</p>
-        <a href="equipos.html#playa" class="btn btn-ghost">Ver balonmano playa</a>
+      <div class="col-b filete">
+        <p class="eyebrow">02 — Balonmano playa</p>
+        <h2>La arena, en verano</h2>
+        <p>Con Barbate y su litoral como escenario natural, el club lleva su nombre a la arena en los torneos de la provincia y en los circuitos nacionales.</p>
+        <a class="enlace-filete" href="equipos.html#playa">Ver balonmano playa</a>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- Paño 3 — foto. La playa. -->
+<section class="banda banda-foto banda-rotulo">
+  <div class="banda-media">
+    <picture>
+      <source srcset="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.webp" type="image/webp">
+      <img src="assets/img/celebracion-con-la-bufanda-de-barbate-en-la-arena.jpg" width="900" height="600" alt="Jugadores del club celebrando con la bufanda de Barbate sobre la arena" loading="lazy" decoding="async">
+    </picture>
+  </div>
   <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Nuestra casa · Balonmano Pista</p>
-      <h2>El pabellón</h2>
-    </div>
-    <div class="grid grid-2" style="align-items:center;">
-      <div>
-        <p style="max-width:480px">Entrenamos y jugamos en el Pabellón Municipal, Av. Joaquín Blume, 14, 11160 Barbate, Cádiz. Toda la afición tiene su sitio en las gradas cada jornada, celebrando cada victoria como esta.</p>
-        <a href="contacto.html" class="btn btn-solid">Cómo llegar</a>
-      </div>
-      <picture><source srcset="assets/img/equipo-del-club-balonmano-barbate-celebrando-una-victoria-en.webp" type="image/webp"><img src="assets/img/equipo-del-club-balonmano-barbate-celebrando-una-victoria-en.jpg" width="1100" height="413" alt="Equipo del Club Balonmano Barbate celebrando una victoria en el pabellón" loading="lazy" decoding="async"></picture>
+    <p class="eyebrow">Balonmano playa</p>
+    <h2>La playa de Barbate es la otra pista</h2>
+    <p class="lead">De junio a septiembre el club se muda a la arena: Barbate, La Línea, Torremolinos y los circuitos nacionales.</p>
+    <div class="hero-actions">
+      <a class="enlace-filete" href="equipos.html#playa">Ver los equipos de playa</a>
     </div>
   </div>
 </section>
+
+<!-- Paño 4 — arena. El pabellón, con el dato de dirección en el margen. -->
+<section class="banda banda-arena banda-clara">
+  <div class="container">
+    <div class="rejilla">
+      <div class="col-ancha filete">
+        <p class="eyebrow">Nuestra casa</p>
+        <h2>El Pabellón Municipal</h2>
+        <p>Aquí entrena y compite la cantera de pista, de alevín a sénior. La afición tiene su sitio en las gradas cada jornada, y se nota.</p>
+        <div class="hero-actions">
+          <a href="contacto.html" class="btn btn-ghost">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="col-lado filete">
+        <p class="eyebrow">Dirección</p>
+        <p>Av. Joaquín Blume, 14<br>11160 Barbate, Cádiz</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paño 5 — friso de cierre. La foto de grupo panorámica, a sangre. -->
+<figure class="banda banda-foto banda-tira">
+  <div class="banda-media">
+    <picture>
+      <source srcset="assets/img/todos-los-equipos-del-club-en-el-pabellon-de-barbate.webp" type="image/webp">
+      <img src="assets/img/todos-los-equipos-del-club-en-el-pabellon-de-barbate.jpg" width="1124" height="280" alt="Todos los equipos del Club Balonmano Barbate juntos en el pabellón" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <figcaption>Todos los equipos del club · Pabellón Municipal de Barbate</figcaption>
+</figure>
 
 </main>
 

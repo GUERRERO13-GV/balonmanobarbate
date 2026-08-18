@@ -1,0 +1,3 @@
+# Utilidades que solo se lanzan en local para regenerar el sumario de torneos.
+# No forman parte del sitio y no tienen por qué quedar servidas en el dominio.
+tools/

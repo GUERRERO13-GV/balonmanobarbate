@@ -1,13 +1,13 @@
 /* ============================================
    CLUB BALONMANO BARBATE — hoja de estilos
-   Desarrollo y diseño: Fran Vidal (FranVi)
+   Desarrollo y diseño: Francisco Vidal Mateo (FranVi)
 
-   Paleta: azul noche atlántico, oro de timón,
-   arena y rojo almadraba (red de atún).
-
-   Dirección: editorial deportiva impresa. Manda la
-   tipografía y el filete; el oro es acento, no relleno.
-   Nada de sombras blandas ni adornos de plantilla.
+   Dirección: ALMADRABA.
+   La almadraba es el laberinto de redes que la flota de Barbate cala en el
+   Estrecho. De ahí sale la estructura de la web: bandas que se alternan como
+   los paños de la red —foto a sangre, arena, foto— y filetes de 1 px cruzando
+   la página. Manda la fotografía real del club, tratada en duotono azul y con
+   grano de prensa. No hay tarjetas: el contenido cuelga de filetes.
    ============================================ */
 
 :root{
@@ -24,32 +24,40 @@
   --almadraba-d: #7E2517;
   --white:       #FFFDF8;
 
+  /* Tres familias, tres oficios distintos:
+     - titular: serif en caja mixta. Es lo que aleja el sitio del cartel
+       deportivo genérico (mayúscula condensada sobre azul marino).
+     - display: Oswald, solo para botones y menú móvil. Chapa, no titular.
+     - mono: rótulos, datos y pies de foto. */
+  --font-titular: 'Source Serif 4', Georgia, serif;
   --font-display: 'Oswald', sans-serif;
-  --font-body:    'Source Serif 4', serif;
+  --font-body:    'Source Serif 4', Georgia, serif;
   --font-mono:    'JetBrains Mono', monospace;
 
-  --radius: 2px;
-  --container: 1180px;
+  --radius: 0px;
+  --container: 1240px;
 
-  /* Ritmo vertical y movimiento: una sola curva para todo el sitio, así el
-     header, las tarjetas y los enlaces se mueven con el mismo carácter. */
+  /* El header es transparente sobre la banda de portada, así que su altura se
+     fija aquí y NO cambia al comprimirlo: si variara, la portada daría un
+     salto en cuanto se empezara a desplazar. */
+  --header-alto: 78px;
   --header-h: 78px;
-  --section-y: clamp(54px, 6.2vw, 90px);
+  --banda-y: clamp(64px, 7.4vw, 116px);
   --ease: cubic-bezier(.2,.75,.3,1);
 
   /* Colores de función: son los ÚNICOS que cambian con el tema. */
   --bg:         var(--sand);      /* fondo de la página        */
-  --surface:    var(--white);     /* tarjetas y secciones alt  */
+  --surface:    var(--white);     /* bandas alternas           */
   --text:       var(--navy-ink);  /* texto corrido             */
   --border:     var(--sand-dim);  /* bordes y separadores      */
   --heading:    var(--navy-deep); /* titulares                 */
-  --accent:     var(--almadraba); /* eyebrows, metadatos       */
+  --accent:     var(--almadraba); /* rótulos, metadatos        */
   --accent-ink: var(--almadraba-d);
   --notice-bg:  rgba(168,51,31,.06);
   --tab-bg:     var(--navy-deep); /* pestaña de temporada activa */
   --tab-fg:     var(--gold-light);
-  --rule:       rgba(13,31,45,.16);  /* filetes finos, más marcados que --border */
-  --muted:      rgba(13,31,45,.62);  /* texto secundario                        */
+  --rule:       rgba(13,31,45,.18);  /* el filete: la unidad de la retícula */
+  --muted:      rgba(13,31,45,.62);  /* texto secundario                    */
 }
 
 /* --- Tema oscuro ---------------------------------------------------------
@@ -59,31 +67,31 @@
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:         #0B1922;
-    --surface:    #12293A;
+    --surface:    #102534;
     --text:       #E7DECA;
     --border:     #23425A;
-    --heading:    var(--gold-light);
+    --heading:    #F3EBD8;
     --accent:     #E5806A;
     --accent-ink: #F0A08C;
     --notice-bg:  rgba(229,128,106,.10);
     --tab-bg:     var(--gold);
     --tab-fg:     var(--navy-deep);
-    --rule:       rgba(231,222,202,.22);
+    --rule:       rgba(231,222,202,.24);
     --muted:      rgba(231,222,202,.62);
   }
 }
 :root[data-theme="dark"]{
   --bg:         #0B1922;
-  --surface:    #12293A;
+  --surface:    #102534;
   --text:       #E7DECA;
   --border:     #23425A;
-  --heading:    var(--gold-light);
+  --heading:    #F3EBD8;
   --accent:     #E5806A;
   --accent-ink: #F0A08C;
   --notice-bg:  rgba(229,128,106,.10);
   --tab-bg:     var(--gold);
   --tab-fg:     var(--navy-deep);
-  --rule:       rgba(231,222,202,.22);
+  --rule:       rgba(231,222,202,.24);
   --muted:      rgba(231,222,202,.62);
 }
 
@@ -96,8 +104,8 @@ body{
   background:var(--bg);
   color:var(--text);
   font-family:var(--font-body);
-  font-size:16.5px;
-  line-height:1.68;
+  font-size:17px;
+  line-height:1.62;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
@@ -107,34 +115,37 @@ img{ max-width:100%; display:block; height:auto; }
 picture{ display:block; }
 a{ color:inherit; text-decoration:none; }
 
-/* Escala tipográfica: el salto entre titular y texto es grande a propósito.
-   Oswald es condensada, así que aguanta cuerpos altos con interlineado corto. */
+/* ---------- Tipografía ----------
+   Titulares en serif y en caja mixta, con interlineado corto y prosa negativa.
+   La mayúscula condensada sobre azul marino es EL cartel de club deportivo
+   genérico; aquí solo queda en rótulos y botones. */
 h1,h2,h3,h4{
-  font-family:var(--font-display);
-  text-transform:uppercase;
+  font-family:var(--font-titular);
   font-weight:600;
-  margin:0 0 .3em;
+  margin:0 0 .34em;
   color:var(--heading);
+  letter-spacing:-.021em;
 }
-h1{ font-size:clamp(3rem, 7.4vw, 5.4rem); line-height:.94; letter-spacing:-.018em; }
-h2{ font-size:clamp(2rem, 4vw, 3.1rem);  line-height:1;   letter-spacing:-.012em; }
-h3{ font-size:clamp(1.35rem, 2.2vw, 1.8rem); line-height:1.08; letter-spacing:-.006em; }
-h4{ font-size:1.1rem; line-height:1.15; letter-spacing:.005em; }
-/* Medida de lectura: 62 caracteres. Más ancho y el ojo pierde el renglón. */
-p{ margin:0 0 1.05em; max-width:62ch; }
-.container{ max-width:var(--container); margin:0 auto; padding:0 28px; }
+h1{ font-size:clamp(2.9rem, 6.6vw, 5.2rem); line-height:1.0; font-weight:700; }
+h2{ font-size:clamp(1.85rem, 3.4vw, 2.85rem); line-height:1.06; }
+h3{ font-size:clamp(1.28rem, 1.9vw, 1.62rem); line-height:1.16; letter-spacing:-.014em; }
+h4{ font-size:1.12rem; line-height:1.24; letter-spacing:-.01em; }
+/* Medida de lectura: 60 caracteres. Más ancho y el ojo pierde el renglón. */
+p{ margin:0 0 1.05em; max-width:60ch; }
+.container{ max-width:var(--container); margin:0 auto; padding:0 clamp(22px, 3.4vw, 44px); }
 
-/* Antetítulo: mono en versalitas, muy espaciado. Es la firma tipográfica de
-   la casa; aparece en el hero, en cada sección y en los pies de foto. */
+/* Rótulo: mono en versalitas, muy espaciado. Es la firma tipográfica de la
+   casa y casi la única pieza en mayúsculas de la página. */
 .eyebrow{
   display:block;
   font-family:var(--font-mono);
-  font-size:.68rem;
+  font-size:.67rem;
   font-weight:500;
-  letter-spacing:.26em;
+  letter-spacing:.24em;
   text-transform:uppercase;
   color:var(--accent);
-  margin:0 0 1em;
+  margin:0 0 1.15em;
+  max-width:none;
 }
 
 /* ---------- Accesibilidad ---------- */
@@ -151,67 +162,69 @@ a:focus-visible, button:focus-visible{
   outline-offset:3px;
 }
 
-/* ---------- Header ---------- */
-/* Al bajar, main.js pone .is-scrolled en el body: el header se estrecha y se
-   apoya en una línea. La altura vive en --header-h porque de ella dependen el
-   menú móvil y el scroll-margin de los anclajes. */
-body.is-scrolled{ --header-h:60px; }
+/* ---------- Header ----------
+   Sobre la banda de portada va transparente: la foto llega hasta arriba del
+   todo y el escudo flota encima. Al desplazar, main.js pone .is-scrolled y el
+   header se cierra en azul. La altura NO cambia (ver --header-alto). */
 .site-header{
   position:sticky; top:0; z-index:100;
   background:var(--navy-deep);
   border-bottom:1px solid rgba(217,167,59,.42);
+  transition:background .4s var(--ease), border-color .4s var(--ease);
+}
+body.con-portada .site-header{
+  background:transparent;
+  border-bottom-color:transparent;
+}
+/* El header es sticky, así que ocupa su sitio en el flujo. Para que la foto
+   de portada pase por DEBAJO se sube el <main> justo esa altura; sin esto
+   quedaba una franja de arena arriba con el menú blanco encima, ilegible. */
+body.con-portada main{ margin-top:calc(var(--header-alto) * -1); }
+body.con-portada.is-scrolled .site-header{
+  background:var(--navy-deep);
+  border-bottom-color:rgba(217,167,59,.42);
 }
 .site-header .container{
   display:flex; align-items:center; justify-content:space-between;
   gap:20px;
-  min-height:var(--header-h);
-  transition:min-height .35s var(--ease);
+  min-height:var(--header-alto);
 }
 .brand{ display:flex; align-items:center; gap:13px; }
-.brand img{
-  width:42px; height:42px;
-  transition:width .35s var(--ease), height .35s var(--ease);
-}
-body.is-scrolled .brand img{ width:32px; height:32px; }
-.brand-text{ line-height:1.2; }
+.brand img{ width:42px; height:42px; }
+.brand-text{ line-height:1.25; }
 .brand-text .name{
-  font-family:var(--font-display);
+  font-family:var(--font-mono);
   color:var(--white);
-  font-size:1rem;
-  letter-spacing:.07em;
+  font-size:.78rem;
+  font-weight:500;
+  letter-spacing:.19em;
   text-transform:uppercase;
 }
-/* Al encoger el header la segunda línea sobra: se pliega en lugar de
-   desaparecer de golpe, y así el nombre no da un salto. */
 .brand-text .since{
   font-family:var(--font-mono);
-  font-size:.6rem;
-  color:rgba(240,200,104,.85);
-  letter-spacing:.18em;
-  overflow:hidden;
-  max-height:2em;
-  transition:max-height .35s var(--ease), opacity .35s var(--ease);
+  font-size:.58rem;
+  color:rgba(240,200,104,.8);
+  letter-spacing:.17em;
 }
-body.is-scrolled .brand-text .since{ max-height:0; opacity:0; }
 /* En móvil no cabe en una línea y partirla deja el header desalineado: en esa
    anchura el nombre solo ya identifica al club. */
-@media (max-width:480px){ .brand-text .since{ display:none; } }
+@media (max-width:520px){ .brand-text .since{ display:none; } }
 
 .main-nav{ display:flex; align-items:center; }
 .main-nav a{
   position:relative;
   font-family:var(--font-mono);
-  font-size:.71rem;
+  font-size:.7rem;
   letter-spacing:.11em;
   text-transform:uppercase;
-  color:rgba(246,241,228,.68);
-  padding:12px 14px;
+  color:rgba(246,241,228,.7);
+  padding:12px 13px;
   transition:color .22s var(--ease);
 }
 /* Filete que crece desde la izquierda: el único movimiento del menú. */
 .main-nav a::after{
   content:"";
-  position:absolute; left:14px; right:14px; bottom:4px;
+  position:absolute; left:13px; right:13px; bottom:4px;
   height:1px; background:var(--gold);
   transform:scaleX(0); transform-origin:left;
   transition:transform .3s var(--ease);
@@ -227,12 +240,97 @@ body.is-scrolled .brand-text .since{ max-height:0; opacity:0; }
   padding:8px 4px;
 }
 
+/* ---------- Submenús de Equipos y Equipaciones ----------
+   Patrón de «disclosure»: el enlace padre sigue siendo un enlace (se puede ir
+   a la página entera) y al lado hay un botón que despliega. Nada depende del
+   :hover, que en un móvil no existe. El panel usa el atributo hidden en vez de
+   opacidad: así no queda nunca alcanzable con el tabulador estando invisible,
+   que es el fallo clásico de estos menús. */
+.nav-grupo{ position:relative; display:flex; align-items:center; }
+.nav-grupo > a{ padding-right:2px; }
+/* El botón tiene que ser un objetivo de dedo, no un icono de 13 px: 44x44 es
+   el mínimo que pide la WCAG (2.5.5) y por debajo de eso no se acierta. El
+   icono se mantiene pequeño; lo que crece es la zona sensible. */
+.nav-mas{
+  display:flex; align-items:center; justify-content:center;
+  background:none; border:none; cursor:pointer;
+  color:rgba(246,241,228,.7);
+  min-width:44px; min-height:44px;
+  padding:0 6px;
+  transition:color .22s var(--ease), background .22s var(--ease);
+}
+.nav-mas svg{ width:14px; height:14px; transition:transform .28s var(--ease); }
+.nav-mas:hover{ color:var(--white); background:rgba(255,255,255,.06); }
+.nav-grupo.abierto .nav-mas{ color:var(--gold-light); }
+.nav-grupo.abierto .nav-mas svg{ transform:rotate(180deg); }
+
+.nav-sub{
+  position:absolute; top:100%; left:0; z-index:120;
+  min-width:184px;
+  display:flex; flex-direction:column;
+  background:var(--navy-deep);
+  border:1px solid rgba(217,167,59,.42);
+  padding:6px 0;
+}
+.nav-sub[hidden]{ display:none; }
+.nav-sub a{
+  padding:11px 20px;
+  font-family:var(--font-mono); font-size:.68rem;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:rgba(246,241,228,.76);
+  border-left:2px solid transparent;
+  transition:color .2s var(--ease), border-color .2s var(--ease), background .2s var(--ease);
+}
+/* El filete del menú principal aquí sobra: en el panel el indicador es el
+   borde izquierdo. */
+.nav-sub a::after{ display:none; }
+.nav-sub a:hover{
+  color:var(--white);
+  border-left-color:var(--gold);
+  background:rgba(255,255,255,.04);
+}
+
+@media (max-width:960px){
+  /* En el menú a pantalla completa el submenú es un acordeón, no un
+     flotante: se abre en línea y empuja al resto. */
+  .nav-grupo{ flex-wrap:wrap; border-bottom:1px solid rgba(255,255,255,.1); }
+  .nav-grupo > a{ flex:1 1 auto; border-bottom:0; }
+  /* En el móvil la fila entera abre el submenú (ver main.js), pero el botón
+     sigue existiendo y ocupa un cuadrado de 56 px con su propio separador,
+     para que se vea que ahí hay un control. */
+  .nav-mas{
+    min-width:56px; min-height:56px;
+    padding:0;
+    align-self:center;
+    color:rgba(240,200,104,.9);
+    background:rgba(255,255,255,.05);
+  }
+  .nav-grupo.abierto .nav-mas{ background:rgba(240,200,104,.14); }
+  .nav-mas svg{ width:22px; height:22px; }
+  .nav-sub{
+    position:static; z-index:auto;
+    width:100%; min-width:0;
+    background:none; border:0;
+    padding:0 0 14px 20px;
+    border-left:1px solid rgba(255,255,255,.14);
+    margin-left:2px;
+  }
+  .nav-sub a{
+    font-family:var(--font-titular);
+    text-transform:none; letter-spacing:-.01em;
+    font-size:1.12rem;
+    padding:9px 0 9px 14px;
+    border-left:0;
+  }
+  .nav-sub a:hover{ background:none; border-left-color:transparent; color:var(--gold-light); }
+}
+
 /* ---------- Botón de tema claro / oscuro ---------- */
 .header-actions{ display:flex; align-items:center; gap:6px; }
 .theme-toggle{
   display:flex; align-items:center; justify-content:center;
   background:none; border:none; cursor:pointer;
-  color:rgba(246,241,228,.68); padding:8px;
+  color:rgba(246,241,228,.7); padding:8px;
   transition:color .22s var(--ease);
 }
 .theme-toggle:hover{ color:var(--gold-light); }
@@ -247,7 +345,7 @@ body.is-scrolled .brand-text .since{ max-height:0; opacity:0; }
 }
 @media (max-width:960px){
   .main-nav{
-    position:fixed; inset:var(--header-h) 0 0 0;
+    position:fixed; inset:var(--header-alto) 0 0 0;
     background:var(--navy-deep);
     flex-direction:column; align-items:stretch;
     padding:20px 28px 40px;
@@ -260,220 +358,478 @@ body.is-scrolled .brand-text .since{ max-height:0; opacity:0; }
   }
   .main-nav.open{ transform:translateX(0); visibility:visible; }
   .main-nav a{
-    font-family:var(--font-display);
-    font-size:1.5rem; letter-spacing:.02em;
-    padding:15px 0;
-    border-bottom:1px solid rgba(255,255,255,.08);
+    font-family:var(--font-titular);
+    text-transform:none;
+    letter-spacing:-.015em;
+    font-size:1.6rem;
+    color:var(--white);
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.1);
   }
   .main-nav a::after{ display:none; }
+  .main-nav a.active{ color:var(--gold-light); }
   .nav-toggle{ display:block; }
 }
 
-/* ---------- Hero ---------- */
-/* Azul plano con un solo foco cálido en la esquina del escudo. Sin ola ni
-   corte en diagonal: corta en recto y deja que hable el titular. */
-.hero{
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 76% 30%, rgba(217,167,59,.20), transparent 52%),
-    var(--navy-deep);
-  color:var(--white);
-  padding:clamp(76px, 9.5vw, 130px) 0 clamp(72px, 9vw, 120px);
-  border-bottom:1px solid rgba(217,167,59,.45);
-}
-/* El hero comparte contenedor con el resto de la página: su titular tiene que
-   arrancar en la misma vertical que el escudo del header y que los filetes de
-   sección. La medida de lectura se limita en los hijos, no aquí. */
-.hero .container{ position:relative; z-index:2; }
-/* En la portada el escudo va anclado al borde derecho de la ventana, así que
-   al estrechar la pantalla se metía debajo del titular. Donde hay escudo se
-   le reserva su carril y el texto ocupa el resto. */
-@media (min-width:1025px){
-  .hero:has(.hero-badge) .container{ padding-right:380px; }
-}
-/* Brújula y escudo comparten centro: se anclan por su punto medio (right +
-   translate 50%) en lugar de por el borde, así siguen concéntricos aunque
-   cambie el tamaño de cualquiera de los dos. */
-.hero .compass,
-.hero .hero-badge{
-  position:absolute; right:170px; top:50%;
-  transform:translate(50%,-50%);
-}
-.hero .compass{
-  width:540px; height:540px; opacity:.16; z-index:1;
-  animation:spin 160s linear infinite;
-}
-.hero .hero-badge{
-  width:230px; height:230px; z-index:2;
-}
-@media (max-width:1024px){ .hero .hero-badge{ display:none; } .hero .compass{ opacity:.08; } }
-@keyframes spin{
-  from{ transform:translate(50%,-50%) rotate(0deg); }
-  to{ transform:translate(50%,-50%) rotate(360deg); }
-}
-@media (prefers-reduced-motion:reduce){
-  .hero .compass{ animation:none; }
-}
-/* En el hero el antetítulo cuelga de un filete de oro a media altura: es el
-   arranque de la página, no una etiqueta más. */
-.hero .eyebrow{
-  color:var(--gold-light);
-  padding-bottom:14px;
-  margin-bottom:26px;
-  border-bottom:1px solid rgba(217,167,59,.45);
-  max-width:min(100%, 340px);
-}
-.hero h1{
-  color:var(--white);
-  margin-bottom:.42em;
-  max-width:19ch;
-}
-.hero h1 em{ color:var(--gold-light); font-style:normal; }
-.hero p.lead{
-  font-size:1.18rem;
-  line-height:1.62;
-  color:rgba(246,241,228,.82);
-  max-width:50ch;
-}
-.hero-actions{ display:flex; gap:12px; margin-top:36px; flex-wrap:wrap; }
+/* ============================================================
+   BANDAS — la estructura de la página
+   La página es una sucesión de paños: foto a sangre, arena, foto.
+   La alternancia ES la maquetación; no hay contenedores decorativos.
+   ============================================================ */
+.banda{ position:relative; }
+.banda-arena{ padding:var(--banda-y) 0; }
+.banda-clara{ background:var(--surface); }
+.banda-arena + .banda-arena{ padding-top:0; }
 
-/* ---------- Botones ---------- */
+/* ---------- Banda de fotografía ----------
+   Cuatro capas, de abajo arriba:
+     1. la foto en escala de grises
+     2. duotono: azul en las sombras (lighten) y arena en las luces (darken)
+     3. velo azul en degradado, para que el texto tenga contraste de verdad
+     4. grano de prensa
+   isolation:isolate encierra los modos de fusión: sin él, el duotono se
+   mezclaría con el fondo de la página. */
+.banda-foto{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  color:var(--white);
+  display:flex;
+  align-items:flex-end;
+  padding:calc(var(--header-alto) + clamp(60px, 8vw, 120px)) 0 clamp(52px, 6.4vw, 92px);
+  min-height:clamp(420px, 58vw, 620px);
+}
+.banda-media{
+  position:absolute; inset:0; z-index:0;
+  isolation:isolate;
+  overflow:hidden;
+}
+.banda-media picture,
+.banda-media img{
+  width:100%; height:100%;
+  object-fit:cover;
+  object-position:center 32%;
+}
+.banda-media img{ filter:grayscale(1) contrast(1.08) brightness(.98); }
+/* Sombras → azul del club */
+.banda-media::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:var(--navy-deep);
+  mix-blend-mode:lighten;
+}
+/* Luces → arena. Las dos capas juntas son el duotono. */
+.banda-media::after{
+  content:""; position:absolute; inset:0; z-index:2;
+  background:var(--sand);
+  mix-blend-mode:darken;
+}
+/* Velo: más denso a la izquierda, que es donde cae el texto. La foto respira
+   por la derecha en vez de quedar aplastada de lado a lado. */
+.banda-foto::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:
+    linear-gradient(100deg, rgba(10,42,67,.93) 0%, rgba(10,42,67,.74) 38%, rgba(10,42,67,.34) 72%, rgba(10,42,67,.30) 100%),
+    linear-gradient(to top, rgba(10,42,67,.55), transparent 45%),
+    /* el header va transparente encima: sin este velo, el menú blanco se
+       pierde en cuanto la foto tiene una zona clara arriba */
+    linear-gradient(to bottom, rgba(10,42,67,.78), transparent 26%);
+}
+/* Grano de prensa. Es lo que convierte la falta de resolución de las fotos
+   del club en textura de papel en vez de en foto borrosa. */
+.banda-foto::after{
+  content:""; position:absolute; inset:0; z-index:2;
+  pointer-events:none;
+  opacity:.4;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size:200px 200px;
+}
+.banda-foto > .container{ position:relative; z-index:3; width:100%; }
+.banda-foto h1,
+.banda-foto h2,
+.banda-foto h3{ color:var(--white); }
+.banda-foto .eyebrow{ color:var(--gold-light); }
+.banda-foto p{ color:rgba(246,241,228,.86); }
+
+/* La portada es más alta y el titular llega hasta abajo: la foto empieza
+   detrás del header y el texto se apoya en el borde inferior. */
+.banda-portada{ min-height:clamp(560px, 82vh, 780px); }
+.banda-portada h1{ max-width:14ch; margin-bottom:.28em; }
+.banda-portada .lead{
+  font-size:clamp(1.05rem, 1.35vw, 1.24rem);
+  max-width:46ch;
+  margin-bottom:0;
+}
+/* Portada interior (páginas que no son el inicio): mismo lenguaje, menos aire */
+.banda-rotulo{ min-height:clamp(380px, 48vh, 480px); }
+.banda-rotulo h1{ max-width:16ch; }
+.banda-rotulo .lead{ max-width:52ch; margin-bottom:0; }
+
+/* Ficha de datos al pie de la portada, colgada de un filete. Es información
+   del club, no un adorno: fundación, disciplinas y sede. */
+.banda-datos{
+  display:flex; flex-wrap:wrap; gap:22px clamp(28px, 3.6vw, 56px);
+  margin:clamp(34px, 4vw, 54px) 0 0;
+  padding-top:18px;
+  border-top:1px solid rgba(246,241,228,.28);
+}
+.banda-datos > div{ min-width:104px; }
+.banda-datos .rot{
+  display:block;
+  font-family:var(--font-mono); font-size:.6rem;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(240,200,104,.85);
+  margin-bottom:6px;
+}
+.banda-datos .val{
+  display:block; margin:0;
+  font-family:var(--font-titular);
+  font-size:1.22rem; line-height:1.2;
+  color:var(--white);
+}
+
+/* Tira panorámica: una banda baja de foto, sin texto, para cerrar la página.
+   Con las fotos de grupo del club (4:1) funciona como un friso. */
+.banda-tira{
+  min-height:0;
+  padding:0;
+  margin:0;              /* es un <figure>: sin esto trae el margen del navegador */
+  display:block;
+}
+.banda-tira .banda-media{ position:relative; height:clamp(190px, 26vw, 330px); }
+.banda-tira::before{
+  background:linear-gradient(to top, rgba(10,42,67,.62), rgba(10,42,67,.12) 60%);
+}
+.banda-tira figcaption{
+  position:absolute; left:0; right:0; bottom:0; z-index:3;
+  padding:0 clamp(22px, 3.4vw, 44px) 18px;
+  max-width:var(--container); margin:0 auto;
+  font-family:var(--font-mono); font-size:.62rem;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(246,241,228,.82);
+}
+
+/* ---------- Retícula de doce columnas ----------
+   Los bloques NO se reparten por igual: cada uno ocupa un tramo distinto y
+   arranca en una columna distinta. Ese desequilibrio es lo que le quita a la
+   página el aire de plantilla. */
+.rejilla{
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  column-gap:clamp(20px, 2.6vw, 44px);
+  row-gap:clamp(34px, 4vw, 60px);
+}
+.col-a{ grid-column:1 / span 5; }
+.col-b{ grid-column:7 / span 6; }
+.col-ancha{ grid-column:2 / span 7; }
+.col-lado{ grid-column:10 / span 3; }
+.col-media{ grid-column:1 / span 6; }
+.col-toda{ grid-column:1 / -1; }
+@media (max-width:900px){
+  .rejilla > *{ grid-column:1 / -1; }
+}
+
+/* Bloque que cuelga de un filete: el gesto que se repite en todo el sitio.
+   Es lo que sustituye a la tarjeta. */
+.filete{
+  border-top:1px solid var(--rule);
+  padding-top:clamp(18px, 1.9vw, 26px);
+}
+.filete p:last-child{ margin-bottom:0; }
+
+/* Enlace de texto con su filete: sin caja y sin flecha automática. */
+.enlace-filete{
+  display:inline-block;
+  font-family:var(--font-mono); font-size:.68rem;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--heading);
+  padding-bottom:5px;
+  border-bottom:1px solid var(--rule);
+  transition:color .24s var(--ease), border-color .24s var(--ease);
+}
+.enlace-filete:hover{ color:var(--accent); border-color:var(--accent); }
+.banda-foto .enlace-filete{ color:var(--gold-light); border-color:rgba(240,200,104,.5); }
+.banda-foto .enlace-filete:hover{ color:var(--white); border-color:var(--white); }
+
+/* ---------- Botones ----------
+   Solo en la portada y en las llamadas de verdad. Sin flecha. */
 .btn{
   display:inline-block;
   font-family:var(--font-display);
   text-transform:uppercase;
-  letter-spacing:.1em;
-  font-size:.8rem;
+  letter-spacing:.11em;
+  font-size:.78rem;
   line-height:1;
-  padding:16px 30px;
+  padding:16px 28px;
   border-radius:var(--radius);
   border:1px solid var(--gold);
   transition:background .22s var(--ease), color .22s var(--ease), border-color .22s var(--ease);
 }
 .btn-solid{ background:var(--gold); color:var(--navy-deep); }
 .btn-solid:hover{ background:var(--gold-light); border-color:var(--gold-light); }
-.btn-ghost{ color:var(--gold-light); border-color:rgba(240,200,104,.45); background:transparent; }
-.btn-ghost:hover{ background:var(--gold); border-color:var(--gold); color:var(--navy-deep); }
+.btn-ghost{ color:var(--white); border-color:rgba(246,241,228,.5); background:transparent; }
+.btn-ghost:hover{ background:var(--white); border-color:var(--white); color:var(--navy-deep); }
+.banda-arena .btn-ghost{ color:var(--heading); border-color:var(--rule); }
+.banda-arena .btn-ghost:hover{ background:var(--navy-deep); border-color:var(--navy-deep); color:var(--white); }
+.hero-actions{ display:flex; gap:12px; margin-top:34px; flex-wrap:wrap; }
 
-/* ---------- Secciones ---------- */
-section{ padding:var(--section-y) 0; }
-.section-alt{
-  background:var(--surface);
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-}
-/* Cabecera de sección al modo de un periódico: filete de lado a lado, el
-   antetítulo colgando de él y el titular debajo. El filete es lo que da
-   estructura a la página; por eso llega hasta el borde del contenedor. */
+/* ---------- Cabecera de sección ----------
+   Filete de lado a lado, rótulo colgando de él, titular debajo. */
 .section-head{
   max-width:none;
-  margin-bottom:clamp(34px, 4vw, 56px);
-  padding-top:18px;
+  margin-bottom:clamp(30px, 3.4vw, 48px);
+  padding-top:20px;
   border-top:1px solid var(--rule);
 }
-.section-head > *{ max-width:62ch; }
-.section-head h2{ margin-bottom:.34em; }
+.section-head > *{ max-width:60ch; }
+.section-head h2{ margin-bottom:.3em; }
 .section-head p:last-child{ margin-bottom:0; color:var(--muted); }
+section{ padding:0; }
+.section-alt{ background:var(--surface); }
 
-/* ---------- Disciplinas (Pista / Playa) ---------- */
-/* Las dos caras del club, a la misma altura y sin marco exterior: el corte
-   entre azul y oro ya separa bastante. */
-.disciplines{ display:grid; grid-template-columns:1fr 1fr; }
-.discipline{
-  padding:clamp(36px, 4.2vw, 60px) clamp(28px, 3.6vw, 52px);
-  display:flex; flex-direction:column; align-items:flex-start;
+/* ---------- Índice numerado ----------
+   Sustituye a la rejilla de tarjetas iguales. Las entradas comparten filete
+   pero no peso: el número vive en el margen, como en un sumario impreso. */
+.indice{
+  list-style:none; margin:0; padding:0;
+  border-top:1px solid var(--rule);
 }
-.discipline.pista{ background:var(--navy-deep); color:var(--white); }
-.discipline.playa{ background:var(--gold); color:var(--navy-ink); }
-.discipline h3{ color:inherit; margin-bottom:.55em; }
-.discipline.pista h3{ color:var(--gold-light); }
-.discipline p{ margin-bottom:2em; max-width:44ch; }
-.discipline.pista p{ color:rgba(246,241,228,.8); }
-.discipline.playa p{ color:rgba(13,31,45,.78); }
-/* El rótulo de disciplina cuelga de un filete corto, igual que el antetítulo
-   del hero: mismo gesto repetido, que es lo que hace sistema. */
-.discipline .tag{
-  display:block;
-  font-family:var(--font-mono); font-size:.65rem; letter-spacing:.24em;
-  text-transform:uppercase;
-  padding-bottom:12px; margin-bottom:24px;
-  border-bottom:1px solid currentColor;
-  opacity:.6;
+.indice li{
+  display:grid;
+  grid-template-columns:72px minmax(0, 1fr);
+  column-gap:clamp(18px, 2.4vw, 40px);
+  align-items:start;
+  padding:clamp(24px, 2.8vw, 38px) 0;
+  border-bottom:1px solid var(--rule);
 }
-.discipline .btn{ margin-top:auto; }
-.discipline.playa .btn-ghost{ color:var(--navy-deep); border-color:rgba(13,31,45,.4); }
-.discipline.playa .btn-ghost:hover{
-  background:var(--navy-deep); color:var(--gold-light); border-color:var(--navy-deep);
+.indice .num{
+  font-family:var(--font-mono); font-size:.68rem;
+  letter-spacing:.18em; color:var(--accent);
+  padding-top:.5em;
 }
-@media (max-width:760px){ .disciplines{ grid-template-columns:1fr; } }
+.indice h3{ margin:0 0 .35em; }
+.indice p{ margin:0; color:var(--muted); max-width:58ch; }
+@media (max-width:600px){
+  .indice li{ grid-template-columns:1fr; row-gap:10px; }
+  .indice .num{ padding-top:0; }
+}
 
-/* ---------- Tarjetas ---------- */
-.grid{ display:grid; gap:clamp(26px, 3vw, 44px); }
+/* ---------- Listado de competiciones ----------
+   Los equipos del club juegan en varias competiciones a la vez, así que en vez
+   de un solo marco incrustado hay un sumario por sexo y el visitante elige
+   cuál mirar. Solo se carga la que pide: una llamada a la federación, no seis.
+   ============================================================ */
+/* La jerarquía es sexo → categoría → torneo. El visitante busca primero a su
+   equipo (masculino cadete, femenino infantil…) y solo después elige en cuál de
+   sus torneos mirar. Al revés no funcionaba: el club juega decenas de torneos
+   repartidos entre pista y playa, y había que saber de antemano en qué circuito
+   buscar. El sexo cuelga de un filete oscuro y la categoría de uno normal: esa
+   diferencia de grosor es toda la jerarquía, no hay cajas. */
+.comp-sexo > h3{
+  margin:0 0 clamp(18px, 2vw, 26px);
+  padding-top:clamp(14px, 1.6vw, 20px);
+  border-top:1px solid var(--heading);
+  font-size:clamp(1.55rem, 2.5vw, 2.1rem);
+}
+/* Cada categoría es un <details>: son más de cien torneos entre pista, playa,
+   Andalucía y España, y desplegados de golpe la página no se puede leer. El
+   elemento nativo trae gratis el teclado, el foco y el funcionamiento sin JS.
+   El signo es un + / − de una línea, no una flecha de plantilla. */
+.comp-categoria{ border-bottom:1px solid var(--rule); }
+.comp-categoria > summary{
+  list-style:none; cursor:pointer;
+  padding:clamp(13px, 1.5vw, 18px) 0;
+  border-top:1px solid var(--rule);
+}
+.comp-categoria > summary::-webkit-details-marker{ display:none; }
+.comp-categoria > summary > h4{
+  display:flex; align-items:baseline; gap:12px;
+  margin:0;
+  font-size:clamp(1.06rem, 1.4vw, 1.26rem);
+  transition:color .24s var(--ease);
+}
+.comp-categoria > summary > h4 span{
+  flex:none; margin-left:auto;
+  font-family:var(--font-mono); font-weight:400;
+  font-size:.58rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted);
+}
+.comp-categoria > summary > h4::after{
+  content:'+';
+  flex:none; order:3;
+  font-family:var(--font-mono); font-weight:400;
+  font-size:.9rem; line-height:1;
+  color:var(--muted);
+}
+.comp-categoria[open] > summary > h4::after{ content:'−'; }
+.comp-categoria > summary:hover > h4,
+.comp-categoria[open] > summary > h4{ color:var(--accent); }
+.comp-categoria > summary:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+.comp-categoria[open] > summary{ border-bottom:1px solid var(--rule); }
+.comp-categoria .comp-lista{ border-top:0; padding-bottom:clamp(8px, 1vw, 14px); }
+.comp-categoria .comp-lista li:last-child{ border-bottom:0; }
+
+.comp-grupos{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:clamp(30px, 3.6vw, 56px);
+  align-items:start;
+  margin-bottom:0;
+}
+@media (max-width:820px){ .comp-grupos{ grid-template-columns:1fr; } }
+
+.comp-lista{ list-style:none; margin:0; padding:0; border-top:1px solid var(--rule); }
+.comp-lista li{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) auto;
+  align-items:center;
+  gap:14px clamp(14px, 1.8vw, 26px);
+  padding:clamp(16px, 1.9vw, 24px) 0;
+  border-bottom:1px solid var(--rule);
+}
+.comp-lista .comp-torneo{
+  margin:0 0 .3em;
+  font-family:var(--font-titular); font-weight:700;
+  font-size:clamp(1rem, 1.25vw, 1.14rem);
+  line-height:1.25;
+  color:var(--heading);
+}
+.comp-lista .comp-detalle{
+  display:block; margin:0;
+  font-family:var(--font-mono); font-size:.6rem;
+  letter-spacing:.13em; text-transform:uppercase;
+  color:var(--muted);
+  /* Sin tope de medida: la columna ya es estrecha y con 40ch la ficha se
+     partía en tres líneas, que con 147 torneos alarga la lista sin motivo. */
+  max-width:none;
+}
+/* El botón se comporta como el resto de enlaces de filete del sitio: es un
+   <button> porque no navega, carga la tabla ahí mismo. */
+.comp-ver{
+  background:none; border:0; cursor:pointer;
+  font-family:var(--font-mono); font-size:.62rem;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--heading);
+  padding:10px 0 6px;
+  border-bottom:1px solid var(--rule);
+  transition:color .24s var(--ease), border-color .24s var(--ease);
+  white-space:nowrap;
+}
+.comp-ver:hover{ color:var(--accent); border-color:var(--accent); }
+.comp-lista li.activa .comp-ver{ color:var(--accent); border-color:var(--accent); }
+.comp-lista li.activa .comp-torneo{ color:var(--accent); }
+
+/* Hueco de la tabla antes de elegir competición. */
+#tabla-federacion{ min-height:120px; margin-top:clamp(38px, 4.4vw, 62px); }
+#tabla-federacion:focus{ outline:none; }
+.comp-vacio{
+  margin:0;
+  padding:clamp(26px, 3vw, 40px);
+  background:var(--notice-bg);
+  border:1px solid var(--rule);
+  font-family:var(--font-mono); font-size:.68rem;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted);
+  max-width:none;
+}
+
+/* ---------- Muro de patrocinadores ----------
+   Celdas separadas por filete, no tarjetas. La última fila queda incompleta a
+   propósito: son siete logos, no una rejilla que haya que rellenar. */
+.muro-logos{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  border-top:1px solid var(--rule);
+  border-left:1px solid var(--rule);
+}
+.muro-logos > *{
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(24px, 3vw, 40px);
+  aspect-ratio:3 / 2;
+  background:var(--white);
+  border-right:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+}
+.muro-logos img{
+  max-width:100%; max-height:100%;
+  width:auto; object-fit:contain;
+}
+@media (max-width:900px){ .muro-logos{ grid-template-columns:repeat(3, 1fr); } }
+@media (max-width:560px){ .muro-logos{ grid-template-columns:repeat(2, 1fr); } }
+
+/* ---------- Fichas (equipaciones) ----------
+   Antes eran tarjetas con borde y fondo. Ahora la foto va suelta y el texto
+   cuelga de un filete: la caja desaparece y la imagen gana. */
+.grid{ display:grid; gap:clamp(28px, 3.2vw, 48px); }
 .grid-3{ grid-template-columns:repeat(3,1fr); }
 .grid-2{ grid-template-columns:repeat(2,1fr); }
 @media (max-width:960px){ .grid-3{ grid-template-columns:repeat(2,1fr); } }
 @media (max-width:760px){ .grid-3, .grid-2{ grid-template-columns:1fr; } }
 
-/* Tarjetas sin sombra: un filete de 1px bien definido, como los módulos de
-   una página impresa. El sombreado difuso es lo que las hacía parecer
-   pegatinas flotando sobre la arena. */
 .card{
   position:relative;
-  background:var(--surface);
-  border:1px solid var(--rule);
-  border-radius:var(--radius);
-  overflow:hidden;
-  transition:border-color .3s var(--ease);
+  background:none;
+  border:0;
+  border-radius:0;
 }
-.card:hover{ border-color:var(--gold); }
-.card img{ transition:transform .8s var(--ease), filter .5s var(--ease); }
-.card:hover img{ transform:scale(1.028); }
-.card .body{ padding:clamp(24px, 2.6vw, 34px); }
-.card h4{ margin-bottom:.4em; }
-.card p{ color:var(--muted); margin-bottom:0; }
-/* Metadato en mono, colgado de un filete de oro: es la etiqueta de archivo
-   de la tarjeta, no un titulillo. */
+.card > img,
+.card > picture img{ width:100%; }
+.card .body{
+  padding:14px 0 0;
+  margin-top:16px;
+  border-top:1px solid var(--rule);
+}
+.card h4{ margin-bottom:.3em; }
+.card p{ color:var(--muted); margin-bottom:0; max-width:52ch; }
 .card .meta{
   display:block;
-  font-family:var(--font-mono); font-size:.63rem; color:var(--accent);
+  font-family:var(--font-mono); font-size:.62rem; color:var(--accent);
   letter-spacing:.2em; text-transform:uppercase;
-  margin-bottom:1.1em; padding-left:12px;
-  border-left:2px solid var(--gold);
-}
-.card .thumb{
-  aspect-ratio:4/3; width:100%;
-  background:linear-gradient(135deg,var(--navy-deep),var(--navy));
-  display:flex; align-items:center; justify-content:center;
-  color:var(--gold-light); font-family:var(--font-mono); font-size:.72rem;
-  letter-spacing:.1em; text-transform:uppercase; text-align:center; padding:10px;
+  margin-bottom:.9em;
 }
 
-/* ---------- Galería en mosaico ---------- */
-/* Las fotos del club van en proporciones muy dispares (desde 4:1 panorámica
-   hasta 9:16 vertical). Encajarlas en un marco 4/3 común con object-fit:cover
+/* ---------- Galería en mosaico ----------
+   Las fotos del club van en proporciones muy dispares (desde 4:1 panorámica
+   hasta 9:16 vertical). Encajarlas en un marco común con object-fit:cover
    recortaba media foto, así que se apilan en columnas y cada una conserva la
    suya. width/height en el <img> reservan el espacio y evitan el salto. */
-.galeria{ columns:3; column-gap:18px; }
-/* En el mosaico manda la foto: sin marco ni fondo, solo la imagen. */
-.galeria .card{ break-inside:avoid; margin:0 0 18px; background:none; border:none; }
+.galeria{ columns:3; column-gap:16px; }
+/* Ahora cada foto es un <figure>: sin margin:0 traería el del navegador y
+   rompería el reparto en columnas. */
+.galeria .card{ break-inside:avoid; margin:0 0 26px; }
 .galeria img{ width:100%; height:auto; }
-/* Están hechas con móviles muy distintos: una pizca menos de saturación las
-   iguala, y al pasar por encima recuperan el color entero. */
-.galeria img{ filter:saturate(.88); }
-.galeria .card:hover img{ filter:saturate(1.02); }
+
+/* Pie de foto de la hoja de contactos: mono pequeño colgando de un filete.
+   Da contexto a fotos que si no son 36 imágenes mudas, y es texto indexable. */
+.galeria figcaption{
+  font-family:var(--font-mono);
+  font-size:.6rem;
+  line-height:1.6;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-top:9px;
+  padding-top:8px;
+  border-top:1px solid var(--rule);
+}
+/* Están hechas con móviles muy distintos: una pizca menos de saturación y un
+   punto de contraste las igualan. Al pasar por encima recuperan el color. */
+.galeria img{
+  filter:saturate(.82) contrast(1.04);
+  transition:filter .5s var(--ease);
+}
+.galeria .card:hover img{ filter:saturate(1.03) contrast(1); }
 @media (max-width:860px){ .galeria{ columns:2; } }
 @media (max-width:560px){ .galeria{ columns:1; } }
 
-.foto-destacada{ margin-bottom:18px; overflow:hidden; }
+.foto-destacada{ margin-bottom:16px; overflow:hidden; }
 .foto-destacada img{ width:100%; height:auto; }
 
-/* Foto de grupo a todo el ancho del contenedor: en media columna los
-   jugadores salían diminutos y quedaba un hueco muerto al lado. */
-.foto-ancha{ margin:clamp(34px, 4vw, 56px) 0 0; }
+/* Foto de grupo a todo el ancho del contenedor. */
+.foto-ancha{ margin:clamp(32px, 3.6vw, 52px) 0 0; }
 .foto-ancha img{ width:100%; height:auto; }
 .foto-ancha figcaption{
-  font-family:var(--font-mono); font-size:.66rem; letter-spacing:.2em;
+  font-family:var(--font-mono); font-size:.63rem; letter-spacing:.2em;
   text-transform:uppercase;
   color:var(--muted);
   margin-top:14px; padding-top:12px;
@@ -483,12 +839,12 @@ section{ padding:var(--section-y) 0; }
 /* ---------- Pestañas de temporada ---------- */
 .season-tabs{
   display:flex; gap:0;
-  margin-bottom:clamp(30px, 3.4vw, 46px);
+  margin-bottom:clamp(28px, 3.2vw, 44px);
   border-bottom:1px solid var(--rule);
 }
 .season-tabs button{
   position:relative;
-  font-family:var(--font-mono); font-size:.7rem; letter-spacing:.2em;
+  font-family:var(--font-mono); font-size:.68rem; letter-spacing:.2em;
   text-transform:uppercase; padding:0 22px 14px 0;
   background:none; border:none;
   color:var(--muted); cursor:pointer;
@@ -511,7 +867,6 @@ section{ padding:var(--section-y) 0; }
   overflow:hidden;
   background:var(--navy-ink); color:rgba(246,241,228,.78);
   padding:clamp(56px, 6.5vw, 88px) 0 32px;
-  border-top:1px solid rgba(217,167,59,.45);
 }
 /* Escudo al agua en la esquina: firma discreta, no compite con los enlaces. */
 .site-footer::before{
@@ -530,72 +885,186 @@ section{ padding:var(--section-y) 0; }
 }
 .footer-grid h4{
   font-family:var(--font-mono); font-weight:500;
-  color:var(--gold-light); font-size:.66rem;
-  letter-spacing:.24em; margin-bottom:1.6em;
+  color:var(--gold-light); font-size:.63rem;
+  letter-spacing:.24em; text-transform:uppercase;
+  margin-bottom:1.7em;
 }
 .footer-grid p{ color:rgba(246,241,228,.62); }
 .footer-grid a{
   display:flex; align-items:center; gap:11px;
   color:rgba(246,241,228,.78);
-  padding:6px 0; font-size:.92rem;
+  padding:6px 0; font-size:.94rem;
   transition:color .22s var(--ease);
 }
 .footer-grid a:hover{ color:var(--gold-light); }
 .footer-bottom{
   display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-  font-family:var(--font-mono); font-size:.65rem; letter-spacing:.14em;
+  font-family:var(--font-mono); font-size:.62rem; letter-spacing:.14em;
   text-transform:uppercase;
   color:rgba(246,241,228,.45);
 }
 @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr; gap:34px; } }
 
 /* ---------- Misc ---------- */
+/* Aviso destacado. Ocupa todo el ancho del contenedor a propósito: es lo
+   primero que tiene que leer quien entra buscando comprar, así que se lee
+   como una faja de portada, no como una nota al margen. */
 .notice{
-  border-left:2px solid var(--accent);
+  border-left:3px solid var(--accent);
   background:var(--notice-bg);
   color:var(--accent-ink);
-  padding:16px 22px;
+  padding:clamp(24px, 2.6vw, 36px) clamp(26px, 2.8vw, 42px);
   font-family:var(--font-mono);
-  font-size:.78rem;
-  line-height:1.75;
-  margin-bottom:clamp(30px, 3.4vw, 46px);
-  max-width:78ch;
+  font-size:clamp(.82rem, 1.05vw, .95rem);
+  line-height:1.85;
+  margin-bottom:clamp(34px, 3.8vw, 54px);
+  max-width:none;
 }
-.map-embed{
-  width:100%; height:420px; border:0;
-  filter:grayscale(.3);
+.notice a{ border-bottom:1px solid currentColor; }
+.map-embed,
+.marco-cargado{
+  display:block;
+  width:100%; height:460px; border:0;
 }
+.map-embed{ filter:grayscale(.55) contrast(1.05); }
 
-/* ---------- Iconos ---------- */
+/* Hueco de un marco de terceros antes de cargarlo. El salto de altura al
+   pulsar no penaliza el CLS: solo cuentan los desplazamientos que el visitante
+   no ha provocado, y aquí acaba de hacer clic. */
+.marco-diferido{
+  display:flex; align-items:center;
+  width:100%;
+  min-height:clamp(230px, 24vw, 300px);
+  padding:clamp(26px, 3.2vw, 46px);
+  background:var(--notice-bg);
+  border:1px solid var(--rule);
+}
+/* En contenedor ancho el aviso se reparte en dos: la explicación a la
+   izquierda y la llamada a la derecha. En columna estrecha (el mapa de
+   contacto) se apila solo. */
+.mapa-aviso{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr);
+  gap:8px clamp(28px, 4vw, 64px);
+  align-items:start;
+  width:100%;
+}
+@media (min-width:820px){
+  .marco-diferido:not(.marco-estrecho) .mapa-aviso{
+    grid-template-columns:minmax(0, 1.3fr) minmax(230px, .7fr);
+    align-items:end;
+  }
+  /* El rótulo y la explicación ocupan la columna izquierda; la llamada, la
+     derecha, alineada por abajo con el final del párrafo. */
+  .marco-diferido:not(.marco-estrecho) .mapa-aviso .eyebrow{ grid-column:1; grid-row:1; }
+  .marco-diferido:not(.marco-estrecho) .mapa-aviso > p{ grid-column:1; grid-row:2; }
+  .marco-diferido:not(.marco-estrecho) .mapa-accion{ grid-column:2; grid-row:1 / span 2; align-self:end; }
+}
+/* La llamada va siempre junta: botón y enlace alternativo. */
+.mapa-accion{ display:flex; flex-direction:column; align-items:flex-start; }
+.mapa-accion .mapa-alterna{ margin-top:16px; }
+.mapa-aviso p{ color:var(--muted); max-width:52ch; }
+.mapa-aviso .eyebrow{ margin-bottom:.7em; }
+.mapa-aviso .btn{ margin-top:6px; }
+.mapa-alterna{ margin:18px 0 0; font-size:.9rem; }
+.mapa-alterna a{ border-bottom:1px solid var(--rule); }
+.mapa-alterna a:hover{ color:var(--accent); border-color:var(--accent); }
+
 /* SVG en línea: sin librerías externas y heredan el color del enlace. */
 .ico{ width:15px; height:15px; flex-shrink:0; opacity:.7; }
 
 .lista-contacto{ list-style:none; margin:0; padding:0; }
-.lista-contacto li{
-  border-top:1px solid var(--rule);
-}
+.lista-contacto li{ border-top:1px solid var(--rule); }
 .lista-contacto li:last-child{ border-bottom:1px solid var(--rule); }
 .lista-contacto a{
   display:flex; align-items:center; gap:12px;
-  color:var(--text); padding:15px 0;
+  color:var(--text); padding:16px 0;
   transition:color .22s var(--ease), padding-left .22s var(--ease);
 }
 .lista-contacto a:hover{ color:var(--accent); padding-left:8px; }
 .lista-contacto a:hover .ico{ opacity:1; }
 
-/* ---------- Aparición al desplazar ---------- */
-/* main.js pone el atributo, así que sin JS todo se ve desde el principio:
-   nada de contenido escondido si falla el script. Es un fundido corto y sin
-   desplazamiento largo: se nota que la página está viva, no que se monta. */
-[data-reveal]{
-  opacity:0;
-  transform:translateY(14px);
-  transition:opacity .6s var(--ease), transform .6s var(--ease);
-  transition-delay:var(--reveal-delay, 0ms);
+/* ---------- Visor de fotos ----------
+   El diálogo lo inyecta main.js. Fondo azul del club casi opaco, la foto
+   centrada y el pie en mono debajo: mismo lenguaje que el mosaico, en grande.
+   Sin caja blanca ni sombras: aquí también manda la foto. */
+.visor{
+  position:fixed; inset:0; z-index:200;
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(16px, 4vw, 60px);
+  background:rgba(10,42,67,.96);
 }
-[data-reveal].is-visible{ opacity:1; transform:none; }
+.visor[hidden]{ display:none; }
+/* Bloquea el desplazamiento del fondo mientras el visor está abierto. */
+body.sin-scroll{ overflow:hidden; }
+
+.visor-marco{ margin:0; max-width:min(1180px, 100%); max-height:100%; }
+.visor-marco picture{ display:block; }
+.visor-img{
+  max-width:100%;
+  max-height:calc(100vh - clamp(96px, 16vw, 190px));
+  width:auto; height:auto;
+  margin:0 auto;
+}
+.visor-pie{
+  font-family:var(--font-mono); font-size:.64rem;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:rgba(246,241,228,.78);
+  text-align:center;
+  margin-top:16px; padding-top:12px;
+  border-top:1px solid rgba(246,241,228,.24);
+}
+.visor button{
+  position:absolute;
+  background:none; border:1px solid rgba(246,241,228,.3);
+  color:var(--white); cursor:pointer;
+  width:46px; height:46px; line-height:1;
+  font-family:var(--font-body); font-size:1.7rem;
+  display:flex; align-items:center; justify-content:center;
+  transition:background .22s var(--ease), border-color .22s var(--ease), color .22s var(--ease);
+}
+.visor button:hover{ background:var(--gold); border-color:var(--gold); color:var(--navy-deep); }
+.visor-cerrar{ top:clamp(14px, 2.4vw, 28px); right:clamp(14px, 2.4vw, 28px); }
+.visor-nav{ top:50%; transform:translateY(-50%); }
+.visor-antes{ left:clamp(10px, 1.8vw, 24px); }
+.visor-luego{ right:clamp(10px, 1.8vw, 24px); }
+@media (max-width:600px){
+  .visor-nav{ top:auto; bottom:clamp(14px, 4vw, 26px); transform:none; }
+  .visor-antes{ left:calc(50% - 56px); }
+  .visor-luego{ right:calc(50% - 56px); }
+  .visor-pie{ margin-bottom:64px; }
+}
+
+/* La foto del mosaico es un botón: tiene que decirlo. */
+.galeria .card[data-visor]{ cursor:zoom-in; }
+.galeria .card[data-visor]:focus-visible{ outline:2px solid var(--gold); outline-offset:4px; }
+
+/* ============================================================
+   MOVIMIENTO
+   Uno solo, y con intención: el titular de cada banda de foto se descubre
+   tras una máscara, como una copia que sale del revelador. Nada más se mueve
+   al desplazar. El fundido genérico repetido en cada bloque es justo lo que
+   delata una plantilla, así que aquí no existe.
+   main.js pone los atributos; sin JS todo se ve desde el primer momento.
+   ============================================================ */
+[data-mascara]{
+  clip-path:inset(0 0 102% 0);
+  transition:clip-path 1.05s var(--ease);
+  transition-delay:var(--mascara-delay, 0ms);
+}
+[data-mascara].visible{ clip-path:inset(0 0 -12% 0); }
+
+/* La foto de la banda entra con un acercamiento muy lento: no es un efecto,
+   es lo que evita que la portada parezca una imagen pegada. */
+.banda-foto[data-entra] .banda-media img{
+  transform:scale(1.055);
+  transition:transform 2.4s var(--ease);
+}
+.banda-foto[data-entra].visible .banda-media img{ transform:scale(1); }
+
 @media (prefers-reduced-motion:reduce){
-  [data-reveal]{ opacity:1; transform:none; transition:none; }
   html{ scroll-behavior:auto; }
-  .card:hover img{ transform:none; }
+  [data-mascara]{ clip-path:none; transition:none; }
+  .banda-foto[data-entra] .banda-media img{ transform:none; transition:none; }
+  .galeria .card:hover img{ filter:saturate(.82) contrast(1.04); }
 }
