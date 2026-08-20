@@ -14,14 +14,26 @@
 <meta name="theme-color" content="#F6F1E4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0B1922" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://balonmanobarbate.vercel.app/galeria.html">
-<link rel="icon" href="assets/img/escudo-club-balonmano-barbate.webp" type="image/webp">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/img/escudo-club-balonmano-barbate-96.webp" type="image/webp" sizes="96x96">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Club Balonmano Barbate">
 <meta property="og:title" content="Galería — Club Balonmano Barbate">
 <meta property="og:description" content="Fotos de partidos, torneos y celebraciones del Club Balonmano Barbate en el pabellón y en la playa.">
-<meta property="og:image" content="https://balonmanobarbate.vercel.app/img/escudo-club-balonmano-barbate.webp">
+<meta property="og:image" content="https://balonmanobarbate.vercel.app/assets/img/og-club-balonmano-barbate.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Afición y equipos del Club Balonmano Barbate celebrando en el Pabellón Municipal, con el escudo del club">
 <meta property="og:url" content="https://balonmanobarbate.vercel.app/galeria.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Galería — Club Balonmano Barbate">
+<meta name="twitter:description" content="Fotos de partidos, torneos y celebraciones del Club Balonmano Barbate en el pabellón y en la playa.">
+<meta name="twitter:image" content="https://balonmanobarbate.vercel.app/assets/img/og-club-balonmano-barbate.jpg">
+<meta name="twitter:image:alt" content="Afición y equipos del Club Balonmano Barbate celebrando en el Pabellón Municipal, con el escudo del club">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +127,7 @@
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/analitica.js" defer></script>
 </head>
 <body class="con-portada">
 
@@ -129,7 +142,7 @@
         <div class="since">DESDE 1997 · BARBATE, CÁDIZ</div>
       </div>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Navegación principal">
       <a href="index.html">Inicio</a>
       <a href="club.html">El Club</a>
       <div class="nav-grupo">
@@ -187,6 +200,10 @@
     </div>
 
     <div class="season-panel" data-season="25-26">
+      <div class="section-head">
+        <p class="eyebrow">Temporada 2025 / 2026</p>
+        <h2>Fotografías de la temporada</h2>
+      </div>
       <div class="galeria">
         <figure class="card" data-visor="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.webp" data-visor-jpg="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa-450.webp 450w, assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.webp 900w"><img src="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/diego-carrasco-cup-torremolinos-balonmano-playa-450.jpg 450w, assets/img/diego-carrasco-cup-torremolinos-balonmano-playa.jpg 900w" width="900" height="534" alt="Diego Carrasco Cup (Torremolinos), balonmano playa" loading="lazy" decoding="async"></picture><figcaption>Diego Carrasco Cup (Torremolinos), balonmano playa</figcaption></figure>
         <figure class="card" data-visor="assets/img/celebracion-en-el-pabellon-con-la-aficion.webp" data-visor-jpg="assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg"><picture><source type="image/webp" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-en-el-pabellon-con-la-aficion-450.webp 450w, assets/img/celebracion-en-el-pabellon-con-la-aficion.webp 900w"><img src="assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg" sizes="(max-width:560px) 92vw, (max-width:860px) 46vw, 30vw" srcset="assets/img/celebracion-en-el-pabellon-con-la-aficion-450.jpg 450w, assets/img/celebracion-en-el-pabellon-con-la-aficion.jpg 900w" width="900" height="608" alt="Celebración en el pabellón con la afición" loading="lazy" decoding="async"></picture><figcaption>Celebración en el pabellón con la afición</figcaption></figure>
@@ -205,19 +222,21 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h4>Club Balonmano Barbate</h4>
+        <h2>Club Balonmano Barbate</h2>
         <p style="opacity:.8; max-width:320px;">Fundado en 1997 en Barbate, Cádiz. Balonmano de pista y de playa.</p>
       </div>
       <div>
-        <h4>Navegación</h4>
+        <h2>Navegación</h2>
+        <nav aria-label="Enlaces del pie">
         <a href="club.html">El Club</a>
         <a href="equipos.html">Equipos</a>
         <a href="equipaciones.html">Equipaciones</a>
         <a href="galeria.html">Galería</a>
         <a href="patrocinadores.html">Patrocinadores</a>
+        </nav>
       </div>
       <div>
-        <h4>Contacto</h4>
+        <h2>Contacto</h2>
         <a href="mailto:balonmanobarbate@gmail.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect><path d="M3 6.7l9 6 9-6"></path></svg>balonmanobarbate@gmail.com</a>
         <a href="https://www.facebook.com/ClubBalonmanoBarbate" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 2.2h-3.4c-2.7 0-4.2 1.6-4.2 4.3v2.4H6.9v3.5h2.5v9.4h3.6v-9.4h2.9l.5-3.5h-3.4V6.9c0-.9.3-1.3 1.3-1.3H17V2.2z"></path></svg>@ClubBalonmanoBarbate</a>
         <a href="https://www.instagram.com/barbatebalonmano" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="1.25" fill="currentColor" stroke="none"></circle></svg>@barbatebalonmano</a>

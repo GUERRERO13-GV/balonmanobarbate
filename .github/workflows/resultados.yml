@@ -43,14 +43,19 @@ jobs:
       - name: Escribir el HTML
         run: python tools/genera_partidos.py
 
+      # index.html y equipos.html acaban de cambiar, así que su <lastmod> del
+      # sitemap tiene que moverse con ellos o Google deja de fiarse del dato.
+      - name: Actualizar el sitemap
+        run: python tools/genera_sitemap.py
+
       - name: Publicar si hay algo nuevo
         run: |
-          if git diff --quiet -- datos index.html equipos.html; then
+          if git diff --quiet -- datos index.html equipos.html sitemap.xml; then
             echo "La federación no ha movido nada esta semana."
             exit 0
           fi
           git config user.name "FranVi"
           git config user.email "fvidalmateo@gmail.com"
-          git add datos/deportivo.json index.html equipos.html
+          git add datos/deportivo.json index.html equipos.html sitemap.xml
           git commit -m "chore: actualizar resultados de la federación"
           git push

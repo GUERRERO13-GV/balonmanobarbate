@@ -781,7 +781,7 @@ section{ padding:0; }
   margin-top:16px;
   border-top:1px solid var(--rule);
 }
-.card h4{ margin-bottom:.3em; }
+.card h3{ margin-bottom:.3em; }
 .card p{ color:var(--muted); margin-bottom:0; max-width:52ch; }
 .card .meta{
   display:block;
@@ -885,9 +885,11 @@ section{ padding:0; }
   border-bottom:1px solid rgba(255,255,255,.14);
   padding-bottom:44px; margin-bottom:26px;
 }
-.footer-grid h4{
+/* Rótulos del pie. Son <h2> por jerarquía —el pie es una región propia—
+   pero se leen como rótulos mono, no como titulares. */
+.footer-grid h2{
   font-family:var(--font-mono); font-weight:500;
-  color:var(--gold-light); font-size:.63rem;
+  color:var(--gold-light); font-size:.63rem; line-height:1.24;
   letter-spacing:.24em; text-transform:uppercase;
   margin-bottom:1.7em;
 }
@@ -1227,3 +1229,142 @@ body.sin-scroll{ overflow:hidden; }
 .mas-equipos .comp-grupos{ padding-top:clamp(22px, 2.6vw, 36px); }
 .marcadores .rejilla + .mas-equipos{ margin-top:clamp(34px, 4vw, 56px); }
 .marcadores h3{ margin:0 0 clamp(14px, 1.6vw, 20px); }
+
+
+/* ============================================================
+   ESTADOS DE CARGA
+   Los marcos de la federación tardan segundos en pintar: sin nada que lo
+   diga, quien pulsa cree que el botón no ha hecho nada y vuelve a pulsar.
+   No es un spinner de plantilla: es el mismo filete de 1 px del resto del
+   sitio con un segmento que lo recorre.
+   ============================================================ */
+.cargando{
+  display:flex; flex-direction:column; gap:14px;
+  padding:clamp(30px, 3.4vw, 48px) 0;
+  border-top:1px solid var(--rule);
+}
+.cargando::before{
+  content:"";
+  display:block; height:1px; width:100%;
+  background:var(--rule);
+  /* El segmento de acento que recorre el filete. */
+  background-image:linear-gradient(90deg, transparent, var(--accent), transparent);
+  background-size:34% 100%;
+  background-repeat:no-repeat;
+  animation:filete-corre 1.25s var(--ease) infinite;
+}
+.cargando p{
+  font-family:var(--font-mono);
+  font-size:.68rem; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--muted);
+  margin:0;
+}
+@keyframes filete-corre{
+  from{ background-position:-40% 0; }
+  to{ background-position:140% 0; }
+}
+/* Sin animación, el aviso sigue estando: lo que importa es el texto. */
+@media (prefers-reduced-motion:reduce){
+  .cargando::before{ animation:none; background-image:none; }
+}
+
+/* Cuando un marco de terceros no llega a cargar —la federación cae, o una
+   extensión lo bloquea— no se deja un hueco en blanco: se dice qué ha pasado
+   y se ofrece el enlace directo, que es lo que el visitante venía a buscar. */
+.marco-fallo{
+  padding:clamp(26px, 3.2vw, 46px);
+  border:1px solid var(--rule);
+  background:var(--notice-bg);
+}
+.marco-fallo p{ color:var(--muted); max-width:56ch; margin:0 0 14px; }
+.marco-fallo p:last-child{ margin-bottom:0; }
+.marco-fallo a{ border-bottom:1px solid var(--rule); }
+.marco-fallo a:hover{ color:var(--accent); border-color:var(--accent); }
+
+
+/* ============================================================
+   AVISO DE MEDICIÓN DE VISITAS
+   Faja anclada abajo, no una tarjeta flotante: colgada de un filete, como
+   todo lo demás. Lo inyecta assets/js/analitica.js, nunca el HTML.
+   ============================================================ */
+.consentimiento{
+  position:fixed; left:0; right:0; bottom:0; z-index:60;
+  display:grid;
+  grid-template-columns:minmax(0, 1fr);
+  gap:6px clamp(28px, 4vw, 64px);
+  align-items:start;
+  padding:clamp(20px, 2.4vw, 30px) clamp(20px, 5vw, 60px);
+  background:var(--surface);
+  border-top:1px solid var(--heading);
+  box-shadow:0 -18px 40px -32px rgba(13,31,45,.55);
+}
+.consentimiento .eyebrow{ margin:0 0 .7em; }
+.consentimiento-texto{
+  margin:0;
+  color:var(--muted);
+  font-size:clamp(.86rem, 2.4vw, .92rem);
+  max-width:74ch;
+}
+/* En un movil el aviso no puede comerse la pantalla: si el texto creciera
+   —otro idioma, un ajuste de fuente del sistema— se desplaza dentro de su
+   propia faja en vez de empujar los botones fuera de la vista. */
+@media (max-width:899px){
+  .consentimiento{ max-height:62vh; overflow-y:auto; }
+}
+.consentimiento-acciones{
+  display:flex; gap:12px; flex-wrap:wrap;
+  margin-top:16px;
+}
+/* Los dos botones pesan igual a propósito: un «rechazar» apagado al lado de
+   un «aceptar» resaltón no es un consentimiento válido. */
+.consentimiento-acciones .btn{ flex:0 0 auto; }
+/* .btn-ghost nace blanco porque su sitio natural es encima de una foto.
+   Aquí el fondo es claro, así que se repite el ajuste que ya hace
+   .banda-arena: sin esto el texto del botón es blanco sobre arena y no
+   se lee nada. */
+.consentimiento .btn-ghost{ color:var(--heading); border-color:var(--rule); }
+.consentimiento .btn-ghost:hover{ background:var(--navy-deep); border-color:var(--navy-deep); color:var(--white); }
+@media (min-width:900px){
+  .consentimiento{
+    grid-template-columns:minmax(0, 1fr) auto;
+    align-items:center;
+  }
+  .consentimiento .eyebrow{ grid-column:1; grid-row:1; }
+  .consentimiento-texto{ grid-column:1; grid-row:2; }
+  .consentimiento-acciones{ grid-column:2; grid-row:1 / span 2; margin-top:0; }
+}
+
+
+/* ============================================================
+   BUSCADOR DE LA PÁGINA 404
+   Un campo y la lista del sitio. Sin caja: el campo es una línea sobre un
+   filete, como el resto. Lo inyecta main.js sobre [data-buscador].
+   ============================================================ */
+.buscador{ margin:0 0 clamp(26px, 3vw, 40px); max-width:520px; }
+.buscador label{ display:block; margin-bottom:.8em; }
+.buscador-campo{
+  display:block; width:100%;
+  font-family:var(--font-titular);
+  font-size:clamp(1.1rem, 1.8vw, 1.35rem);
+  color:var(--text);
+  background:transparent;
+  border:0; border-bottom:1px solid var(--heading);
+  border-radius:0;                 /* iOS redondea los input[type=search] */
+  padding:10px 0;
+  -webkit-appearance:none; appearance:none;
+  transition:border-color .22s var(--ease);
+}
+.buscador-campo::placeholder{ color:var(--muted); opacity:.75; }
+.buscador-campo:focus{ outline:none; border-bottom-color:var(--accent); }
+.buscador-campo:focus-visible{ outline:2px solid var(--gold); outline-offset:4px; }
+.buscador-recuento{
+  font-family:var(--font-mono);
+  font-size:.68rem; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--muted);
+  margin:1em 0 0; min-height:1em;
+}
+/* .indice li es una rejilla, y display:grid gana al [hidden] del navegador:
+   sin esta línea, filtrar no ocultaría nada. */
+.indice li[hidden]{ display:none; }
+.indice h3 a{ border-bottom:1px solid var(--rule); }
+.indice h3 a:hover{ color:var(--accent); border-color:var(--accent); }

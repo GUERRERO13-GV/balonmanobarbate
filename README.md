@@ -35,9 +35,12 @@ balonmanobarbate/
 │   │   ├── styles.css    # Todo el CSS: tokens de marca, tokens de tema y componentes
 │   │   └── fonts.css     # @font-face de las fuentes autoalojadas
 │   ├── js/
-│   │   ├── main.js       # Menú, tema, visor de fotos y cuenta atrás del próximo partido
+│   │   ├── main.js       # Menú, tema, visor de fotos, cuenta atrás, estados de carga
+│   │   ├── analitica.js  # Aviso de consentimiento y medición de visitas
 │   │   └── theme.js      # Aplica el tema guardado antes de pintar (sin defer)
 │   ├── img/              # Fotos en .webp con respaldo .jpg; escudo y logos en .webp
+│   │   ├── og-club-balonmano-barbate.jpg  # Tarjeta social, 1200 × 630
+│   │   ├── apple-touch-icon.png, icono-192.png, icono-512.png
 │   │   └── equipaciones/ # Renders de las equipaciones
 │   └── fonts/            # Oswald, Source Serif 4 y JetBrains Mono en .woff2 (OFL)
 ├── datos/
@@ -47,12 +50,16 @@ balonmanobarbate/
 │   ├── torneos.py        # Los 147 torneos del club, verificados uno a uno
 │   ├── barre_isquad.py   # Busca en qué competiciones y grupos juega el club
 │   ├── recoge_partidos.py# iSquad → datos/deportivo.json
-│   └── genera_partidos.py# El JSON → los bloques de index.html y equipos.html
+│   ├── genera_partidos.py# El JSON → los bloques de index.html y equipos.html
+│   ├── genera_sitemap.py # Reescribe sitemap.xml con la fecha real de cada página
+│   └── genera_iconos.py  # Favicons, icono de iOS y la imagen de las tarjetas sociales
 ├── .github/workflows/
 │   └── resultados.yml    # La actualización de cada domingo
 ├── vercel.json           # Cabeceras de seguridad y caché inmutable de /assets
 ├── robots.txt            # Indexación abierta, con referencia al sitemap
-├── sitemap.xml           # Las siete páginas indexables
+├── sitemap.xml           # Las siete páginas indexables (generado, con lastmod)
+├── site.webmanifest      # Nombre, colores e iconos para Android y escritorio
+├── favicon.ico           # 16 · 32 · 48 px; los navegadores lo piden a pelo
 ├── README.md             # Documentación general del repositorio
 └── CLAUDE.md             # Directrices de arquitectura y estilo para desarrollo asistido por IA
 ```
@@ -77,6 +84,7 @@ commit; Vercel despliega solo.
 ```bash
 python tools/recoge_partidos.py   # lee iSquad y escribe datos/deportivo.json
 python tools/genera_partidos.py   # vuelca el JSON en index.html y equipos.html
+python tools/genera_sitemap.py    # mueve el <lastmod> de las páginas que han cambiado
 ```
 
 El HTML entre los marcadores `<!-- PROXIMO:INICIO -->` y `<!-- MARCADORES:INICIO -->` **está
@@ -88,6 +96,22 @@ semana anterior: nunca se publica una página vacía ni sellada con una fecha fa
 > **Datos personales:** la plataforma expone la plantilla completa con nombres y edades, pero la
 > mayoría de nuestros equipos son de categoría base. **No se extrae ningún dato personal**: solo
 > el número de jugadores por equipo.
+
+---
+
+## 🔒 Privacidad y medición
+
+**El sitio no carga ningún tercero por su cuenta.** Ni fuentes de Google (están autoalojadas), ni
+mapas, ni tablas de la federación: los dos últimos son marcos que solo se insertan cuando el
+visitante pulsa, con el aviso delante de lo que implica.
+
+Las visitas se miden con **Vercel Web Analytics**, que corre en el propio dominio, no pone
+cookies y no guarda identificadores. Aun así se pide permiso: `assets/js/analitica.js` enseña un
+aviso con «Aceptar» y «Rechazar» del mismo peso, guarda la respuesta en `localStorage` y **solo
+después** inyecta el script. Sin JavaScript no hay medición ni aviso.
+
+> Para que exista `/_vercel/insights/script.js` hay que activar Web Analytics en el panel de
+> Vercel (*Project → Analytics*). Si no está activo, la petición devuelve 404 y no pasa nada más.
 
 ---
 
@@ -135,6 +159,13 @@ npx serve .                  # alternativa
 ```
 
 Comprobar siempre en los dos tamaños: el menú de navegación cambia a versión móvil en **860 px**.
+
+Al tocar el escudo o la foto de la tarjeta social hay que regenerar los derivados:
+
+```bash
+python -m pip install Pillow fonttools brotli
+python tools/genera_iconos.py     # favicon.ico, iconos de iOS/Android y la imagen 1200 × 630
+```
 
 ---
 

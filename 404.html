@@ -13,11 +13,15 @@
 <meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#F6F1E4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0B1922" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="assets/img/escudo-club-balonmano-barbate.webp" type="image/webp">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/img/escudo-club-balonmano-barbate-96.webp" type="image/webp" sizes="96x96">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <script src="assets/js/theme.js"></script>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/analitica.js" defer></script>
 </head>
 <body>
 
@@ -32,7 +36,7 @@
         <div class="since">DESDE 1997 · BARBATE, CÁDIZ</div>
       </div>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Navegación principal">
       <a href="index.html">Inicio</a>
       <a href="club.html">El Club</a>
       <div class="nav-grupo">
@@ -73,11 +77,76 @@
   <div class="container">
     <p class="eyebrow">Error 404</p>
     <h1>Esta pelota se ha ido fuera de banda.</h1>
-    <p class="lead" style="max-width:52ch;">La página que buscas no existe o ha cambiado de sitio. Vuelve al inicio o pasa directamente por los equipos.</p>
+    <p class="lead" style="max-width:52ch;">La página que buscas no existe o ha cambiado de sitio. Vuelve al inicio, busca por aquí abajo o pasa directamente por los equipos.</p>
     <div class="hero-actions">
       <a href="index.html" class="btn btn-solid">Volver al inicio</a>
       <a href="equipos.html" class="btn btn-ghost">Ver equipos</a>
     </div>
+  </div>
+</section>
+
+<!-- Todo el sitio en una lista. El campo de búsqueda lo inyecta main.js sobre
+     data-buscador: sin JavaScript la lista se ve entera, que es exactamente lo
+     que hace falta cuando alguien se ha perdido. No hay backend ni índice que
+     consultar, el filtrado es sobre este mismo HTML. -->
+<section class="banda banda-arena banda-clara" data-buscador>
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Todo el sitio</p>
+      <h2>¿Buscabas alguna de estas?</h2>
+    </div>
+
+    <ol class="indice" data-buscador-lista>
+      <li>
+        <span class="num">01</span>
+        <div>
+          <h3><a href="index.html">Inicio</a></h3>
+          <p>Próximo partido, últimos resultados y el resumen del club: pista, playa y el pabellón.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <div>
+          <h3><a href="club.html">El Club</a></h3>
+          <p>Historia desde 1997, valores e instalaciones del Club Balonmano Barbate.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <div>
+          <h3><a href="equipos.html">Equipos</a></h3>
+          <p>Todos los equipos por temporada, de alevín a sénior, y los resultados oficiales de la federación.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">04</span>
+        <div>
+          <h3><a href="equipaciones.html">Equipaciones</a></h3>
+          <p>Juegos de pista, de portería, de balonmano playa y ropa de paseo. Se piden en el club.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">05</span>
+        <div>
+          <h3><a href="galeria.html">Galería</a></h3>
+          <p>Fotos de partidos, torneos y celebraciones en el pabellón y en la arena.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">06</span>
+        <div>
+          <h3><a href="patrocinadores.html">Patrocinadores</a></h3>
+          <p>Empresas e instituciones que sostienen al club, y cómo sumarse.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">07</span>
+        <div>
+          <h3><a href="contacto.html">Contacto</a></h3>
+          <p>Correo, dirección del Pabellón Municipal, redes sociales y cómo llegar.</p>
+        </div>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -87,19 +156,21 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h4>Club Balonmano Barbate</h4>
+        <h2>Club Balonmano Barbate</h2>
         <p style="opacity:.8; max-width:320px;">Fundado en 1997 en Barbate, Cádiz. Balonmano de pista y de playa.</p>
       </div>
       <div>
-        <h4>Navegación</h4>
+        <h2>Navegación</h2>
+        <nav aria-label="Enlaces del pie">
         <a href="club.html">El Club</a>
         <a href="equipos.html">Equipos</a>
         <a href="equipaciones.html">Equipaciones</a>
         <a href="galeria.html">Galería</a>
         <a href="patrocinadores.html">Patrocinadores</a>
+        </nav>
       </div>
       <div>
-        <h4>Contacto</h4>
+        <h2>Contacto</h2>
         <a href="mailto:balonmanobarbate@gmail.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect><path d="M3 6.7l9 6 9-6"></path></svg>balonmanobarbate@gmail.com</a>
         <a href="https://www.facebook.com/ClubBalonmanoBarbate" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 2.2h-3.4c-2.7 0-4.2 1.6-4.2 4.3v2.4H6.9v3.5h2.5v9.4h3.6v-9.4h2.9l.5-3.5h-3.4V6.9c0-.9.3-1.3 1.3-1.3H17V2.2z"></path></svg>@ClubBalonmanoBarbate</a>
         <a href="https://www.instagram.com/barbatebalonmano" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="1.25" fill="currentColor" stroke="none"></circle></svg>@barbatebalonmano</a>

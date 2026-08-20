@@ -1,5 +1,34 @@
 /* Club Balonmano Barbate — comportamiento de la interfaz
    Desarrollo: Francisco Vidal Mateo (FranVi) */
+
+/* ---------- Red de seguridad ----------
+   El sitio funciona entero sin JavaScript, salvo por una cosa: este script
+   tapa los titulares de las bandas de foto con data-mascara y luego los
+   descubre. Si algo revienta a mitad —un navegador viejo, una extensión que
+   se mete por medio—, esas piezas se quedarían tapadas y la página se vería
+   con agujeros. Este guardián las descubre todas y deja el contenido a la
+   vista, que es el estado correcto cuando el adorno no se puede pintar.
+
+   No se registra nada en consola en el camino normal: solo se avisa cuando
+   de verdad ha fallado algo. */
+function revelarContenido() {
+  document.querySelectorAll('[data-mascara]').forEach(function (pieza) {
+    pieza.removeAttribute('data-mascara');
+    pieza.classList.add('visible');
+  });
+  document.querySelectorAll('.banda-foto[data-entra]').forEach(function (banda) {
+    banda.removeAttribute('data-entra');
+    banda.classList.add('visible');
+  });
+}
+
+window.addEventListener('error', function (e) {
+  // Solo interesan los errores de este script; los de un iframe de terceros
+  // o una imagen suelta no tienen por qué desmontar las animaciones.
+  if (e.filename && e.filename.indexOf('main.js') === -1) return;
+  revelarContenido();
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');
@@ -294,6 +323,75 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
+  // ---------- Estado de carga y fallo de los marcos ----------
+  // El contenido de estos dos marcos lo sirve un tercero (Google y la
+  // federación), así que puede tardar y puede no llegar. Las dos cosas se
+  // cuentan: mientras carga hay un aviso, y si no llega se dice y se ofrece
+  // el enlace directo, que es lo que el visitante venía a ver.
+  var ESPERA_MAXIMA = 15000;
+
+  function avisoCarga(texto) {
+    var caja = document.createElement('div');
+    caja.className = 'cargando';
+    // El aviso se anuncia solo: quien usa lector de pantalla acaba de pulsar
+    // un botón y necesita saber que algo está pasando.
+    caja.setAttribute('role', 'status');
+    caja.setAttribute('aria-live', 'polite');
+    var p = document.createElement('p');
+    p.textContent = texto;
+    caja.appendChild(p);
+    return caja;
+  }
+
+  function avisoFallo(destino, titulo) {
+    var caja = document.createElement('div');
+    caja.className = 'marco-fallo';
+    var p = document.createElement('p');
+    p.textContent = 'No se ha podido cargar «' + titulo + '». Puede que el '
+      + 'servidor de origen esté caído o que una extensión del navegador lo '
+      + 'esté bloqueando.';
+    var q = document.createElement('p');
+    var a = document.createElement('a');
+    a.href = destino;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = 'Abrirlo directamente en el sitio de origen';
+    q.appendChild(a);
+    caja.appendChild(p);
+    caja.appendChild(q);
+    return caja;
+  }
+
+  // El marco se mete en el DOM ya, porque fuera de él no empieza a cargar,
+  // pero oculto: hasta que dispara load solo se ve el aviso.
+  function vigilarCarga(marco, espera, destino, titulo) {
+    marco.style.display = 'none';
+    espera.appendChild(marco);
+    var resuelto = false;
+
+    var reloj = setTimeout(function () {
+      if (resuelto) return;
+      resuelto = true;
+      espera.replaceWith(avisoFallo(destino, titulo));
+    }, ESPERA_MAXIMA);
+
+    marco.addEventListener('load', function () {
+      if (resuelto) return;
+      resuelto = true;
+      clearTimeout(reloj);
+      marco.style.display = '';
+      espera.replaceWith(marco);
+    });
+
+    marco.addEventListener('error', function () {
+      if (resuelto) return;
+      resuelto = true;
+      clearTimeout(reloj);
+      espera.replaceWith(avisoFallo(destino, titulo));
+    });
+  }
+
+
   // ---------- Marcos de terceros, solo bajo demanda ----------
   // El iframe de Google enviaba la IP del visitante a seis dominios suyos nada
   // más entrar en contacto.html, sin que nadie lo pidiera; el de la federación
@@ -304,28 +402,37 @@ document.addEventListener('DOMContentLoaded', function () {
     var boton = hueco.querySelector('button');
     if (!boton) return;
     boton.addEventListener('click', function () {
+      var destino = hueco.getAttribute('data-src');
+      var titulo = hueco.getAttribute('data-titulo') || 'Contenido externo';
+
+      // Mientras el marco no pinte, en su sitio va el aviso de carga: son
+      // varios segundos contra un servidor ajeno y sin nada que lo diga
+      // parece que el botón no ha funcionado.
+      var espera = avisoCarga('Cargando el contenido…');
+      hueco.replaceWith(espera);
+
       var marco = document.createElement('iframe');
       marco.className = 'marco-cargado';
-      marco.title = hueco.getAttribute('data-titulo') || 'Contenido externo';
+      marco.title = titulo;
       marco.loading = 'lazy';
       marco.referrerPolicy = 'no-referrer';
       marco.setAttribute('allowfullscreen', '');
       marco.style.height = (hueco.getAttribute('data-alto') || '460') + 'px';
-      marco.src = hueco.getAttribute('data-src');
-      hueco.replaceWith(marco);
+
+      vigilarCarga(marco, espera, destino, titulo);
+      marco.src = destino;
     });
   });
 
 
   // ---------- Sumario de competiciones de la federación ----------
-  // Un solo marco para todas: al elegir una competición se carga ahí. Así el
-  // visitante decide qué mira y solo se hace una llamada a la federación, no
-  // una por equipo. El aviso de privacidad va encima del sumario, para que se
-  // lea antes del primer clic.
+  // Un solo marco a la vez para las 147: al elegir una competición se carga
+  // ahí. Así el visitante decide qué mira y solo se hace una llamada a la
+  // federación, no una por equipo. El aviso de privacidad va encima del
+  // sumario, para que se lea antes del primer clic.
   var huecoTabla = document.getElementById('tabla-federacion');
   if (huecoTabla) {
     var botones = Array.prototype.slice.call(document.querySelectorAll('.comp-ver'));
-    var marcoActual = null;
 
     var cargar = function (boton) {
       botones.forEach(function (b) {
@@ -335,18 +442,30 @@ document.addEventListener('DOMContentLoaded', function () {
         b.setAttribute('aria-pressed', activo ? 'true' : 'false');
       });
 
-      if (!marcoActual) {
-        marcoActual = document.createElement('iframe');
-        marcoActual.className = 'marco-cargado';
-        marcoActual.loading = 'lazy';
-        marcoActual.referrerPolicy = 'no-referrer';
-        marcoActual.setAttribute('allowfullscreen', '');
-        marcoActual.style.height = '820px';
-        huecoTabla.innerHTML = '';
-        huecoTabla.appendChild(marcoActual);
-      }
-      marcoActual.title = 'Clasificación y calendario: ' + boton.getAttribute('data-nombre');
-      marcoActual.src = boton.getAttribute('data-src');
+      var nombre = boton.getAttribute('data-nombre');
+      var destino = boton.getAttribute('data-src');
+
+      // Marco nuevo en cada carga y no uno reutilizado: reutilizarlo obligaba
+      // a colgarle otro par de listeners por clic, y con 147 botones eso se
+      // acumula. En pantalla sigue habiendo uno solo.
+      var marco = document.createElement('iframe');
+      marco.className = 'marco-cargado';
+      marco.loading = 'lazy';
+      marco.referrerPolicy = 'no-referrer';
+      marco.setAttribute('allowfullscreen', '');
+      marco.style.height = '820px';
+      marco.title = 'Clasificación y calendario: ' + nombre;
+
+      // Cada clasificación son ~2,4 MB contra el servidor de la federación:
+      // hay segundos de espera y conviene que se vean. Al cambiar de torneo
+      // se vuelve a poner el aviso, porque si no parece que el clic no ha
+      // hecho nada.
+      var espera = avisoCarga('Cargando la clasificación…');
+      huecoTabla.innerHTML = '';
+      huecoTabla.appendChild(espera);
+
+      vigilarCarga(marco, espera, destino, nombre);
+      marco.src = destino;
       // El foco va a la tabla recién cargada: si no, quien navega con teclado
       // pulsa y no sabe que ha pasado nada más abajo.
       huecoTabla.setAttribute('tabindex', '-1');
@@ -398,20 +517,124 @@ document.addEventListener('DOMContentLoaded', function () {
     if (pinta()) setInterval(pinta, 60000);
   });
 
-  // Season tabs (preparado para futuras temporadas; hoy solo hay una)
-  document.querySelectorAll('.season-tabs').forEach(function (tabs) {
-    var buttons = tabs.querySelectorAll('button');
-    buttons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        buttons.forEach(function (b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-        var target = btn.getAttribute('data-target');
-        var panelGroup = tabs.parentElement.querySelectorAll('.season-panel');
-        panelGroup.forEach(function (p) {
-          p.style.display = (p.dataset.season === target) ? '' : 'none';
-        });
+  // ---------- Buscador de la página 404 ----------
+  // No hay backend ni índice: se filtra la lista que ya está en el HTML. Por
+  // eso el campo lo pone el script y no el marcado — sin JavaScript un campo
+  // de búsqueda que no busca es peor que ninguno, y la lista entera sigue
+  // estando a la vista.
+  var zonaBusca = document.querySelector('[data-buscador]');
+  var listaBusca = zonaBusca && zonaBusca.querySelector('[data-buscador-lista]');
+  if (listaBusca) {
+    var entradas = Array.prototype.slice.call(listaBusca.children).map(function (li) {
+      return { li: li, texto: li.textContent.toLowerCase() };
+    });
+
+    var campo = document.createElement('input');
+    campo.type = 'search';
+    campo.id = 'buscador-404';
+    campo.className = 'buscador-campo';
+    campo.placeholder = 'equipos, equipaciones, contacto…';
+    campo.autocomplete = 'off';
+
+    var etiqueta = document.createElement('label');
+    etiqueta.className = 'eyebrow';
+    etiqueta.htmlFor = campo.id;
+    etiqueta.textContent = 'Buscar en la web del club';
+
+    var recuento = document.createElement('p');
+    recuento.className = 'buscador-recuento';
+    // El resultado se dice en voz alta: sin esto, quien no ve la lista no
+    // sabe si al escribir ha quedado algo.
+    recuento.setAttribute('role', 'status');
+    recuento.setAttribute('aria-live', 'polite');
+
+    var caja = document.createElement('div');
+    caja.className = 'buscador';
+    caja.appendChild(etiqueta);
+    caja.appendChild(campo);
+    caja.appendChild(recuento);
+    listaBusca.parentNode.insertBefore(caja, listaBusca);
+
+    // Sin acentos y en minúsculas: quien escribe «galeria» buscando «galería»
+    // tiene que encontrarla igual.
+    var llano = function (t) {
+      return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    };
+
+    campo.addEventListener('input', function () {
+      var busca = llano(campo.value.trim());
+      var vistos = 0;
+      entradas.forEach(function (e) {
+        var vale = !busca || llano(e.texto).indexOf(busca) !== -1;
+        e.li.hidden = !vale;
+        if (vale) vistos++;
+      });
+      if (!busca) { recuento.textContent = ''; return; }
+      recuento.textContent = vistos === 0
+        ? 'Ninguna página coincide. Prueba con otra palabra.'
+        : vistos === 1 ? '1 página coincide' : vistos + ' páginas coinciden';
+    });
+  }
+
+
+  // ---------- Pestañas de temporada ----------
+  // Preparado para futuras temporadas; hoy solo hay una. La semántica de
+  // pestañas la pone el script y no el HTML, como el resto del ARIA del
+  // sitio: sin JS los paneles se ven todos y unos role="tabpanel" sueltos
+  // solo estorbarían.
+  document.querySelectorAll('.season-tabs').forEach(function (tabs, iGrupo) {
+    var buttons = Array.prototype.slice.call(tabs.querySelectorAll('button'));
+    var paneles = Array.prototype.slice.call(
+      tabs.parentElement.querySelectorAll('.season-panel'));
+    if (!buttons.length) return;
+
+    tabs.setAttribute('role', 'tablist');
+    tabs.setAttribute('aria-label', 'Temporadas');
+
+    var pon = function (btn) {
+      var destino = btn.getAttribute('data-target');
+      buttons.forEach(function (b) {
+        var activo = b === btn;
+        b.classList.toggle('active', activo);
+        b.setAttribute('aria-selected', activo ? 'true' : 'false');
+        // Solo la pestaña activa entra en el orden del tabulador: dentro de
+        // un tablist se cambia de pestaña con las flechas, no con Tab.
+        b.tabIndex = activo ? 0 : -1;
+      });
+      paneles.forEach(function (p) {
+        p.hidden = p.dataset.season !== destino;
+      });
+    };
+
+    buttons.forEach(function (btn, i) {
+      var idBoton = 'temporada-' + iGrupo + '-' + i;
+      var panel = paneles.filter(function (p) {
+        return p.dataset.season === btn.getAttribute('data-target');
+      })[0];
+
+      btn.type = 'button';
+      btn.id = idBoton;
+      btn.setAttribute('role', 'tab');
+      if (panel) {
+        panel.id = panel.id || idBoton + '-panel';
+        panel.setAttribute('role', 'tabpanel');
+        panel.setAttribute('aria-labelledby', idBoton);
+        btn.setAttribute('aria-controls', panel.id);
+      }
+
+      btn.addEventListener('click', function () { pon(btn); });
+      btn.addEventListener('keydown', function (e) {
+        var paso = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!paso) return;
+        e.preventDefault();
+        var siguiente = buttons[(i + paso + buttons.length) % buttons.length];
+        pon(siguiente);
+        siguiente.focus();
       });
     });
+
+    pon(buttons.filter(function (b) { return b.classList.contains('active'); })[0]
+        || buttons[0]);
   });
 });
 

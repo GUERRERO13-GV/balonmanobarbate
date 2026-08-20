@@ -1,0 +1,25 @@
+{
+  "name": "Club Balonmano Barbate",
+  "short_name": "BM Barbate",
+  "description": "Club Balonmano Barbate, fundado en 1997: balonmano pista y balonmano playa en Barbate, Cádiz.",
+  "lang": "es",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#F6F1E4",
+  "theme_color": "#0A2A43",
+  "icons": [
+    {
+      "src": "/assets/img/icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

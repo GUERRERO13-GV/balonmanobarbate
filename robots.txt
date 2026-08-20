@@ -1,4 +1,11 @@
+# Club Balonmano Barbate — web oficial
+# No hay nada que esconder: las siete páginas indexables son públicas y
+# 404.html se excluye sola con su <meta name="robots" content="noindex">.
+
 User-agent: *
 Allow: /
+
+# Las utilidades de tools/ y el flujo de la Action no se despliegan
+# (ver .vercelignore), así que no hace falta bloquearlos aquí.
 
 Sitemap: https://balonmanobarbate.vercel.app/sitemap.xml
